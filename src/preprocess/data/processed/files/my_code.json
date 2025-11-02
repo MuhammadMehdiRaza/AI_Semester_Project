@@ -1,0 +1,83 @@
+{
+  "path": "C:\\Users\\Pc\\Code\\python\\AI_Project\\src\\preprocess\\my_code.py",
+  "loc": 14,
+  "imports": [
+    "math"
+  ],
+  "node_hist": {
+    "Module": 1,
+    "Import": 1,
+    "FunctionDef": 1,
+    "Assign": 2,
+    "Expr": 1,
+    "alias": 1,
+    "arguments": 1,
+    "For": 1,
+    "Return": 1,
+    "Name": 15,
+    "Call": 4,
+    "arg": 1,
+    "Constant": 7,
+    "If": 1,
+    "Store": 5,
+    "BinOp": 2,
+    "Compare": 1,
+    "AugAssign": 2,
+    "Load": 11,
+    "Add": 3,
+    "Eq": 1,
+    "Mod": 1,
+    "Attribute": 1
+  },
+  "num_functions": 1,
+  "functions": [
+    {
+      "name": "factorial_sum",
+      "args": 1,
+      "lineno": 3,
+      "end_lineno": 10
+    }
+  ],
+  "avg_cc": 3.0,
+  "max_cc": 3,
+  "top_idents": [
+    [
+      "total",
+      4
+    ],
+    [
+      "i",
+      4
+    ],
+    [
+      "result",
+      2
+    ],
+    [
+      "factorial_sum",
+      1
+    ],
+    [
+      "print",
+      1
+    ],
+    [
+      "range",
+      1
+    ],
+    [
+      "n",
+      1
+    ],
+    [
+      "math",
+      1
+    ]
+  ],
+  "subtree_hashes": [
+    "a578fa7631b5aec11523bbdc533de0cb3a40e17a22b1b4a7239aaa9a3de1d01c",
+    "785cc289dcf27758714ca25526353ef082ffb4e428fb8635aa2fd0755df9c308",
+    "bb24cc77e1eb2f5346d3b12834106a126a7b443d92bf261608d32cb6d8fe920b"
+  ],
+  "canonical_code": "import math\n\ndef f1(v1):\n    v2 = 0\n    for v3 in v4(1, v1 + 1):\n        if v3 % 2 == 0:\n            v2 += v5.factorial(v3)\n        else:\n            v2 += v3\n    return v2\nv6 = f1(5)\nv7('Result:', v6)"
+}
