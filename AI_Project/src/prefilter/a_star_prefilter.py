@@ -1,25 +1,26 @@
 #!/usr/bin/env python3
-"""
-a_star_prefilter.py
--------------------------------------
-Heuristic A* prefilter for plagiarism detection.
-
-Reads JSON files (from extract_perfile.py output),
-computes a simple similarity heuristic between every
-pair of files, and writes the most promising (lowest-h)
-pairs to candidates.csv.
-
-Usage:
-  python src/prefilter/a_star_prefilter.py
-"""
 
 import os
 import json
 import math
 import heapq
 import csv
+import argparse
+import matplotlib.pyplot as plt
 from difflib import SequenceMatcher
 from typing import Dict
+
+WEIGHTS = {
+    "loc_diff": 0.15,
+    "import_sim": 0.15,
+    "node_sim": 0.20,
+    "subtree_sim": 0.20,
+    "canon_sim": 0.30
+}
+
+SIMILARITY_THRESHOLD = 0.5
+TOP_K_PERCENT = 0.2
+MIN_CANDIDATES = 10
 
 def cosine_similarity(dict1: Dict[str, int], dict2: Dict[str, int]) -> float:
     if not dict1 or not dict2:
@@ -62,22 +63,54 @@ def detailed_heuristic(a, b):
     subtree_sim = jaccard(a.get("subtree_hashes", []), b.get("subtree_hashes", []))
     canon_sim = canonical_similarity(a, b)
     
-    h = (0.15 * loc_diff + 
-         0.15 * (1 - import_sim) + 
-         0.20 * (1 - node_sim) +
-         0.20 * (1 - subtree_sim) +
-         0.30 * (1 - canon_sim))
+    func_diff = abs(a.get("num_functions", 0) - b.get("num_functions", 0)) / max(a.get("num_functions", 1), b.get("num_functions", 1), 1)
+    cc_diff = abs(a.get("avg_cc", 0) - b.get("avg_cc", 0)) / max(a.get("avg_cc", 1), b.get("avg_cc", 1), 1)
+    
+    h = (WEIGHTS["loc_diff"] * loc_diff + 
+         WEIGHTS["import_sim"] * (1 - import_sim) + 
+         WEIGHTS["node_sim"] * (1 - node_sim) +
+         WEIGHTS["subtree_sim"] * (1 - subtree_sim) +
+         WEIGHTS["canon_sim"] * (1 - canon_sim))
     
     return h, {
         "loc_diff": loc_diff,
         "import_sim": import_sim,
         "node_sim": node_sim,
         "subtree_sim": subtree_sim,
-        "canon_sim": canon_sim
+        "canon_sim": canon_sim,
+        "func_diff": func_diff,
+        "cc_diff": cc_diff
     }
 
 
+def visualize_results(results, out_dir):
+    if not results:
+        return
+    
+    scores = [r["heuristic"] for r in results]
+    
+    plt.figure(figsize=(10, 6))
+    plt.hist(scores, bins=20, edgecolor='black', alpha=0.7)
+    plt.xlabel("Heuristic Score (lower = more similar)")
+    plt.ylabel("Frequency")
+    plt.title("Distribution of Similarity Scores")
+    plt.axvline(SIMILARITY_THRESHOLD, color='r', linestyle='--', label=f'Threshold ({SIMILARITY_THRESHOLD})')
+    plt.legend()
+    plt.grid(True, alpha=0.3)
+    
+    viz_path = os.path.join(out_dir, "heuristic_distribution.png")
+    plt.savefig(viz_path, dpi=150, bbox_inches='tight')
+    plt.close()
+    print(f"  Visualization: {viz_path}")
+
+
 def main():
+    parser = argparse.ArgumentParser(description="A* prefilter for code plagiarism detection")
+    parser.add_argument("--top-k", type=float, default=TOP_K_PERCENT, help="Top percentage of pairs to keep")
+    parser.add_argument("--threshold", type=float, default=SIMILARITY_THRESHOLD, help="Similarity threshold")
+    parser.add_argument("--visualize", action="store_true", help="Generate visualization")
+    args = parser.parse_args()
+    
     import time
     start_time = time.time()
     
@@ -104,29 +137,37 @@ def main():
             quick_h = quick_heuristic(data[f1], data[f2])
             heapq.heappush(heap, (quick_h, f1, f2))
 
-    target_k = max(10, int(total_pairs * 0.2))
+    target_k = max(MIN_CANDIDATES, int(total_pairs * args.top_k))
     results = []
     detailed_comparisons = 0
+    skipped_by_threshold = 0
 
-    print(f"Running A* search for top {target_k} candidates...")
+    print(f"Running A* search for top {target_k} candidates (threshold={args.threshold})...")
     
     while heap and len(results) < target_k:
         quick_h, f1, f2 = heapq.heappop(heap)
+        
+        if quick_h > args.threshold:
+            skipped_by_threshold += 1
+            continue
         
         try:
             detailed_h, parts = detailed_heuristic(data[f1], data[f2])
             detailed_comparisons += 1
             
-            results.append({
-                "file1": f1,
-                "file2": f2,
-                "heuristic": round(detailed_h, 4),
-                "loc_diff": round(parts["loc_diff"], 4),
-                "import_sim": round(parts["import_sim"], 4),
-                "node_sim": round(parts["node_sim"], 4),
-                "subtree_sim": round(parts["subtree_sim"], 4),
-                "canon_sim": round(parts["canon_sim"], 4)
-            })
+            if detailed_h <= args.threshold:
+                results.append({
+                    "file1": f1,
+                    "file2": f2,
+                    "heuristic": round(detailed_h, 4),
+                    "loc_diff": round(parts["loc_diff"], 4),
+                    "import_sim": round(parts["import_sim"], 4),
+                    "node_sim": round(parts["node_sim"], 4),
+                    "subtree_sim": round(parts["subtree_sim"], 4),
+                    "canon_sim": round(parts["canon_sim"], 4),
+                    "func_diff": round(parts["func_diff"], 4),
+                    "cc_diff": round(parts["cc_diff"], 4)
+                })
         except Exception as e:
             print(f"Error comparing {f1} and {f2}: {e}")
 
@@ -146,9 +187,13 @@ def main():
     print(f"\nResults:")
     print(f"  Selected: {len(results)} candidate pairs")
     print(f"  Detailed comparisons: {detailed_comparisons}/{total_pairs}")
+    print(f"  Skipped by threshold: {skipped_by_threshold}")
     print(f"  Reduction: {reduction:.1f}%")
     print(f"  Time: {elapsed:.2f}s")
     print(f"  Output: {out_csv}")
+    
+    if args.visualize:
+        visualize_results(results, out_dir)
 
 
 if __name__ == "__main__":
