@@ -1,0 +1,93 @@
+{
+  "path": ".\\my_code6.py",
+  "loc": 15,
+  "imports": [
+    "math"
+  ],
+  "node_hist": {
+    "Module": 1,
+    "Import": 1,
+    "FunctionDef": 2,
+    "Assign": 2,
+    "Expr": 1,
+    "alias": 1,
+    "arguments": 2,
+    "Return": 2,
+    "For": 1,
+    "Name": 16,
+    "Call": 5,
+    "arg": 2,
+    "IfExp": 1,
+    "Constant": 7,
+    "AugAssign": 1,
+    "Store": 4,
+    "Compare": 1,
+    "BinOp": 2,
+    "Add": 2,
+    "Load": 13,
+    "Eq": 1,
+    "Attribute": 1,
+    "Mod": 1
+  },
+  "num_functions": 2,
+  "functions": [
+    {
+      "name": "even_factorial",
+      "args": 1,
+      "lineno": 4,
+      "end_lineno": 5
+    },
+    {
+      "name": "ft",
+      "args": 1,
+      "lineno": 7,
+      "end_lineno": 11
+    }
+  ],
+  "avg_cc": 2.0,
+  "max_cc": 2,
+  "top_idents": [
+    [
+      "i",
+      5
+    ],
+    [
+      "ttl",
+      3
+    ],
+    [
+      "rst",
+      2
+    ],
+    [
+      "ft",
+      1
+    ],
+    [
+      "print",
+      1
+    ],
+    [
+      "range",
+      1
+    ],
+    [
+      "n",
+      1
+    ],
+    [
+      "even_factorial",
+      1
+    ],
+    [
+      "math",
+      1
+    ]
+  ],
+  "subtree_hashes": [
+    "84529ec7be57bc7e13f0d73406c7eaf89b0daeb1a9b45d71176ed01276972a15",
+    "418e4fd2a4e439f60407eb578948f64a320384155fea848653fb4353aa6917ac",
+    "71684cd60a292774025f85b52a033ee4260a2a104eaf1def7dea21c136082a96"
+  ],
+  "canonical_code": "import math\n\ndef f1(v1):\n    return v2.factorial(v1) if v1 % 2 == 0 else v1\n\ndef f2(v3):\n    v4 = 0\n    for v1 in v5(1, v3 + 1):\n        v4 += f1(v1)\n    return v4\nv6 = f2(5)\nv7('Result:', v6)"
+}
