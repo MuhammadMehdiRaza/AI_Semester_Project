@@ -1,6 +1,6 @@
 {
-  "path": "my_code.py",
-  "loc": 14,
+  "path": "my_code2.py",
+  "loc": 13,
   "imports": [
     "math"
   ],
@@ -32,7 +32,7 @@
   "num_functions": 1,
   "functions": [
     {
-      "name": "factorial_sum",
+      "name": "ft",
       "args": 1,
       "lineno": 3,
       "end_lineno": 10
@@ -42,7 +42,7 @@
   "max_cc": 3,
   "top_idents": [
     [
-      "total",
+      "ttl",
       4
     ],
     [
@@ -50,11 +50,11 @@
       4
     ],
     [
-      "result",
+      "rst",
       2
     ],
     [
-      "factorial_sum",
+      "ft",
       1
     ],
     [
@@ -75,9 +75,9 @@
     ]
   ],
   "subtree_hashes": [
-    "a578fa7631b5aec11523bbdc533de0cb3a40e17a22b1b4a7239aaa9a3de1d01c",
-    "785cc289dcf27758714ca25526353ef082ffb4e428fb8635aa2fd0755df9c308",
-    "bb24cc77e1eb2f5346d3b12834106a126a7b443d92bf261608d32cb6d8fe920b"
+    "7d93f372935c4cff980c73fc9079803c5b1acbd998fb66eccba2166d7e818d0d",
+    "b63457348dfc5686a72250d6f5cf1dcaa7c354148bf038ee4896bbb8ff3b59f4",
+    "960e7457a745e7a5df8cf9deec02f2ccfa50d7670a77a3da20db7e6e5991e914"
   ],
   "canonical_code": "import math\n\ndef f1(v1):\n    v2 = 0\n    for v3 in v4(1, v1 + 1):\n        if v3 % 2 == 0:\n            v2 += v5.factorial(v3)\n        else:\n            v2 += v3\n    return v2\nv6 = f1(5)\nv7('Result:', v6)"
 }
