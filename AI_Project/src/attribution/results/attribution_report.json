@@ -1,0 +1,83 @@
+{
+  "attributions": {
+    "my_code2.json": {
+      "source": "my_code.json",
+      "confidence": 0.8512,
+      "constraint_scores": {
+        "temporal": 1.0,
+        "structural": 0.9762,
+        "semantic": 0.8,
+        "stylistic": 0.7439
+      },
+      "satisfied": true
+    },
+    "my_code4.json": {
+      "source": "my_code3.json",
+      "confidence": 0.81,
+      "constraint_scores": {
+        "temporal": 1.0,
+        "structural": 0.881,
+        "semantic": 0.6275,
+        "stylistic": 0.931
+      },
+      "satisfied": true
+    },
+    "my_code6.json": {
+      "source": "my_code3.json",
+      "confidence": 0.7705,
+      "constraint_scores": {
+        "temporal": 1.0,
+        "structural": 0.5889,
+        "semantic": 0.6763,
+        "stylistic": 0.9287
+      },
+      "satisfied": true
+    },
+    "my_code7.json": {
+      "source": "my_code3.json",
+      "confidence": 0.7784,
+      "constraint_scores": {
+        "temporal": 1.0,
+        "structural": 0.5505,
+        "semantic": 0.6889,
+        "stylistic": 0.9708
+      },
+      "satisfied": true
+    },
+    "my_code8.json": {
+      "source": "my_code3.json",
+      "confidence": 0.7843,
+      "constraint_scores": {
+        "temporal": 1.0,
+        "structural": 0.9394,
+        "semantic": 0.669,
+        "stylistic": 0.7155
+      },
+      "satisfied": true
+    },
+    "my_code9.json": {
+      "source": "my_code3.json",
+      "confidence": 0.7646,
+      "constraint_scores": {
+        "temporal": 1.0,
+        "structural": 0.8556,
+        "semantic": 0.6646,
+        "stylistic": 0.7105
+      },
+      "satisfied": true
+    }
+  },
+  "solution": {
+    "my_code2.json": "my_code.json",
+    "my_code4.json": "my_code3.json",
+    "my_code6.json": "my_code3.json",
+    "my_code7.json": "my_code3.json",
+    "my_code8.json": "my_code3.json",
+    "my_code9.json": "my_code3.json"
+  },
+  "statistics": {
+    "total_files": 6,
+    "valid_attributions": 6,
+    "domain_reduction_percent": 0.0
+  }
+}

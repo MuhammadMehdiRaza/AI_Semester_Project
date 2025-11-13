@@ -1,0 +1,7 @@
+suspicious,source,confidence,temporal,structural,semantic,stylistic,satisfied
+my_code2.json,my_code.json,0.8512,1.0,0.9762,0.8,0.7439,True
+my_code4.json,my_code3.json,0.81,1.0,0.881,0.6275,0.931,True
+my_code6.json,my_code3.json,0.7705,1.0,0.5889,0.6763,0.9287,True
+my_code7.json,my_code3.json,0.7784,1.0,0.5505,0.6889,0.9708,True
+my_code8.json,my_code3.json,0.7843,1.0,0.9394,0.669,0.7155,True
+my_code9.json,my_code3.json,0.7646,1.0,0.8556,0.6646,0.7105,True
