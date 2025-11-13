@@ -151,6 +151,7 @@ def extract_per_file(path):
     }
     return out
 
+
 def main():
     if len(sys.argv) < 2:
         print("Usage: extract_perfile.py <file_or_dir> [outdir]")

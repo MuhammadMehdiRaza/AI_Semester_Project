@@ -1,0 +1,38 @@
+{
+  "selected_features": [
+    "canonical_similarity",
+    "node_hist_l2",
+    "node_hist_l1",
+    "node_cosine",
+    "node_diff_AugAssign",
+    "ident_total_ratio",
+    "loc_sum",
+    "loc_diff",
+    "node_total_diff",
+    "node_total_ratio",
+    "node_diff_Assign",
+    "loc_ratio",
+    "node_diff_Add",
+    "canonical_length_diff",
+    "node_diff_Store",
+    "ident_total_diff",
+    "node_diff_Name",
+    "ident_jaccard",
+    "canonical_length_ratio",
+    "avg_cc_ratio",
+    "node_diff_Constant",
+    "subtree_diff_count",
+    "ident_diff_i",
+    "ident_diff_result",
+    "import_jaccard",
+    "node_unique_diff",
+    "avg_cc_diff",
+    "ident_diff_factorial",
+    "ident_diff_j",
+    "ident_diff_math"
+  ],
+  "parameters": {
+    "max_features": 30,
+    "canonical_threshold": 0.7
+  }
+}
