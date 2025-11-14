@@ -1,0 +1,418 @@
+[
+  {
+    "file1": "original_0.py",
+    "file2": "plagiarized_0.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1000,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_1.py",
+    "file2": "plagiarized_1.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1001,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_2.py",
+    "file2": "plagiarized_2.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1002,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_3.py",
+    "file2": "plagiarized_3.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1003,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_4.py",
+    "file2": "plagiarized_4.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1004,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_5.py",
+    "file2": "plagiarized_5.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1005,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_6.py",
+    "file2": "plagiarized_6.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1006,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_7.py",
+    "file2": "plagiarized_7.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1007,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_8.py",
+    "file2": "plagiarized_8.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1008,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_9.py",
+    "file2": "plagiarized_9.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1009,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_10.py",
+    "file2": "plagiarized_10.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1010,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_11.py",
+    "file2": "plagiarized_11.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1011,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_12.py",
+    "file2": "plagiarized_12.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1012,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_13.py",
+    "file2": "plagiarized_13.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1013,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_14.py",
+    "file2": "plagiarized_14.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1014,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_15.py",
+    "file2": "plagiarized_15.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1015,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_16.py",
+    "file2": "plagiarized_16.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1016,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_17.py",
+    "file2": "plagiarized_17.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1017,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_18.py",
+    "file2": "plagiarized_18.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1018,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_19.py",
+    "file2": "plagiarized_19.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1019,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_20.py",
+    "file2": "plagiarized_20.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1020,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_21.py",
+    "file2": "plagiarized_21.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1021,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_22.py",
+    "file2": "plagiarized_22.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1022,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_23.py",
+    "file2": "plagiarized_23.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1023,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_24.py",
+    "file2": "plagiarized_24.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1024,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_25.py",
+    "file2": "plagiarized_25.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1025,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_26.py",
+    "file2": "plagiarized_26.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1026,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_27.py",
+    "file2": "plagiarized_27.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1027,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_28.py",
+    "file2": "plagiarized_28.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1028,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_29.py",
+    "file2": "plagiarized_29.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1029,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_30.py",
+    "file2": "plagiarized_30.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1030,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "original_31.py",
+    "file2": "plagiarized_31.py",
+    "is_plagiarized": 1,
+    "transformation_seed": 1031,
+    "source": "synthetic_positive"
+  },
+  {
+    "file1": "unrelated_a_0.py",
+    "file2": "unrelated_b_0.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_1.py",
+    "file2": "unrelated_b_1.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_2.py",
+    "file2": "unrelated_b_2.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_3.py",
+    "file2": "unrelated_b_3.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_4.py",
+    "file2": "unrelated_b_4.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_5.py",
+    "file2": "unrelated_b_5.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_6.py",
+    "file2": "unrelated_b_6.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_7.py",
+    "file2": "unrelated_b_7.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_8.py",
+    "file2": "unrelated_b_8.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_9.py",
+    "file2": "unrelated_b_9.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_10.py",
+    "file2": "unrelated_b_10.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_11.py",
+    "file2": "unrelated_b_11.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_12.py",
+    "file2": "unrelated_b_12.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_13.py",
+    "file2": "unrelated_b_13.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_14.py",
+    "file2": "unrelated_b_14.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_15.py",
+    "file2": "unrelated_b_15.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_16.py",
+    "file2": "unrelated_b_16.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_17.py",
+    "file2": "unrelated_b_17.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_18.py",
+    "file2": "unrelated_b_18.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_19.py",
+    "file2": "unrelated_b_19.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_20.py",
+    "file2": "unrelated_b_20.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_21.py",
+    "file2": "unrelated_b_21.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_22.py",
+    "file2": "unrelated_b_22.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_23.py",
+    "file2": "unrelated_b_23.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_24.py",
+    "file2": "unrelated_b_24.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_25.py",
+    "file2": "unrelated_b_25.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_26.py",
+    "file2": "unrelated_b_26.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_27.py",
+    "file2": "unrelated_b_27.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_28.py",
+    "file2": "unrelated_b_28.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_29.py",
+    "file2": "unrelated_b_29.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_30.py",
+    "file2": "unrelated_b_30.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  },
+  {
+    "file1": "unrelated_a_31.py",
+    "file2": "unrelated_b_31.py",
+    "is_plagiarized": 0,
+    "source": "synthetic_negative"
+  }
+]

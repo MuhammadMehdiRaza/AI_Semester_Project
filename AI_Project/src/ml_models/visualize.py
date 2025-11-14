@@ -40,15 +40,29 @@ class ModelVisualizer:
         
         # Extract metrics
         models = list(self.results.keys())
-        metrics = ['test_accuracy', 'precision', 'recall', 'f1']
+        
+        # Check if test metrics are all zero (class imbalance issue)
+        has_test_metrics = any(
+            self.results[m].get('f1', 0) > 0 for m in models
+        )
+        
+        # Use CV scores if test metrics are problematic
+        if not has_test_metrics and all('cv_f1_mean' in self.results[m] for m in models):
+            print("Warning: Test set metrics are 0 (likely no positive samples in test set).")
+            print("Using cross-validation scores instead for more reliable comparison.")
+            metrics = ['train_accuracy', 'test_accuracy', 'cv_f1_mean', 'roc_auc']
+            metric_labels = ['Train Accuracy', 'Test Accuracy', 'CV F1 Score', 'ROC AUC']
+        else:
+            metrics = ['test_accuracy', 'precision', 'recall', 'f1']
+            metric_labels = ['Test Accuracy', 'Precision', 'Recall', 'F1 Score']
         
         data = []
         for model in models:
-            for metric in metrics:
-                if metric in self.results[model]:
+            for metric, label in zip(metrics, metric_labels):
+                if metric in self.results[model] and self.results[model][metric] is not None:
                     data.append({
                         'Model': model.replace('_', ' ').title(),
-                        'Metric': metric.replace('_', ' ').title(),
+                        'Metric': label,
                         'Score': self.results[model][metric]
                     })
         
@@ -60,21 +74,35 @@ class ModelVisualizer:
         # Grouped bar chart
         x = np.arange(len(models))
         width = 0.2
+        colors = ['#3498db', '#2ecc71', '#e74c3c', '#f39c12']
         
-        for i, metric in enumerate(metrics):
-            metric_data = df[df['Metric'] == metric.replace('_', ' ').title()]
-            scores = [metric_data[metric_data['Model'] == m.replace('_', ' ').title()]['Score'].values[0] 
-                     for m in models]
-            ax.bar(x + i * width, scores, width, label=metric.replace('_', ' ').title())
+        for i, label in enumerate(metric_labels):
+            metric_data = df[df['Metric'] == label]
+            if len(metric_data) > 0:
+                scores = []
+                for m in models:
+                    model_data = metric_data[metric_data['Model'] == m.replace('_', ' ').title()]
+                    if len(model_data) > 0:
+                        scores.append(model_data['Score'].values[0])
+                    else:
+                        scores.append(0)
+                
+                ax.bar(x + i * width, scores, width, label=label, color=colors[i % len(colors)])
         
         ax.set_xlabel('Model', fontsize=12, fontweight='bold')
         ax.set_ylabel('Score', fontsize=12, fontweight='bold')
-        ax.set_title('Model Performance Comparison', fontsize=14, fontweight='bold')
+        
+        if not has_test_metrics:
+            ax.set_title('Model Performance Comparison\n(Using CV Scores - Test Set Has Class Imbalance)', 
+                        fontsize=14, fontweight='bold')
+        else:
+            ax.set_title('Model Performance Comparison', fontsize=14, fontweight='bold')
+        
         ax.set_xticks(x + width * 1.5)
         ax.set_xticklabels([m.replace('_', ' ').title() for m in models])
-        ax.legend()
+        ax.legend(loc='upper left', fontsize=10)
         ax.set_ylim(0, 1.1)
-        ax.grid(True, alpha=0.3)
+        ax.grid(True, alpha=0.3, axis='y')
         
         plt.tight_layout()
         output_path = self.output_dir / "model_comparison.png"
