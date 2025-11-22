@@ -1,200 +1,191 @@
 {
   "logistic_regression": {
-    "train_time": 0.01184391975402832,
-    "train_accuracy": 0.9642857142857143,
-    "test_accuracy": 0.75,
-    "precision": 0.0,
-    "recall": 0.0,
-    "f1": 0.0,
-    "confusion_matrix": [
-      [
-        6,
-        1
-      ],
-      [
-        1,
-        0
-      ]
-    ],
-    "classification_report": "              precision    recall  f1-score   support\n\n           0       0.86      0.86      0.86         7\n           1       0.00      0.00      0.00         1\n\n    accuracy                           0.75         8\n   macro avg       0.43      0.43      0.43         8\nweighted avg       0.75      0.75      0.75         8\n",
-    "roc_auc": 0.7142857142857143,
-    "roc_curve": {
-      "fpr": [
-        0.0,
-        0.14285714285714285,
-        0.2857142857142857,
-        0.2857142857142857,
-        1.0
-      ],
-      "tpr": [
-        0.0,
-        0.0,
-        0.0,
-        1.0,
-        1.0
-      ],
-      "thresholds": [
-        Infinity,
-        0.5745383915390383,
-        0.1328706639335926,
-        0.10230813337962982,
-        0.004793535147512111
-      ]
-    },
-    "cv_f1_mean": 0.6666666666666666,
-    "cv_f1_std": 0.36514837167011077
-  },
-  "random_forest": {
-    "train_time": 0.2575373649597168,
+    "train_time": 0.0059506893157958984,
     "train_accuracy": 1.0,
-    "test_accuracy": 0.875,
-    "precision": 0.0,
-    "recall": 0.0,
-    "f1": 0.0,
+    "test_accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
     "confusion_matrix": [
       [
         7,
         0
       ],
       [
-        1,
-        0
+        0,
+        5
       ]
     ],
-    "classification_report": "              precision    recall  f1-score   support\n\n           0       0.88      1.00      0.93         7\n           1       0.00      0.00      0.00         1\n\n    accuracy                           0.88         8\n   macro avg       0.44      0.50      0.47         8\nweighted avg       0.77      0.88      0.82         8\n",
-    "roc_auc": 0.8571428571428571,
+    "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00         7\n           1       1.00      1.00      1.00         5\n\n    accuracy                           1.00        12\n   macro avg       1.00      1.00      1.00        12\nweighted avg       1.00      1.00      1.00        12\n",
+    "roc_auc": 1.0,
     "roc_curve": {
       "fpr": [
         0.0,
-        0.14285714285714285,
-        0.14285714285714285,
-        0.5714285714285714,
-        0.8571428571428571,
+        0.0,
+        0.0,
         1.0
       ],
       "tpr": [
         0.0,
-        0.0,
+        0.2,
         1.0,
+        1.0
+      ],
+      "thresholds": [
+        Infinity,
+        0.9148208357898953,
+        0.8528628156581678,
+        1.8841376795973606e-07
+      ]
+    },
+    "cv_f1_mean": 1.0,
+    "cv_f1_std": 0.0
+  },
+  "random_forest": {
+    "train_time": 0.2372581958770752,
+    "train_accuracy": 1.0,
+    "test_accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "confusion_matrix": [
+      [
+        7,
+        0
+      ],
+      [
+        0,
+        5
+      ]
+    ],
+    "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00         7\n           1       1.00      1.00      1.00         5\n\n    accuracy                           1.00        12\n   macro avg       1.00      1.00      1.00        12\nweighted avg       1.00      1.00      1.00        12\n",
+    "roc_auc": 1.0,
+    "roc_curve": {
+      "fpr": [
+        0.0,
+        0.0,
+        0.0,
+        0.14285714285714285,
+        1.0
+      ],
+      "tpr": [
+        0.0,
+        0.4,
         1.0,
         1.0,
         1.0
       ],
       "thresholds": [
         Infinity,
-        0.4017142857142858,
-        0.29666666666666663,
-        0.04,
-        0.013333333333333332,
+        1.0,
+        0.86,
+        0.06,
         0.0
       ]
     },
-    "cv_f1_mean": 0.8,
-    "cv_f1_std": 0.4000000000000001,
+    "cv_f1_mean": 1.0,
+    "cv_f1_std": 0.0,
     "feature_importance": [
-      0.33321744057756786,
-      0.03597616823364387,
-      0.04878022349840075,
-      0.07982928835870012,
-      0.14861480536565766,
-      0.031169813635553458,
-      0.00457142857142857,
-      0.027623086852295774,
-      0.18974349741511318,
-      0.1004742474916388
+      0.2,
+      0.11,
+      0.15,
+      0.0,
+      0.017608695652173913,
+      0.16,
+      0.1923913043478261,
+      0.17,
+      0.0,
+      0.0
     ]
   },
   "svm": {
-    "train_time": 0.004968404769897461,
-    "train_accuracy": 0.9642857142857143,
-    "test_accuracy": 0.75,
-    "precision": 0.0,
-    "recall": 0.0,
-    "f1": 0.0,
+    "train_time": 0.0026597976684570312,
+    "train_accuracy": 1.0,
+    "test_accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
     "confusion_matrix": [
       [
-        6,
-        1
+        7,
+        0
       ],
       [
-        1,
-        0
+        0,
+        5
       ]
     ],
-    "classification_report": "              precision    recall  f1-score   support\n\n           0       0.86      0.86      0.86         7\n           1       0.00      0.00      0.00         1\n\n    accuracy                           0.75         8\n   macro avg       0.43      0.43      0.43         8\nweighted avg       0.75      0.75      0.75         8\n",
-    "roc_auc": 0.8571428571428572,
+    "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00         7\n           1       1.00      1.00      1.00         5\n\n    accuracy                           1.00        12\n   macro avg       1.00      1.00      1.00        12\nweighted avg       1.00      1.00      1.00        12\n",
+    "roc_auc": 1.0,
     "roc_curve": {
       "fpr": [
         0.0,
-        0.14285714285714285,
-        0.14285714285714285,
+        0.0,
+        0.0,
         1.0
       ],
       "tpr": [
         0.0,
-        0.0,
+        0.2,
         1.0,
         1.0
       ],
       "thresholds": [
         Infinity,
-        0.7845846650790999,
-        0.151400349508991,
-        0.060947142233551355
+        0.9384313139060834,
+        0.8784234383861127,
+        0.0036549577713870913
       ]
     },
-    "cv_f1_mean": 0.13333333333333333,
-    "cv_f1_std": 0.26666666666666666
+    "cv_f1_mean": 1.0,
+    "cv_f1_std": 0.0
   },
   "deep_neural_network": {
-    "train_time": 29.11832594871521,
-    "train_accuracy": 0.9642857142857143,
-    "test_accuracy": 0.75,
-    "precision": 0.0,
-    "recall": 0.0,
-    "f1": 0.0,
+    "train_time": 18.97148609161377,
+    "train_accuracy": 1.0,
+    "test_accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
     "confusion_matrix": [
       [
-        6,
-        1
+        7,
+        0
       ],
       [
-        1,
-        0
+        0,
+        5
       ]
     ],
-    "classification_report": "              precision    recall  f1-score   support\n\n           0       0.86      0.86      0.86         7\n           1       0.00      0.00      0.00         1\n\n    accuracy                           0.75         8\n   macro avg       0.43      0.43      0.43         8\nweighted avg       0.75      0.75      0.75         8\n",
-    "roc_auc": 0.7142857142857143,
+    "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00         7\n           1       1.00      1.00      1.00         5\n\n    accuracy                           1.00        12\n   macro avg       1.00      1.00      1.00        12\nweighted avg       1.00      1.00      1.00        12\n",
+    "roc_auc": 1.0,
     "roc_curve": {
       "fpr": [
         0.0,
-        0.14285714285714285,
-        0.2857142857142857,
-        0.2857142857142857,
+        0.0,
+        0.0,
         1.0
       ],
       "tpr": [
         0.0,
-        0.0,
-        0.0,
+        0.2,
         1.0,
         1.0
       ],
       "thresholds": [
         Infinity,
-        0.7481679916381836,
-        0.39216434955596924,
-        0.17305304110050201,
-        0.009405664168298244
+        0.9639632701873779,
+        0.9400333762168884,
+        0.001982456538826227
       ]
     },
-    "cv_f1_mean": 0.6666666666666666,
-    "cv_f1_std": 0.36514837167011077,
+    "cv_f1_mean": 1.0,
+    "cv_f1_std": 0.0,
     "training_history": {
       "final_epoch": 100,
-      "final_train_loss": 0.3708036243915558,
-      "final_val_loss": 0.3396153450012207,
-      "final_train_accuracy": 1.0,
+      "final_train_loss": 0.32604172825813293,
+      "final_val_loss": 0.28235605359077454,
+      "final_train_accuracy": 0.9714285731315613,
       "final_val_accuracy": 1.0
     }
   }

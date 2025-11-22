@@ -429,6 +429,12 @@ class ScalableTrainer:
         # Save all results
         self._save_results()
         
+        # Save the scaler for later use
+        scaler_path = self.output_dir / "scaler.pkl"
+        with open(scaler_path, 'wb') as f:
+            pickle.dump(data['scaler'], f)
+        print(f"Scaler saved to {scaler_path}")
+        
         return self.results
     
     def _save_results(self):

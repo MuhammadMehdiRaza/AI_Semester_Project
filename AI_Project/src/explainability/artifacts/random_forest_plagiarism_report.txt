@@ -3,8 +3,8 @@ PLAGIARISM DETECTION EXPLAINABILITY REPORT
 ======================================================================
 
 Model: random_forest
-Dataset Size: 36 code pairs
-Overall Accuracy: 97.2%
+Dataset Size: 56 code pairs
+Overall Accuracy: 100.0%
 
 ======================================================================
 GLOBAL FEATURE IMPORTANCE
@@ -12,16 +12,16 @@ GLOBAL FEATURE IMPORTANCE
 
 Top features for plagiarism detection (by mean |SHAP| value):
 
- 1. canonical_similarity           - Importance: 0.0959
- 2. node_diff_AugAssign            - Importance: 0.0500
- 3. loc_sum                        - Importance: 0.0459
- 4. node_diff_Assign               - Importance: 0.0295
- 5. ident_total_ratio              - Importance: 0.0132
- 6. node_hist_l1                   - Importance: 0.0128
- 7. node_cosine                    - Importance: 0.0106
- 8. node_hist_l2                   - Importance: 0.0074
- 9. node_total_ratio               - Importance: 0.0035
-10. loc_diff                       - Importance: 0.0018
+ 1. node_cosine                    - Importance: 0.0971
+ 2. node_hist_l2                   - Importance: 0.0955
+ 3. node_total_diff                - Importance: 0.0840
+ 4. node_hist_l1                   - Importance: 0.0788
+ 5. canonical_similarity           - Importance: 0.0703
+ 6. node_total_ratio               - Importance: 0.0538
+ 7. node_diff_Name                 - Importance: 0.0082
+ 8. node_diff_Store                - Importance: 0.0000
+ 9. node_diff_Constant             - Importance: 0.0000
+10. node_diff_Assign               - Importance: 0.0000
 
 ======================================================================
 INDIVIDUAL CASE EXPLANATIONS
@@ -33,44 +33,29 @@ Case: Correctly Detected Plagiarism
 Sample Index: 0
 True Label: Plagiarized
 Predicted Label: Plagiarized
-Plagiarism Probability: 65.8%
+Plagiarism Probability: 100.0%
 
 Top Contributing Features:
-  1. canonical_similarity     : ↑ increases plagiarism score (SHAP = +0.2537)
-  2. node_diff_AugAssign      : ↑ increases plagiarism score (SHAP = +0.0878)
-  3. node_diff_Assign         : ↑ increases plagiarism score (SHAP = +0.0629)
-  4. node_cosine              : ↑ increases plagiarism score (SHAP = +0.0390)
-  5. ident_total_ratio        : ↑ increases plagiarism score (SHAP = +0.0317)
+  1. node_cosine              : ↑ increases plagiarism score (SHAP = +0.1125)
+  2. node_hist_l2             : ↑ increases plagiarism score (SHAP = +0.1087)
+  3. node_total_diff          : ↑ increases plagiarism score (SHAP = +0.0909)
+  4. node_hist_l1             : ↑ increases plagiarism score (SHAP = +0.0886)
+  5. canonical_similarity     : ↑ increases plagiarism score (SHAP = +0.0873)
 
 ----------------------------------------------------------------------
 Case: Correctly Identified Original
 ----------------------------------------------------------------------
-Sample Index: 1
+Sample Index: 24
 True Label: Original
 Predicted Label: Original
 Plagiarism Probability: 0.0%
 
 Top Contributing Features:
-  1. canonical_similarity     : ↓ decreases plagiarism score (SHAP = -0.0608)
-  2. node_diff_AugAssign      : ↓ decreases plagiarism score (SHAP = -0.0365)
-  3. loc_sum                  : ↓ decreases plagiarism score (SHAP = -0.0287)
-  4. node_diff_Assign         : ↓ decreases plagiarism score (SHAP = -0.0189)
-  5. ident_total_ratio        : ↓ decreases plagiarism score (SHAP = -0.0156)
-
-----------------------------------------------------------------------
-Case: Missed Plagiarism (FN)
-----------------------------------------------------------------------
-Sample Index: 17
-True Label: Plagiarized
-Predicted Label: Original
-Plagiarism Probability: 29.7%
-
-Top Contributing Features:
-  1. canonical_similarity     : ↑ increases plagiarism score (SHAP = +0.2446)
-  2. node_diff_AugAssign      : ↓ decreases plagiarism score (SHAP = -0.0394)
-  3. loc_sum                  : ↓ decreases plagiarism score (SHAP = -0.0281)
-  4. node_diff_Assign         : ↓ decreases plagiarism score (SHAP = -0.0189)
-  5. ident_total_ratio        : ↓ decreases plagiarism score (SHAP = -0.0110)
+  1. node_cosine              : ↓ decreases plagiarism score (SHAP = -0.0875)
+  2. node_hist_l2             : ↓ decreases plagiarism score (SHAP = -0.0845)
+  3. node_total_diff          : ↓ decreases plagiarism score (SHAP = -0.0791)
+  4. node_hist_l1             : ↓ decreases plagiarism score (SHAP = -0.0714)
+  5. canonical_similarity     : ↓ decreases plagiarism score (SHAP = -0.0627)
 
 ======================================================================
 INTERPRETATION GUIDE
