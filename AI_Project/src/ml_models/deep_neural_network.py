@@ -39,6 +39,8 @@ class DeepNeuralNetwork:
     - Dense layer 1: 64 units, ReLU activation, Dropout(0.3)
     - Dense layer 2: 32 units, ReLU activation, Dropout(0.3)
     - Output layer: 1 unit, Sigmoid activation
+    
+    Implements sklearn interface for compatibility with cross-validation.
     """
     
     def __init__(self, 
@@ -77,6 +79,41 @@ class DeepNeuralNetwork:
         
         self.model = None
         self.history = None
+    
+    def get_params(self, deep=True):
+        """
+        Get parameters for sklearn compatibility.
+        
+        Args:
+            deep: If True, return parameters for sub-objects
+            
+        Returns:
+            Dictionary of parameters
+        """
+        return {
+            'input_dim': self.input_dim,
+            'hidden_units': self.hidden_units,
+            'dropout_rate': self.dropout_rate,
+            'learning_rate': self.learning_rate,
+            'l2_reg': self.l2_reg,
+            'epochs': self.epochs,
+            'batch_size': self.batch_size,
+            'verbose': self.verbose
+        }
+    
+    def set_params(self, **params):
+        """
+        Set parameters for sklearn compatibility.
+        
+        Args:
+            **params: Parameters to set
+            
+        Returns:
+            self
+        """
+        for key, value in params.items():
+            setattr(self, key, value)
+        return self
         
     def _build_model(self):
         """Build the neural network architecture."""
