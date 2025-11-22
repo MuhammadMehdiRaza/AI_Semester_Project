@@ -6,7 +6,7 @@ Learns optimal classification threshold using reinforcement learning
 import numpy as np
 import pandas as pd
 from pathlib import Path
-from typing import Tuple
+from typing import Tuple, Dict, Any
 import argparse
 import sys
 import json
@@ -72,10 +72,15 @@ def load_model_predictions(
         with open(selected_features_path, 'r') as f:
             selected_features = json.load(f)
         
+        # Handle different JSON formats
         if isinstance(selected_features, dict):
-            selected_features = selected_features.get('features', [])
+            selected_features = selected_features.get('selected_features',
+                              selected_features.get('features', []))
         
-        X = X[selected_features]
+        if selected_features:
+            X = X[selected_features]
+        else:
+            print("Warning: No features found in selection file, using all features")
     
     # Scale features
     from sklearn.preprocessing import StandardScaler

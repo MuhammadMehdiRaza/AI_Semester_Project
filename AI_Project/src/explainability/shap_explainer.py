@@ -103,9 +103,12 @@ class PlagiarismExplainer:
         shap_values = self.explainer.shap_values(X)
         
         # For binary classification, some explainers return values for both classes
-        if isinstance(shap_values, list):
+        if isinstance(shap_values, list) and len(shap_values) == 2:
             # Use SHAP values for positive class (plagiarism)
             shap_values = shap_values[1]
+        elif isinstance(shap_values, np.ndarray) and shap_values.ndim == 3:
+            # Shape (n_samples, n_features, n_classes) - take positive class
+            shap_values = shap_values[:, :, 1]
         
         self.shap_values = shap_values
         return shap_values
@@ -365,10 +368,15 @@ def load_model_and_data(
         with open(selected_features_path, 'r') as f:
             selected_features = json.load(f)
         
+        # Handle different JSON formats
         if isinstance(selected_features, dict):
-            selected_features = selected_features.get('features', [])
+            selected_features = selected_features.get('selected_features', 
+                              selected_features.get('features', []))
         
-        X = X[selected_features]
+        if selected_features:
+            X = X[selected_features]
+        else:
+            print("Warning: No features found in selection file, using all features")
     
     feature_names = list(X.columns)
     
