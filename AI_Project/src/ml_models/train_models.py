@@ -25,6 +25,14 @@ from sklearn.model_selection import GridSearchCV
 from config import AdaptiveConfig
 from data_loader import ScalableDataLoader
 
+# Try to import Deep Neural Network
+try:
+    from deep_neural_network import DeepNeuralNetwork, get_dnn_params_for_size
+    HAS_DNN = True
+except ImportError:
+    HAS_DNN = False
+    print("WARNING: Deep Neural Network not available (TensorFlow not installed)")
+
 
 class ScalableTrainer:
     """
@@ -302,10 +310,89 @@ class ScalableTrainer:
         
         return results
     
+    def train_deep_neural_network(
+        self,
+        X_train: np.ndarray,
+        y_train: np.ndarray,
+        X_test: np.ndarray,
+        y_test: np.ndarray
+    ) -> Dict[str, Any]:
+        """
+        Train Deep Neural Network (Advanced ML for Deliverable 4).
+        
+        Architecture: Input -> Dense(64) -> Dropout -> Dense(32) -> Dropout -> Output
+        Uses early stopping and L2 regularization.
+        """
+        if not HAS_DNN:
+            print("\n" + "="*60)
+            print("SKIPPING Deep Neural Network (TensorFlow not installed)")
+            print("Install with: pip install tensorflow")
+            print("="*60)
+            return {}
+        
+        print("\n" + "="*60)
+        print("Training Deep Neural Network (Advanced ML)")
+        print("="*60)
+        
+        start_time = time.time()
+        
+        # Get adaptive params based on dataset size
+        dnn_params = get_dnn_params_for_size(len(X_train))
+        dnn_params['input_dim'] = X_train.shape[1]
+        
+        print(f"Architecture: {dnn_params['hidden_units']}")
+        print(f"Dropout rate: {dnn_params['dropout_rate']}")
+        print(f"Learning rate: {dnn_params['learning_rate']}")
+        print(f"Max epochs: {dnn_params['epochs']} (with early stopping)")
+        
+        # Train model
+        model = DeepNeuralNetwork(**dnn_params)
+        model.fit(X_train, y_train, validation_split=0.2)
+        
+        train_time = time.time() - start_time
+        
+        # Get training history
+        history = model.get_training_history()
+        
+        # Evaluate
+        results = self._evaluate_model(model, X_train, y_train, X_test, y_test, train_time)
+        
+        # Add training history to results
+        if history:
+            results['training_history'] = {
+                'final_epoch': len(history.get('loss', [])),
+                'final_train_loss': float(history.get('loss', [0])[-1]) if history.get('loss') else None,
+                'final_val_loss': float(history.get('val_loss', [0])[-1]) if history.get('val_loss') else None,
+                'final_train_accuracy': float(history.get('accuracy', [0])[-1]) if history.get('accuracy') else None,
+                'final_val_accuracy': float(history.get('val_accuracy', [0])[-1]) if history.get('val_accuracy') else None
+            }
+        
+        # Store
+        self.models['deep_neural_network'] = model
+        self.results['deep_neural_network'] = results
+        
+        # Save model (Keras format)
+        model_path = self.output_dir / "deep_neural_network.h5"
+        try:
+            model.save(str(model_path))
+            print(f"Model saved to {model_path}")
+        except Exception as e:
+            print(f"Warning: Could not save DNN model: {e}")
+        
+        # Also save as pickle for compatibility with visualization
+        try:
+            with open(self.output_dir / "deep_neural_network.pkl", 'wb') as f:
+                pickle.dump(model, f)
+        except Exception as e:
+            print(f"Warning: Could not pickle DNN model: {e}")
+        
+        return results
+    
     def train_all_models(
         self,
         data: Dict[str, Any],
-        use_grid_search: bool = False
+        use_grid_search: bool = False,
+        include_dnn: bool = True
     ) -> Dict[str, Dict[str, Any]]:
         """Train all baseline models"""
         
@@ -322,13 +409,31 @@ class ScalableTrainer:
         print("TRAINING ALL BASELINE MODELS")
         print("="*60)
         
-        # Train models
+        # Train baseline models
         self.train_logistic_regression(X_train, y_train, X_test, y_test, use_grid_search)
         self.train_random_forest(X_train, y_train, X_test, y_test, use_grid_search)
         self.train_svm(X_train, y_train, X_test, y_test, use_grid_search)
         
+        # Train advanced model (DNN) if requested
+        if include_dnn and HAS_DNN:
+            print("\n" + "="*60)
+            print("TRAINING ADVANCED ML MODEL")
+            print("="*60)
+            self.train_deep_neural_network(X_train, y_train, X_test, y_test)
+        elif include_dnn and not HAS_DNN:
+            print("\n" + "="*60)
+            print("Deep Neural Network skipped (TensorFlow not installed)")
+            print("Install with: pip install tensorflow")
+            print("="*60)
+        
         # Save all results
         self._save_results()
+        
+        # Save the scaler for later use
+        scaler_path = self.output_dir / "scaler.pkl"
+        with open(scaler_path, 'wb') as f:
+            pickle.dump(data['scaler'], f)
+        print(f"Scaler saved to {scaler_path}")
         
         return self.results
     
@@ -387,6 +492,8 @@ def main():
                         help="Use grid search for hyperparameter tuning (only for medium/large datasets)")
     parser.add_argument("--test-size", type=float, default=0.2,
                         help="Test set size (default: 0.2)")
+    parser.add_argument("--no-dnn", action="store_true",
+                        help="Skip Deep Neural Network training")
     
     args = parser.parse_args()
     
@@ -400,7 +507,11 @@ def main():
     
     # Train models
     trainer = ScalableTrainer(output_dir=args.output_dir)
-    results = trainer.train_all_models(data, use_grid_search=args.grid_search)
+    results = trainer.train_all_models(
+        data, 
+        use_grid_search=args.grid_search,
+        include_dnn=not args.no_dnn
+    )
     
     print("\n" + "="*60)
     print("TRAINING COMPLETED SUCCESSFULLY!")

@@ -1,0 +1,11 @@
+feature,importance
+node_cosine,0.09714285714285721
+node_hist_l2,0.09552724449463586
+node_total_diff,0.08400974025974026
+node_hist_l1,0.07876623376623373
+canonical_similarity,0.07032467532467519
+node_total_ratio,0.05376623376623378
+node_diff_Name,0.008247459062676462
+node_diff_Store,0.0
+node_diff_Constant,0.0
+node_diff_Assign,0.0

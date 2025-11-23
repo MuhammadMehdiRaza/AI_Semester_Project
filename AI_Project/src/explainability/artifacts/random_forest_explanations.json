@@ -1,0 +1,126 @@
+[
+  {
+    "sample_idx": 0,
+    "true_label": 1,
+    "predicted_label": 1,
+    "base_value": 0.43840909090909097,
+    "top_features": [
+      {
+        "feature": "node_cosine",
+        "shap_value": 0.1125,
+        "abs_shap_value": 0.1125
+      },
+      {
+        "feature": "node_hist_l2",
+        "shap_value": 0.10872035573122528,
+        "abs_shap_value": 0.10872035573122528
+      },
+      {
+        "feature": "node_total_diff",
+        "shap_value": 0.09090909090909093,
+        "abs_shap_value": 0.09090909090909093
+      },
+      {
+        "feature": "node_hist_l1",
+        "shap_value": 0.08863636363636364,
+        "abs_shap_value": 0.08863636363636364
+      },
+      {
+        "feature": "canonical_similarity",
+        "shap_value": 0.08727272727272725,
+        "abs_shap_value": 0.08727272727272725
+      },
+      {
+        "feature": "node_total_ratio",
+        "shap_value": 0.06363636363636363,
+        "abs_shap_value": 0.06363636363636363
+      },
+      {
+        "feature": "node_diff_Name",
+        "shap_value": 0.00991600790513834,
+        "abs_shap_value": 0.00991600790513834
+      },
+      {
+        "feature": "node_diff_Store",
+        "shap_value": 0.0,
+        "abs_shap_value": 0.0
+      },
+      {
+        "feature": "node_diff_Constant",
+        "shap_value": 0.0,
+        "abs_shap_value": 0.0
+      },
+      {
+        "feature": "node_diff_Assign",
+        "shap_value": 0.0,
+        "abs_shap_value": 0.0
+      }
+    ],
+    "total_shap_contribution": 0.5615909090909091,
+    "case_type": "true_positive",
+    "case_description": "Correctly Detected Plagiarism",
+    "predicted_probability": 1.0
+  },
+  {
+    "sample_idx": 24,
+    "true_label": 0,
+    "predicted_label": 0,
+    "base_value": 0.43840909090909097,
+    "top_features": [
+      {
+        "feature": "node_cosine",
+        "shap_value": -0.08750000000000001,
+        "abs_shap_value": 0.08750000000000001
+      },
+      {
+        "feature": "node_hist_l2",
+        "shap_value": -0.08454545454545455,
+        "abs_shap_value": 0.08454545454545455
+      },
+      {
+        "feature": "node_total_diff",
+        "shap_value": -0.0790909090909091,
+        "abs_shap_value": 0.0790909090909091
+      },
+      {
+        "feature": "node_hist_l1",
+        "shap_value": -0.07136363636363637,
+        "abs_shap_value": 0.07136363636363637
+      },
+      {
+        "feature": "canonical_similarity",
+        "shap_value": -0.06272727272727271,
+        "abs_shap_value": 0.06272727272727271
+      },
+      {
+        "feature": "node_total_ratio",
+        "shap_value": -0.046363636363636364,
+        "abs_shap_value": 0.046363636363636364
+      },
+      {
+        "feature": "node_diff_Name",
+        "shap_value": -0.006818181818181819,
+        "abs_shap_value": 0.006818181818181819
+      },
+      {
+        "feature": "node_diff_Store",
+        "shap_value": 0.0,
+        "abs_shap_value": 0.0
+      },
+      {
+        "feature": "node_diff_Constant",
+        "shap_value": 0.0,
+        "abs_shap_value": 0.0
+      },
+      {
+        "feature": "node_diff_Assign",
+        "shap_value": 0.0,
+        "abs_shap_value": 0.0
+      }
+    ],
+    "total_shap_contribution": -0.4384090909090909,
+    "case_type": "true_negative",
+    "case_description": "Correctly Identified Original",
+    "predicted_probability": 0.0
+  }
+]

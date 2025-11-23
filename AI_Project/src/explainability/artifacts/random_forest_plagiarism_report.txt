@@ -1,0 +1,81 @@
+======================================================================
+PLAGIARISM DETECTION EXPLAINABILITY REPORT
+======================================================================
+
+Model: random_forest
+Dataset Size: 56 code pairs
+Overall Accuracy: 100.0%
+
+======================================================================
+GLOBAL FEATURE IMPORTANCE
+======================================================================
+
+Top features for plagiarism detection (by mean |SHAP| value):
+
+ 1. node_cosine                    - Importance: 0.0971
+ 2. node_hist_l2                   - Importance: 0.0955
+ 3. node_total_diff                - Importance: 0.0840
+ 4. node_hist_l1                   - Importance: 0.0788
+ 5. canonical_similarity           - Importance: 0.0703
+ 6. node_total_ratio               - Importance: 0.0538
+ 7. node_diff_Name                 - Importance: 0.0082
+ 8. node_diff_Store                - Importance: 0.0000
+ 9. node_diff_Constant             - Importance: 0.0000
+10. node_diff_Assign               - Importance: 0.0000
+
+======================================================================
+INDIVIDUAL CASE EXPLANATIONS
+======================================================================
+
+----------------------------------------------------------------------
+Case: Correctly Detected Plagiarism
+----------------------------------------------------------------------
+Sample Index: 0
+True Label: Plagiarized
+Predicted Label: Plagiarized
+Plagiarism Probability: 100.0%
+
+Top Contributing Features:
+  1. node_cosine              : ↑ increases plagiarism score (SHAP = +0.1125)
+  2. node_hist_l2             : ↑ increases plagiarism score (SHAP = +0.1087)
+  3. node_total_diff          : ↑ increases plagiarism score (SHAP = +0.0909)
+  4. node_hist_l1             : ↑ increases plagiarism score (SHAP = +0.0886)
+  5. canonical_similarity     : ↑ increases plagiarism score (SHAP = +0.0873)
+
+----------------------------------------------------------------------
+Case: Correctly Identified Original
+----------------------------------------------------------------------
+Sample Index: 24
+True Label: Original
+Predicted Label: Original
+Plagiarism Probability: 0.0%
+
+Top Contributing Features:
+  1. node_cosine              : ↓ decreases plagiarism score (SHAP = -0.0875)
+  2. node_hist_l2             : ↓ decreases plagiarism score (SHAP = -0.0845)
+  3. node_total_diff          : ↓ decreases plagiarism score (SHAP = -0.0791)
+  4. node_hist_l1             : ↓ decreases plagiarism score (SHAP = -0.0714)
+  5. canonical_similarity     : ↓ decreases plagiarism score (SHAP = -0.0627)
+
+======================================================================
+INTERPRETATION GUIDE
+======================================================================
+
+- SHAP values show how much each feature contributes to the prediction
+- Positive SHAP value: Feature pushes prediction toward plagiarism
+- Negative SHAP value: Feature pushes prediction toward original
+- Larger absolute value: Stronger contribution
+
+Key Features:
+- canonical_similarity: Similarity of normalized code (most important)
+- node_hist_*: AST node distribution similarity
+- ident_overlap: Identifier/variable name overlap
+- loc_diff: Lines of code difference
+- subtree_jaccard: Code structure similarity
+
+This report provides transparency and explainability for academic
+integrity decisions, ensuring fair and evidence-based conclusions.
+
+======================================================================
+END OF REPORT
+======================================================================

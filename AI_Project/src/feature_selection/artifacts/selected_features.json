@@ -1,20 +1,18 @@
 {
   "selected_features": [
-    "canonical_similarity",
-    "node_hist_l2",
-    "node_hist_l1",
     "node_cosine",
-    "node_diff_AugAssign",
-    "ident_total_ratio",
-    "loc_diff",
     "node_total_ratio",
-    "loc_sum",
+    "canonical_similarity",
+    "node_diff_Store",
+    "node_diff_Name",
+    "node_hist_l1",
+    "node_hist_l2",
+    "node_total_diff",
+    "node_diff_Constant",
     "node_diff_Assign"
   ],
   "parameters": {
     "max_features": 10,
-    "canonical_threshold": 0.7,
-    "use_ml": true,
-    "cv_folds": 3
+    "method": "ml_guided"
   }
 }
