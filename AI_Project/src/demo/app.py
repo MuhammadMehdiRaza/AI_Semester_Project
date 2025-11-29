@@ -443,7 +443,11 @@ def load_feature_names():
     feature_path = project_root / "src" / "feature_selection" / "artifacts" / "selected_features.json"
     if feature_path.exists():
         with open(feature_path, 'r') as f:
-            return json.load(f)
+            data = json.load(f)
+            # Handle nested structure
+            if isinstance(data, dict):
+                return data.get('selected_features', data.get('features', list(data.keys())))
+            return data
     # Default to the 19 features from training
     return [
         "canonical_len_ratio", "canonical_similarity", "cc_avg_diff", "cc_max_diff",
