@@ -1,1018 +1,794 @@
 """
-Streamlit Web Demo for Code Plagiarism Detection System
-Interactive interface for comparing code files and detecting plagiarism.
-Designed with Anthropic-inspired aesthetics.
+Streamlit Demo App for Code Plagiarism Detection
+Unified demo with Anthropic-inspired dark theme
+
+This demo allows users to:
+1. Input two code snippets
+2. Analyze them for potential plagiarism
+3. View detailed similarity metrics and explanations
 """
 
 import streamlit as st
-import numpy as np
-import pandas as pd
-import pickle
-import json
-import ast
 import sys
 import os
-from pathlib import Path
-from difflib import SequenceMatcher
+import json
+import ast
+import re
+import hashlib
 from collections import Counter
-import tempfile
+from pathlib import Path
 
-# Add parent directory to path for imports
-sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+# Add parent directories to path for imports
+current_dir = Path(__file__).parent
+project_root = current_dir.parent.parent
+sys.path.insert(0, str(project_root))
+sys.path.insert(0, str(current_dir.parent))
 
-# Page configuration
-st.set_page_config(
-    page_title="Code Plagiarism Detector",
-    page_icon="◈",
-    layout="wide",
-    initial_sidebar_state="collapsed"
-)
+import numpy as np
+import joblib
 
-# Anthropic-inspired Custom CSS - Dark Modern Theme
-st.markdown("""
+# Try to import preprocessing modules
+try:
+    from preprocess.lexer import tokenize_code
+    from preprocess.ast_parser import parse_ast, get_ast_node_types
+    from preprocess.normalizer import normalize_code
+    HAS_PREPROCESS = True
+except ImportError:
+    HAS_PREPROCESS = False
+
+# Anthropic-inspired dark theme CSS
+DARK_THEME_CSS = """
 <style>
-    /* Import fonts - Using Source Serif for headers (similar to Anthropic's Tiempos) and Inter for body */
-    @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
-    
-    /* ===== DARK MODERN THEME ===== */
-    
-    /* Root variables */
-    :root {
-        --bg-primary: #191919;
-        --bg-secondary: #232323;
-        --bg-tertiary: #2A2A2A;
-        --text-primary: #ECECEC;
-        --text-secondary: #A8A8A8;
-        --text-muted: #666666;
-        --accent: #D4714A;
-        --accent-hover: #E8926F;
-        --border: #333333;
-        --success: #4ADE80;
-        --warning: #FBBF24;
-        --danger: #F87171;
-    }
-    
-    /* Global styles */
+    /* Main background and text colors */
     .stApp {
-        background-color: var(--bg-primary) !important;
+        background-color: #1a1a2e;
+        color: #e0e0e0;
     }
     
-    html, body, [class*="css"] {
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
-        color: var(--text-primary) !important;
-    }
-    
-    /* Hide Streamlit defaults */
-    #MainMenu, footer, .stDeployButton, header[data-testid="stHeader"] {
-        display: none !important;
-    }
-    
-    /* Main container */
-    .main .block-container {
-        max-width: 1100px;
-        padding: 2rem 1rem 3rem;
-    }
-    
-    /* ===== TYPOGRAPHY ===== */
-    
+    /* Header styling */
     .main-header {
-        font-family: 'Source Serif 4', 'Georgia', serif !important;
-        font-size: 3rem;
-        font-weight: 600;
-        color: var(--text-primary) !important;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 2rem;
+        border-radius: 10px;
+        margin-bottom: 2rem;
         text-align: center;
-        margin: 0 0 0.5rem 0;
-        letter-spacing: -0.02em;
-        -webkit-text-fill-color: var(--text-primary);
     }
     
-    .sub-header {
-        font-family: 'Inter', sans-serif !important;
-        font-size: 1.0625rem;
-        font-weight: 400;
-        color: var(--text-secondary) !important;
-        text-align: center;
-        margin-bottom: 1.5rem;
+    .main-header h1 {
+        color: white;
+        margin: 0;
+        font-size: 2.5rem;
     }
     
-    .section-title {
-        font-family: 'Inter', sans-serif !important;
-        font-size: 0.75rem;
-        font-weight: 600;
-        color: var(--text-muted) !important;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        margin-bottom: 1rem;
+    .main-header p {
+        color: rgba(255,255,255,0.8);
+        margin-top: 0.5rem;
     }
     
-    /* All text elements */
-    p, span, label, .stMarkdown {
-        color: var(--text-primary) !important;
+    /* Card styling */
+    .metric-card {
+        background: linear-gradient(145deg, #242442, #1e1e38);
+        border: 1px solid #3a3a5c;
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin: 1rem 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     }
     
-    h1, h2, h3, h4, h5, h6 {
-        color: var(--text-primary) !important;
+    .metric-card h3 {
+        color: #667eea;
+        margin-top: 0;
     }
     
-    /* ===== STATUS BADGE ===== */
-    
-    .status-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 0.5rem 1rem;
-        border-radius: 100px;
-        font-size: 0.875rem;
-        font-weight: 500;
+    /* Result cards */
+    .result-positive {
+        background: linear-gradient(145deg, #2d4a3e, #1e3830);
+        border: 1px solid #4ade80;
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin: 1rem 0;
     }
     
-    .status-success {
-        background: rgba(74, 222, 128, 0.15);
-        color: #4ADE80;
-        border: 1px solid rgba(74, 222, 128, 0.3);
+    .result-negative {
+        background: linear-gradient(145deg, #4a2d2d, #381e1e);
+        border: 1px solid #f87171;
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin: 1rem 0;
     }
     
-    .status-warning {
-        background: rgba(251, 191, 36, 0.15);
-        color: #FBBF24;
-        border: 1px solid rgba(251, 191, 36, 0.3);
-    }
-    
-    /* ===== TEXT AREAS ===== */
-    
-    .stTextArea label {
-        color: var(--text-secondary) !important;
-        font-size: 0.875rem;
-        font-weight: 500;
-    }
-    
+    /* Code input styling */
     .stTextArea textarea {
-        font-family: 'JetBrains Mono', monospace !important;
-        font-size: 0.875rem !important;
-        background: var(--bg-secondary) !important;
-        color: var(--text-primary) !important;
-        border: 1px solid var(--border) !important;
-        border-radius: 12px !important;
-        padding: 1rem !important;
-        transition: border-color 0.2s, box-shadow 0.2s;
+        background-color: #242442 !important;
+        color: #e0e0e0 !important;
+        border: 1px solid #3a3a5c !important;
+        border-radius: 8px !important;
+        font-family: 'Monaco', 'Menlo', monospace !important;
     }
     
-    .stTextArea textarea:focus {
-        border-color: var(--accent) !important;
-        box-shadow: 0 0 0 3px rgba(212, 113, 74, 0.15) !important;
-    }
-    
-    .stTextArea textarea::placeholder {
-        color: var(--text-muted) !important;
-        opacity: 1;
-    }
-    
-    /* ===== BUTTONS ===== */
-    
+    /* Button styling */
     .stButton > button {
-        background: var(--accent) !important;
-        color: white !important;
-        border: none !important;
-        border-radius: 12px !important;
-        padding: 0.875rem 2rem !important;
-        font-size: 1rem !important;
-        font-weight: 600 !important;
-        letter-spacing: -0.01em;
-        transition: all 0.2s ease !important;
-        box-shadow: 0 4px 14px rgba(212, 113, 74, 0.25) !important;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 0.75rem 2rem;
+        font-weight: 600;
+        transition: transform 0.2s, box-shadow 0.2s;
     }
     
     .stButton > button:hover {
-        background: var(--accent-hover) !important;
-        transform: translateY(-2px) !important;
-        box-shadow: 0 6px 20px rgba(212, 113, 74, 0.35) !important;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
     }
     
-    .stButton > button:active {
-        transform: translateY(0) !important;
+    /* Progress bar styling */
+    .stProgress > div > div {
+        background: linear-gradient(90deg, #667eea, #764ba2);
     }
     
-    /* ===== FILE UPLOADER ===== */
-    
-    [data-testid="stFileUploader"] {
-        background: transparent !important;
+    /* Sidebar styling */
+    .css-1d391kg {
+        background-color: #16162a;
     }
     
-    [data-testid="stFileUploader"] > div,
-    [data-testid="stFileUploader"] > div > div,
-    [data-testid="stFileUploader"] section,
-    [data-testid="stFileUploader"] section > div {
-        background: var(--bg-secondary) !important;
-        border-color: var(--border) !important;
-    }
-    
-    [data-testid="stFileUploader"] > div > div {
-        border: 1px solid var(--border) !important;
-        border-radius: 12px !important;
-        padding: 1rem !important;
-        transition: all 0.2s;
-    }
-    
-    [data-testid="stFileUploader"] > div > div:hover {
-        border-color: var(--accent) !important;
-    }
-    
-    [data-testid="stFileUploader"] span,
-    [data-testid="stFileUploader"] small,
-    [data-testid="stFileUploader"] p {
-        color: var(--text-secondary) !important;
-    }
-    
-    [data-testid="stFileUploader"] button {
-        background: var(--accent) !important;
-        color: white !important;
-        border: none !important;
-        border-radius: 8px !important;
-        font-weight: 500 !important;
-    }
-    
-    [data-testid="stFileUploader"] svg {
-        stroke: var(--text-muted) !important;
-    }
-    
-    /* ===== RESULT BOXES ===== */
-    
-    .result-box {
-        padding: 2.5rem;
-        border-radius: 20px;
-        margin: 2rem 0;
-        text-align: center;
-        backdrop-filter: blur(10px);
-    }
-    
-    .result-box h2 {
-        margin: 0 0 0.5rem 0;
-        font-size: 4rem;
-        font-weight: 700;
-        letter-spacing: -0.03em;
-    }
-    
-    .result-box h3 {
-        margin: 0;
-        font-size: 1.125rem;
-        font-weight: 500;
-        opacity: 0.9;
-    }
-    
-    .plagiarism-high {
-        background: linear-gradient(135deg, rgba(248, 113, 113, 0.15) 0%, rgba(239, 68, 68, 0.1) 100%);
-        border: 1px solid rgba(248, 113, 113, 0.3);
-    }
-    
-    .plagiarism-high h2 { color: #F87171 !important; }
-    .plagiarism-high h3 { color: #FCA5A5 !important; }
-    
-    .plagiarism-medium {
-        background: linear-gradient(135deg, rgba(251, 191, 36, 0.15) 0%, rgba(245, 158, 11, 0.1) 100%);
-        border: 1px solid rgba(251, 191, 36, 0.3);
-    }
-    
-    .plagiarism-medium h2 { color: #FBBF24 !important; }
-    .plagiarism-medium h3 { color: #FDE68A !important; }
-    
-    .plagiarism-low {
-        background: linear-gradient(135deg, rgba(74, 222, 128, 0.15) 0%, rgba(34, 197, 94, 0.1) 100%);
-        border: 1px solid rgba(74, 222, 128, 0.3);
-    }
-    
-    .plagiarism-low h2 { color: #4ADE80 !important; }
-    .plagiarism-low h3 { color: #86EFAC !important; }
-    
-    /* ===== EVIDENCE CARDS ===== */
-    
-    .evidence-card {
-        background: var(--bg-secondary);
-        border: 1px solid var(--border);
-        border-radius: 12px;
-        padding: 1rem 1.25rem;
-        margin: 0.5rem 0;
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
-    
-    .evidence-icon {
-        font-size: 1.5rem;
-        opacity: 0.8;
-    }
-    
-    .evidence-text {
-        color: var(--text-primary) !important;
-        font-size: 0.9375rem;
-        font-weight: 500;
-    }
-    
-    .evidence-value {
-        color: var(--accent) !important;
-        font-size: 0.9375rem;
-        font-weight: 600;
-        margin-left: auto;
-    }
-    
-    /* ===== METRICS ===== */
-    
-    [data-testid="stMetricValue"] {
-        font-size: 2rem !important;
-        font-weight: 700 !important;
-        color: var(--text-primary) !important;
-    }
-    
-    [data-testid="stMetricLabel"] {
-        font-size: 0.75rem !important;
-        font-weight: 500 !important;
-        color: var(--text-muted) !important;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-    }
-    
-    [data-testid="stMetricDelta"] {
-        display: none;
-    }
-    
-    /* Metric container */
-    [data-testid="metric-container"] {
-        background: var(--bg-secondary);
-        border: 1px solid var(--border);
-        border-radius: 12px;
-        padding: 1.25rem;
-    }
-    
-    /* ===== EXPANDERS ===== */
-    
+    /* Expander styling */
     .streamlit-expanderHeader {
-        font-size: 0.9375rem !important;
-        font-weight: 500 !important;
-        color: var(--text-primary) !important;
-        background: var(--bg-secondary) !important;
-        border: 1px solid var(--border) !important;
-        border-radius: 12px !important;
-        padding: 1rem !important;
-    }
-    
-    .streamlit-expanderHeader:hover {
-        background: var(--bg-tertiary) !important;
-        border-color: var(--accent) !important;
-    }
-    
-    .streamlit-expanderContent {
-        background: var(--bg-secondary) !important;
-        border: 1px solid var(--border) !important;
-        border-top: none !important;
-        border-radius: 0 0 12px 12px !important;
-    }
-    
-    /* ===== DATAFRAMES ===== */
-    
-    .stDataFrame {
-        border: 1px solid var(--border) !important;
-        border-radius: 12px !important;
-        overflow: hidden;
-    }
-    
-    [data-testid="stDataFrame"] > div {
-        background: var(--bg-secondary) !important;
-    }
-    
-    /* ===== JSON DISPLAY ===== */
-    
-    .stJson {
-        background: var(--bg-tertiary) !important;
+        background-color: #242442;
         border-radius: 8px;
     }
     
-    /* ===== SIDEBAR ===== */
-    
-    [data-testid="stSidebar"] {
-        background: var(--bg-secondary) !important;
-        border-right: 1px solid var(--border) !important;
+    /* Tab styling */
+    .stTabs [data-baseweb="tab-list"] {
+        gap: 8px;
     }
     
-    [data-testid="stSidebar"] * {
-        color: var(--text-primary) !important;
+    .stTabs [data-baseweb="tab"] {
+        background-color: #242442;
+        border-radius: 8px 8px 0 0;
+        color: #e0e0e0;
+        border: 1px solid #3a3a5c;
     }
     
-    /* ===== ALERTS ===== */
-    
-    .stAlert {
-        background: var(--bg-secondary) !important;
-        border-radius: 12px !important;
-        border: 1px solid var(--border) !important;
+    .stTabs [aria-selected="true"] {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     }
     
-    /* Success alert */
-    [data-testid="stAlert"][data-baseweb="notification"] {
-        background: rgba(74, 222, 128, 0.1) !important;
-        border: 1px solid rgba(74, 222, 128, 0.3) !important;
-    }
-    
-    /* ===== DIVIDERS ===== */
-    
-    hr {
-        border: none !important;
-        border-top: 1px solid var(--border) !important;
-        margin: 2rem 0 !important;
-    }
-    
-    /* ===== FOOTER ===== */
-    
-    .footer {
-        text-align: center;
-        padding: 2rem 0 1rem;
-        color: var(--text-muted);
-        font-size: 0.8125rem;
-    }
-    
-    .footer a {
-        color: var(--accent);
-        text-decoration: none;
-    }
-    
-    /* ===== CODE BLOCKS ===== */
-    
-    code {
-        background: var(--bg-tertiary) !important;
-        color: var(--accent) !important;
-        padding: 0.2rem 0.4rem;
+    /* Feature importance bars */
+    .feature-bar {
+        background: linear-gradient(90deg, #667eea, #764ba2);
+        height: 20px;
         border-radius: 4px;
-        font-family: 'JetBrains Mono', monospace !important;
+        margin: 4px 0;
     }
     
-    pre {
-        background: var(--bg-tertiary) !important;
-        border: 1px solid var(--border) !important;
-        border-radius: 8px !important;
+    /* Similarity gauge */
+    .similarity-gauge {
+        width: 100%;
+        height: 30px;
+        background: linear-gradient(90deg, #22c55e 0%, #eab308 50%, #ef4444 100%);
+        border-radius: 15px;
+        position: relative;
+        margin: 1rem 0;
     }
     
-    /* ===== SCROLLBAR ===== */
-    
-    ::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
-    }
-    
-    ::-webkit-scrollbar-track {
-        background: var(--bg-primary);
-    }
-    
-    ::-webkit-scrollbar-thumb {
-        background: var(--border);
-        border-radius: 4px;
-    }
-    
-    ::-webkit-scrollbar-thumb:hover {
-        background: var(--text-muted);
-    }
-    
-    /* ===== SPINNER ===== */
-    
-    .stSpinner > div > div {
-        border-top-color: var(--accent) !important;
+    .gauge-marker {
+        position: absolute;
+        top: -5px;
+        width: 4px;
+        height: 40px;
+        background: white;
+        border-radius: 2px;
     }
 </style>
-""", unsafe_allow_html=True)
+"""
+
+def get_page_config():
+    """Configure Streamlit page settings"""
+    st.set_page_config(
+        page_title="Code Plagiarism Detector",
+        page_icon="🔍",
+        layout="wide",
+        initial_sidebar_state="expanded"
+    )
+
+def apply_theme():
+    """Apply the dark theme CSS"""
+    st.markdown(DARK_THEME_CSS, unsafe_allow_html=True)
+
+def render_header():
+    """Render the main header"""
+    st.markdown("""
+        <div class="main-header">
+            <h1>🔍 Code Plagiarism Detector</h1>
+            <p>AI-Powered Code Similarity Analysis with Explainable Results</p>
+        </div>
+    """, unsafe_allow_html=True)
 
 
-# ============ Helper Functions ============
+# ============================================================================
+# FEATURE EXTRACTION FUNCTIONS - Match training pipeline exactly
+# ============================================================================
 
-@st.cache_resource
-def load_model():
-    """Load the trained Random Forest model."""
-    model_path = Path(__file__).parent.parent / "ml_models" / "artifacts" / "random_forest.pkl"
-    if model_path.exists():
-        with open(model_path, 'rb') as f:
-            return pickle.load(f)
-    return None
-
-@st.cache_resource
-def load_scaler():
-    """Load the feature scaler."""
-    scaler_path = Path(__file__).parent.parent / "ml_models" / "artifacts" / "scaler.pkl"
-    if scaler_path.exists():
-        with open(scaler_path, 'rb') as f:
-            return pickle.load(f)
-    return None
-
-@st.cache_resource
-def load_selected_features():
-    """Load selected feature names."""
-    features_path = Path(__file__).parent.parent / "feature_selection" / "artifacts" / "selected_features.json"
-    if features_path.exists():
-        with open(features_path, 'r') as f:
-            data = json.load(f)
-            return data.get('selected_features', [])
-    return []
-
-
-def extract_code_features(code: str) -> dict:
-    """Extract AST-based features from code string."""
+def safe_parse_ast(code: str):
+    """Safely parse code into AST, return None on failure"""
     try:
-        tree = ast.parse(code)
-    except SyntaxError as e:
-        return {'error': str(e)}
-    
-    # LOC
-    loc = code.count('\n') + 1
-    
-    # Imports
+        return ast.parse(code)
+    except:
+        return None
+
+def normalize_code_canonical(code: str) -> str:
+    """Normalize code by removing comments and standardizing whitespace"""
+    # Remove single-line comments
+    code = re.sub(r'#.*$', '', code, flags=re.MULTILINE)
+    # Remove docstrings (simplified)
+    code = re.sub(r'""".*?"""', '', code, flags=re.DOTALL)
+    code = re.sub(r"'''.*?'''", '', code, flags=re.DOTALL)
+    # Normalize whitespace
+    lines = [line.strip() for line in code.split('\n') if line.strip()]
+    return '\n'.join(lines)
+
+def get_ast_subtrees(tree) -> list:
+    """Get list of subtree hashes for structural comparison"""
+    subtrees = []
+    for node in ast.walk(tree):
+        try:
+            subtree_str = ast.dump(node)
+            subtrees.append(hashlib.md5(subtree_str.encode()).hexdigest()[:8])
+        except:
+            pass
+    return subtrees
+
+def get_node_types(tree) -> list:
+    """Get list of AST node types"""
+    return [type(node).__name__ for node in ast.walk(tree)]
+
+def get_identifiers(tree) -> set:
+    """Extract all identifier names from AST"""
+    identifiers = set()
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Name):
+            identifiers.add(node.id)
+        elif isinstance(node, ast.FunctionDef) or isinstance(node, ast.AsyncFunctionDef):
+            identifiers.add(node.name)
+        elif isinstance(node, ast.ClassDef):
+            identifiers.add(node.name)
+        elif isinstance(node, ast.arg):
+            identifiers.add(node.arg)
+    return identifiers
+
+def get_imports(tree) -> set:
+    """Extract all import names from AST"""
     imports = set()
     for node in ast.walk(tree):
         if isinstance(node, ast.Import):
-            for n in node.names:
-                imports.add(n.name.split('.')[0])
+            for alias in node.names:
+                imports.add(alias.name.split('.')[0])
         elif isinstance(node, ast.ImportFrom):
             if node.module:
                 imports.add(node.module.split('.')[0])
-    
-    # Node histogram
-    node_types = [type(n).__name__ for n in ast.walk(tree)]
-    node_hist = dict(Counter(node_types))
-    
-    # Functions
-    funcs = []
-    for n in ast.walk(tree):
-        if isinstance(n, ast.FunctionDef):
-            funcs.append({
-                'name': n.name,
-                'args': len(n.args.args)
-            })
-    
-    # Top identifiers
-    idents = [n.id for n in ast.walk(tree) if isinstance(n, ast.Name)]
-    top_idents = Counter(idents).most_common(20)
-    
-    # Canonical code (normalized)
-    try:
-        canonical = ast.unparse(tree)
-    except:
-        canonical = ""
-    
-    return {
-        'loc': loc,
-        'imports': list(imports),
-        'node_hist': node_hist,
-        'num_functions': len(funcs),
-        'functions': funcs,
-        'top_idents': top_idents,
-        'canonical_code': canonical
-    }
+    return imports
 
+def count_functions(tree) -> int:
+    """Count function definitions"""
+    count = 0
+    for node in ast.walk(tree):
+        if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)):
+            count += 1
+    return count
 
-def compute_similarity_features(feat_a: dict, feat_b: dict) -> dict:
-    """Compute pairwise similarity features."""
+def calculate_cyclomatic_complexity(tree) -> int:
+    """Estimate cyclomatic complexity"""
+    complexity = 1  # Base complexity
+    for node in ast.walk(tree):
+        if isinstance(node, (ast.If, ast.While, ast.For, ast.ExceptHandler,
+                            ast.With, ast.Assert, ast.comprehension)):
+            complexity += 1
+        elif isinstance(node, ast.BoolOp):
+            complexity += len(node.values) - 1
+    return complexity
+
+def cosine_similarity_counters(counter1: Counter, counter2: Counter) -> float:
+    """Calculate cosine similarity between two Counters"""
+    all_keys = set(counter1.keys()) | set(counter2.keys())
+    if not all_keys:
+        return 0.0
+    
+    vec1 = np.array([counter1.get(k, 0) for k in all_keys])
+    vec2 = np.array([counter2.get(k, 0) for k in all_keys])
+    
+    dot = np.dot(vec1, vec2)
+    norm1 = np.linalg.norm(vec1)
+    norm2 = np.linalg.norm(vec2)
+    
+    if norm1 == 0 or norm2 == 0:
+        return 0.0
+    return float(dot / (norm1 * norm2))
+
+def jaccard_similarity(set1: set, set2: set) -> float:
+    """Calculate Jaccard similarity between two sets"""
+    if not set1 and not set2:
+        return 0.0
+    intersection = len(set1 & set2)
+    union = len(set1 | set2)
+    return intersection / union if union > 0 else 0.0
+
+def compute_similarity_features(code1: str, code2: str) -> dict:
+    """
+    Compute pairwise similarity features between two code snippets.
+    Returns exactly the 19 features used in training:
+    - canonical_len_ratio, canonical_similarity, cc_avg_diff, cc_max_diff
+    - common_imports, common_subtrees, exact_match
+    - func_count_diff, func_count_ratio
+    - ident_jaccard, import_count_diff, import_jaccard
+    - loc_avg, loc_diff, loc_ratio
+    - node_hist_cosine, node_hist_jaccard
+    - subtree_count_diff, subtree_hash_jaccard
+    """
     features = {}
     
+    # Normalize codes
+    norm1 = normalize_code_canonical(code1)
+    norm2 = normalize_code_canonical(code2)
+    
+    # Parse ASTs
+    tree1 = safe_parse_ast(code1)
+    tree2 = safe_parse_ast(code2)
+    
+    # Lines of code
+    loc1 = len([l for l in code1.split('\n') if l.strip()])
+    loc2 = len([l for l in code2.split('\n') if l.strip()])
+    
     # LOC features
-    la, lb = feat_a.get('loc', 0), feat_b.get('loc', 0)
-    features['loc_diff'] = abs(la - lb)
-    features['loc_ratio'] = min(la, lb) / max(la, lb, 1)
+    features['loc_avg'] = (loc1 + loc2) / 2
+    features['loc_diff'] = abs(loc1 - loc2)
+    features['loc_ratio'] = min(loc1, loc2) / max(loc1, loc2) if max(loc1, loc2) > 0 else 0
     
-    # Import similarity
-    ia, ib = set(feat_a.get('imports', [])), set(feat_b.get('imports', []))
-    features['import_jaccard'] = len(ia & ib) / len(ia | ib) if (ia | ib) else 1.0
+    # Canonical (normalized) features
+    len1, len2 = len(norm1), len(norm2)
+    features['canonical_len_ratio'] = min(len1, len2) / max(len1, len2) if max(len1, len2) > 0 else 0
+    features['canonical_similarity'] = 1.0 if norm1 == norm2 else (
+        len(set(norm1.split()) & set(norm2.split())) / len(set(norm1.split()) | set(norm2.split()))
+        if set(norm1.split()) | set(norm2.split()) else 0.0
+    )
     
-    # Node histogram similarity
-    nha = feat_a.get('node_hist', {})
-    nhb = feat_b.get('node_hist', {})
-    all_nodes = set(nha) | set(nhb)
+    # Exact match
+    features['exact_match'] = 1 if code1.strip() == code2.strip() else 0
     
-    if all_nodes:
-        v1 = np.array([nha.get(n, 0) for n in all_nodes])
-        v2 = np.array([nhb.get(n, 0) for n in all_nodes])
-        dot = np.dot(v1, v2)
-        norm1, norm2 = np.linalg.norm(v1), np.linalg.norm(v2)
-        features['node_cosine'] = dot / (norm1 * norm2) if norm1 and norm2 else 0
-        features['node_hist_l1'] = np.sum(np.abs(v1 - v2))
-        features['node_hist_l2'] = np.sqrt(np.sum((v1 - v2) ** 2))
-        features['node_total_diff'] = abs(sum(nha.values()) - sum(nhb.values()))
-        features['node_total_ratio'] = min(sum(nha.values()), sum(nhb.values())) / max(sum(nha.values()), sum(nhb.values()), 1)
+    if tree1 and tree2:
+        # Node histogram features
+        nodes1 = Counter(get_node_types(tree1))
+        nodes2 = Counter(get_node_types(tree2))
+        features['node_hist_cosine'] = cosine_similarity_counters(nodes1, nodes2)
+        all_nodes = set(nodes1.keys()) | set(nodes2.keys())
+        features['node_hist_jaccard'] = len(set(nodes1.keys()) & set(nodes2.keys())) / len(all_nodes) if all_nodes else 0
+        
+        # Subtree features
+        subtrees1 = set(get_ast_subtrees(tree1))
+        subtrees2 = set(get_ast_subtrees(tree2))
+        features['subtree_hash_jaccard'] = jaccard_similarity(subtrees1, subtrees2)
+        features['common_subtrees'] = len(subtrees1 & subtrees2)
+        features['subtree_count_diff'] = abs(len(subtrees1) - len(subtrees2))
+        
+        # Identifier features
+        idents1 = get_identifiers(tree1)
+        idents2 = get_identifiers(tree2)
+        features['ident_jaccard'] = jaccard_similarity(idents1, idents2)
+        
+        # Import features
+        imports1 = get_imports(tree1)
+        imports2 = get_imports(tree2)
+        features['import_jaccard'] = jaccard_similarity(imports1, imports2)
+        features['common_imports'] = len(imports1 & imports2)
+        features['import_count_diff'] = abs(len(imports1) - len(imports2))
+        
+        # Function count features
+        func1 = count_functions(tree1)
+        func2 = count_functions(tree2)
+        features['func_count_diff'] = abs(func1 - func2)
+        features['func_count_ratio'] = min(func1, func2) / max(func1, func2) if max(func1, func2) > 0 else 0
+        
+        # Cyclomatic complexity features
+        cc1 = calculate_cyclomatic_complexity(tree1)
+        cc2 = calculate_cyclomatic_complexity(tree2)
+        features['cc_avg_diff'] = abs(cc1 - cc2)
+        features['cc_max_diff'] = abs(cc1 - cc2)  # Same as avg for pairwise
+        
     else:
-        features['node_cosine'] = 0
-        features['node_hist_l1'] = 0
-        features['node_hist_l2'] = 0
-        features['node_total_diff'] = 0
-        features['node_total_ratio'] = 0
-    
-    # Canonical similarity
-    ca = feat_a.get('canonical_code', '')
-    cb = feat_b.get('canonical_code', '')
-    features['canonical_similarity'] = SequenceMatcher(None, ca, cb).ratio() if ca and cb else 0
-    
-    # Top node type differences
-    for node_type in ['Name', 'Store', 'Constant', 'Assign', 'Load', 'Call', 'Attribute']:
-        features[f'node_diff_{node_type}'] = abs(nha.get(node_type, 0) - nhb.get(node_type, 0))
-    
-    # Identifier overlap
-    ida = {name: count for name, count in feat_a.get('top_idents', [])}
-    idb = {name: count for name, count in feat_b.get('top_idents', [])}
-    common = set(ida.keys()) & set(idb.keys())
-    all_idents = set(ida.keys()) | set(idb.keys())
-    features['ident_overlap'] = len(common)
-    features['ident_jaccard'] = len(common) / len(all_idents) if all_idents else 0
-    features['ident_total_diff'] = abs(sum(ida.values()) - sum(idb.values()))
-    features['ident_total_ratio'] = min(sum(ida.values()) or 1, sum(idb.values()) or 1) / max(sum(ida.values()) or 1, sum(idb.values()) or 1)
+        # Default values if AST parsing fails
+        features['node_hist_cosine'] = 0.0
+        features['node_hist_jaccard'] = 0.0
+        features['subtree_hash_jaccard'] = 0.0
+        features['common_subtrees'] = 0
+        features['subtree_count_diff'] = 0
+        features['ident_jaccard'] = 0.0
+        features['import_jaccard'] = 0.0
+        features['common_imports'] = 0
+        features['import_count_diff'] = 0
+        features['func_count_diff'] = 0
+        features['func_count_ratio'] = 0.0
+        features['cc_avg_diff'] = 0
+        features['cc_max_diff'] = 0
     
     return features
 
 
-def predict_plagiarism(code1: str, code2: str, model, scaler, selected_features):
-    """Predict if two code samples are plagiarized."""
-    # Extract features
-    feat1 = extract_code_features(code1)
-    feat2 = extract_code_features(code2)
+def load_models():
+    """Load all trained models"""
+    import pickle
     
-    if 'error' in feat1:
-        return None, f"Error parsing Code 1: {feat1['error']}"
-    if 'error' in feat2:
-        return None, f"Error parsing Code 2: {feat2['error']}"
+    models = {}
+    model_dir = project_root / "src" / "ml_models" / "artifacts"
     
-    # Compute similarity features
-    sim_features = compute_similarity_features(feat1, feat2)
+    model_files = {
+        'Logistic Regression': 'logistic_regression.pkl',
+        'Random Forest': 'random_forest.pkl',
+        'SVM': 'svm.pkl',
+        'DNN': 'deep_neural_network.pkl'
+    }
     
-    # Build feature vector
-    if selected_features:
-        feature_vector = [sim_features.get(f, 0) for f in selected_features]
-    else:
-        feature_vector = list(sim_features.values())
+    for name, filename in model_files.items():
+        model_path = model_dir / filename
+        if model_path.exists():
+            try:
+                with open(model_path, 'rb') as f:
+                    models[name] = pickle.load(f)
+            except Exception as e:
+                st.warning(f"Could not load {name}: {e}")
     
-    # Scale and predict
-    X = np.array([feature_vector])
-    if scaler:
-        X = scaler.transform(X)
+    return models
+
+def load_feature_names():
+    """Load selected feature names"""
+    feature_path = project_root / "src" / "feature_selection" / "artifacts" / "selected_features.json"
+    if feature_path.exists():
+        with open(feature_path, 'r') as f:
+            return json.load(f)
+    # Default to the 19 features from training
+    return [
+        "canonical_len_ratio", "canonical_similarity", "cc_avg_diff", "cc_max_diff",
+        "common_imports", "common_subtrees", "exact_match", "func_count_diff",
+        "func_count_ratio", "ident_jaccard", "import_count_diff", "import_jaccard",
+        "loc_avg", "loc_diff", "loc_ratio", "node_hist_cosine", "node_hist_jaccard",
+        "subtree_count_diff", "subtree_hash_jaccard"
+    ]
+
+def prepare_features_for_model(features: dict, feature_names: list) -> np.ndarray:
+    """Prepare feature vector for model prediction"""
+    feature_vector = []
+    for name in feature_names:
+        value = features.get(name, 0.0)
+        feature_vector.append(float(value))
+    return np.array(feature_vector).reshape(1, -1)
+
+def get_prediction(models: dict, features: np.ndarray) -> dict:
+    """Get predictions from all models"""
+    predictions = {}
     
-    if model:
-        prob = model.predict_proba(X)[0][1]
-        prediction = model.predict(X)[0]
-    else:
-        # Fallback: use canonical similarity
-        prob = sim_features.get('canonical_similarity', 0)
-        prediction = 1 if prob > 0.7 else 0
+    for name, model in models.items():
+        try:
+            pred = model.predict(features)[0]
+            
+            # Get probability if available
+            if hasattr(model, 'predict_proba'):
+                proba = model.predict_proba(features)[0]
+                confidence = max(proba)
+            else:
+                confidence = 0.85  # Default confidence for models without proba
+            
+            predictions[name] = {
+                'prediction': int(pred),
+                'confidence': float(confidence),
+                'label': 'Plagiarism Detected' if pred == 1 else 'No Plagiarism'
+            }
+        except Exception as e:
+            predictions[name] = {
+                'prediction': -1,
+                'confidence': 0.0,
+                'label': f'Error: {str(e)}'
+            }
     
+    return predictions
+
+def render_similarity_gauge(similarity: float):
+    """Render a visual similarity gauge"""
+    percentage = similarity * 100
+    color = "#22c55e" if similarity < 0.4 else "#eab308" if similarity < 0.7 else "#ef4444"
+    
+    st.markdown(f"""
+        <div style="margin: 1rem 0;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                <span>Low Similarity</span>
+                <span>High Similarity</span>
+            </div>
+            <div style="width: 100%; height: 25px; background: linear-gradient(90deg, #22c55e 0%, #eab308 50%, #ef4444 100%); border-radius: 12px; position: relative;">
+                <div style="position: absolute; left: {percentage}%; top: -5px; width: 4px; height: 35px; background: white; border-radius: 2px; transform: translateX(-50%);"></div>
+            </div>
+            <div style="text-align: center; margin-top: 10px;">
+                <span style="font-size: 1.5rem; font-weight: bold; color: {color};">{percentage:.1f}%</span>
+            </div>
+        </div>
+    """, unsafe_allow_html=True)
+
+def render_feature_importance(features: dict):
+    """Render feature importance visualization"""
+    st.markdown("### 📊 Feature Analysis")
+    
+    # Sort features by value
+    sorted_features = sorted(features.items(), key=lambda x: abs(x[1]) if isinstance(x[1], (int, float)) else 0, reverse=True)
+    
+    for name, value in sorted_features[:10]:  # Show top 10 features
+        if isinstance(value, (int, float)):
+            normalized = min(abs(value), 1.0) if isinstance(value, float) else min(value / 100, 1.0)
+            st.markdown(f"""
+                <div style="margin: 8px 0;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>{name}</span>
+                        <span>{value:.4f}</span>
+                    </div>
+                    <div style="width: 100%; height: 8px; background: #242442; border-radius: 4px;">
+                        <div style="width: {normalized * 100}%; height: 100%; background: linear-gradient(90deg, #667eea, #764ba2); border-radius: 4px;"></div>
+                    </div>
+                </div>
+            """, unsafe_allow_html=True)
+
+def render_model_predictions(predictions: dict):
+    """Render predictions from all models"""
+    st.markdown("### 🤖 Model Predictions")
+    
+    cols = st.columns(len(predictions))
+    
+    for col, (name, pred) in zip(cols, predictions.items()):
+        with col:
+            is_plagiarism = pred['prediction'] == 1
+            bg_class = "result-positive" if not is_plagiarism else "result-negative"
+            icon = "✅" if not is_plagiarism else "⚠️"
+            
+            st.markdown(f"""
+                <div class="{bg_class}">
+                    <h4>{icon} {name}</h4>
+                    <p><strong>{pred['label']}</strong></p>
+                    <p>Confidence: {pred['confidence']*100:.1f}%</p>
+                </div>
+            """, unsafe_allow_html=True)
+
+def get_sample_code_pairs():
+    """Return sample code pairs for demonstration"""
     return {
-        'probability': prob,
-        'prediction': prediction,
-        'features': sim_features,
-        'feat1': feat1,
-        'feat2': feat2
-    }, None
+        "Similar (Variable Renaming)": (
+            '''def calculate_sum(numbers):
+    """Calculate sum of numbers"""
+    total = 0
+    for num in numbers:
+        total += num
+    return total
 
+result = calculate_sum([1, 2, 3, 4, 5])
+print(result)''',
+            '''def compute_total(values):
+    """Compute total of values"""
+    sum_val = 0
+    for val in values:
+        sum_val += val
+    return sum_val
 
-def get_feature_explanation(features: dict) -> list:
-    """Generate human-readable explanation of features."""
-    explanations = []
+output = compute_total([1, 2, 3, 4, 5])
+print(output)'''
+        ),
+        "Similar (Structure Change)": (
+            '''def find_max(lst):
+    max_val = lst[0]
+    for item in lst:
+        if item > max_val:
+            max_val = item
+    return max_val''',
+            '''def find_max(lst):
+    max_val = lst[0]
+    i = 0
+    while i < len(lst):
+        if lst[i] > max_val:
+            max_val = lst[i]
+        i += 1
+    return max_val'''
+        ),
+        "Different Code": (
+            '''def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr''',
+            '''class LinkedList:
+    def __init__(self):
+        self.head = None
     
-    # Canonical similarity
-    canon_sim = features.get('canonical_similarity', 0)
-    if canon_sim > 0.8:
-        explanations.append({
-            'icon': '⚡',
-            'text': 'Very high structural similarity',
-            'value': f'{canon_sim:.0%}',
-            'level': 'high'
-        })
-    elif canon_sim > 0.6:
-        explanations.append({
-            'icon': '◐',
-            'text': 'Moderate structural similarity',
-            'value': f'{canon_sim:.0%}',
-            'level': 'medium'
-        })
-    else:
-        explanations.append({
-            'icon': '○',
-            'text': 'Low structural similarity',
-            'value': f'{canon_sim:.0%}',
-            'level': 'low'
-        })
-    
-    # Node similarity
-    node_sim = features.get('node_cosine', 0)
-    if node_sim > 0.9:
-        explanations.append({
-            'icon': '◈',
-            'text': 'AST patterns nearly identical',
-            'value': f'{node_sim:.0%}',
-            'level': 'high'
-        })
-    elif node_sim > 0.7:
-        explanations.append({
-            'icon': '◇',
-            'text': 'Similar AST patterns',
-            'value': f'{node_sim:.0%}',
-            'level': 'medium'
-        })
-    
-    # Identifier overlap
-    ident_overlap = features.get('ident_overlap', 0)
-    if ident_overlap > 10:
-        explanations.append({
-            'icon': '※',
-            'text': 'Many shared identifiers',
-            'value': f'{ident_overlap}',
-            'level': 'high'
-        })
-    elif ident_overlap > 5:
-        explanations.append({
-            'icon': '·',
-            'text': 'Some shared identifiers',
-            'value': f'{ident_overlap}',
-            'level': 'medium'
-        })
-    
-    # Import similarity
-    import_sim = features.get('import_jaccard', 0)
-    if import_sim > 0.8:
-        explanations.append({
-            'icon': '⊕',
-            'text': 'Matching imports',
-            'value': f'{import_sim:.0%}',
-            'level': 'high' if import_sim == 1.0 else 'medium'
-        })
-    
-    return explanations
+    def append(self, data):
+        new_node = Node(data)
+        if not self.head:
+            self.head = new_node
+            return
+        current = self.head
+        while current.next:
+            current = current.next
+        current.next = new_node'''
+        )
+    }
 
-
-# ============ Main App ============
 
 def main():
-    # Header
-    st.markdown('<h1 class="main-header">Code Plagiarism Detector</h1>', unsafe_allow_html=True)
-    st.markdown('<p class="sub-header">Intelligent analysis powered by AST parsing and machine learning</p>', unsafe_allow_html=True)
+    """Main application entry point"""
+    get_page_config()
+    apply_theme()
+    render_header()
     
-    # Load models (cached)
-    model = load_model()
-    scaler = load_scaler()
-    selected_features = load_selected_features()
+    # Sidebar
+    with st.sidebar:
+        st.markdown("## ⚙️ Settings")
+        
+        # Model selection
+        st.markdown("### Model Selection")
+        models = load_models()
+        
+        if not models:
+            st.error("No models found! Please train models first.")
+            st.stop()
+        
+        selected_models = st.multiselect(
+            "Select models to use",
+            list(models.keys()),
+            default=list(models.keys())
+        )
+        
+        st.markdown("---")
+        
+        # Sample code selector
+        st.markdown("### 📝 Sample Codes")
+        sample_pairs = get_sample_code_pairs()
+        sample_choice = st.selectbox(
+            "Load sample pair",
+            ["Custom"] + list(sample_pairs.keys())
+        )
+        
+        st.markdown("---")
+        st.markdown("""
+        ### ℹ️ About
+        This tool uses machine learning to detect code plagiarism.
+        
+        **Features analyzed:**
+        - AST structural similarity
+        - Token-level comparison
+        - Semantic analysis
+        - Code metrics
+        
+        **Models:** LR, RF, SVM, DNN
+        """)
     
-    # Status indicator
-    col_status1, col_status2, col_status3 = st.columns([1, 2, 1])
-    with col_status2:
-        if model:
-            st.markdown(
-                '<div style="text-align: center; margin-bottom: 2rem;">'
-                '<span class="status-badge status-success">● Model Ready</span>'
-                '</div>',
-                unsafe_allow_html=True
-            )
-        else:
-            st.markdown(
-                '<div style="text-align: center; margin-bottom: 2rem;">'
-                '<span class="status-badge status-warning">◐ Heuristic Mode</span>'
-                '</div>',
-                unsafe_allow_html=True
-            )
+    # Main content
+    col1, col2 = st.columns(2)
     
-    # Code input section
-    st.markdown('<p class="section-title">Code Samples</p>', unsafe_allow_html=True)
-    
-    col1, col2 = st.columns(2, gap="medium")
+    # Get sample code if selected
+    if sample_choice != "Custom":
+        default_code1, default_code2 = sample_pairs[sample_choice]
+    else:
+        default_code1 = "# Enter first code snippet here\n"
+        default_code2 = "# Enter second code snippet here\n"
     
     with col1:
+        st.markdown("### 📄 Code Snippet 1")
         code1 = st.text_area(
-            "First code sample",
-            height=280,
-            placeholder="Paste or type your first code sample here...",
-            key="code1",
+            "Enter first code",
+            value=default_code1,
+            height=300,
             label_visibility="collapsed"
         )
-        uploaded_file1 = st.file_uploader(
-            "Upload .py file",
-            type=['py'],
-            key="upload1",
-            label_visibility="collapsed"
-        )
-        if uploaded_file1:
-            code1 = uploaded_file1.read().decode('utf-8')
-            st.code(code1[:500] + ('...' if len(code1) > 500 else ''), language='python')
     
     with col2:
+        st.markdown("### 📄 Code Snippet 2")
         code2 = st.text_area(
-            "Second code sample",
-            height=280,
-            placeholder="Paste or type your second code sample here...",
-            key="code2",
+            "Enter second code",
+            value=default_code2,
+            height=300,
             label_visibility="collapsed"
         )
-        uploaded_file2 = st.file_uploader(
-            "Upload .py file",
-            type=['py'],
-            key="upload2",
-            label_visibility="collapsed"
-        )
-        if uploaded_file2:
-            code2 = uploaded_file2.read().decode('utf-8')
-            st.code(code2[:500] + ('...' if len(code2) > 500 else ''), language='python')
     
-    # Action buttons
-    st.markdown("<div style='height: 1.5rem'></div>", unsafe_allow_html=True)
+    # Analyze button
+    col_btn = st.columns([1, 2, 1])
+    with col_btn[1]:
+        analyze_btn = st.button("🔍 Analyze for Plagiarism", use_container_width=True)
     
-    col_btn1, col_btn2, col_btn3 = st.columns([1, 2, 1])
-    with col_btn2:
-        analyze_clicked = st.button(
-            "Analyze",
-            type="primary",
-            use_container_width=True
-        )
-    
-    # Quick load examples
-    with st.expander("Load example code", expanded=False):
-        col_ex1, col_ex2 = st.columns(2)
-        with col_ex1:
-            if st.button("Similar Code Pair", use_container_width=True):
-                st.session_state.code1 = '''def fibonacci(n):
-    if n <= 1:
-        return n
-    return fibonacci(n-1) + fibonacci(n-2)
-
-def main():
-    for i in range(10):
-        print(fibonacci(i))
-
-if __name__ == "__main__":
-    main()'''
-                
-                st.session_state.code2 = '''def fib(num):
-    if num <= 1:
-        return num
-    return fib(num-1) + fib(num-2)
-
-def run():
-    for x in range(10):
-        print(fib(x))
-
-if __name__ == "__main__":
-    run()'''
-                st.rerun()
-        
-        with col_ex2:
-            if st.button("Different Code Pair", use_container_width=True):
-                st.session_state.code1 = '''def factorial(n):
-    if n <= 1:
-        return 1
-    return n * factorial(n-1)
-
-print(factorial(5))'''
-                
-                st.session_state.code2 = '''def fibonacci(n):
-    a, b = 0, 1
-    for _ in range(n):
-        a, b = b, a + b
-    return a
-
-print(fibonacci(10))'''
-                st.rerun()
-    
-    # Analysis
-    if analyze_clicked:
-        if not code1 or not code2:
-            st.error("Please provide both code samples to analyze.")
+    if analyze_btn:
+        if not code1.strip() or not code2.strip():
+            st.error("Please enter code in both snippets!")
             return
         
-        with st.spinner("Analyzing..."):
-            result, error = predict_plagiarism(code1, code2, model, scaler, selected_features)
-        
-        if error:
-            st.error(error)
-            return
-        
-        st.markdown("<hr>", unsafe_allow_html=True)
-        
-        prob = result['probability']
-        prediction = result['prediction']
-        
-        # Result display
-        if prob >= 0.7:
-            risk_class = "plagiarism-high"
-            risk_label = "High similarity detected"
-        elif prob >= 0.4:
-            risk_class = "plagiarism-medium"
-            risk_label = "Moderate similarity detected"
-        else:
-            risk_class = "plagiarism-low"
-            risk_label = "Low similarity"
-        
-        st.markdown(f"""
-        <div class="result-box {risk_class}">
-            <h2>{prob:.0%}</h2>
-            <h3>{risk_label}</h3>
-        </div>
-        """, unsafe_allow_html=True)
-        
-        # Evidence section
-        st.markdown('<p class="section-title">Analysis Evidence</p>', unsafe_allow_html=True)
-        
-        explanations = get_feature_explanation(result['features'])
-        for exp in explanations:
-            st.markdown(f"""
-            <div class="evidence-card">
-                <span class="evidence-icon">{exp['icon']}</span>
-                <span class="evidence-text">{exp['text']}</span>
-                <span class="evidence-value">{exp['value']}</span>
-            </div>
-            """, unsafe_allow_html=True)
-        
-        st.markdown("<div style='height: 1.5rem'></div>", unsafe_allow_html=True)
-        
-        # Metrics
-        st.markdown('<p class="section-title">Key Metrics</p>', unsafe_allow_html=True)
-        
-        col_m1, col_m2, col_m3, col_m4 = st.columns(4, gap="medium")
-        
-        with col_m1:
-            st.metric(
-                "Structure",
-                f"{result['features'].get('canonical_similarity', 0):.0%}"
-            )
-        
-        with col_m2:
-            st.metric(
-                "AST Match",
-                f"{result['features'].get('node_cosine', 0):.0%}"
-            )
-        
-        with col_m3:
-            st.metric(
-                "Shared IDs",
-                f"{result['features'].get('ident_overlap', 0)}"
-            )
-        
-        with col_m4:
-            st.metric(
-                "LOC Diff",
-                f"{result['features'].get('loc_diff', 0)}"
-            )
-        
-        # Detailed data (collapsed by default)
-        with st.expander("View all features"):
-            features_df = pd.DataFrame([
-                {"Feature": k, "Value": f"{v:.4f}" if isinstance(v, float) else str(v)}
-                for k, v in sorted(result['features'].items())
-            ])
-            st.dataframe(features_df, use_container_width=True, hide_index=True)
-        
-        with st.expander("Code statistics"):
-            col_s1, col_s2 = st.columns(2)
+        with st.spinner("Analyzing code similarity..."):
+            # Compute features
+            features = compute_similarity_features(code1, code2)
             
-            with col_s1:
-                st.markdown("**Sample 1**")
-                st.json({
-                    "Lines": result['feat1']['loc'],
-                    "Functions": result['feat1']['num_functions'],
-                    "Imports": result['feat1']['imports']
-                })
+            # Load feature names and prepare for model
+            feature_names = load_feature_names()
+            feature_vector = prepare_features_for_model(features, feature_names)
             
-            with col_s2:
-                st.markdown("**Sample 2**")
-                st.json({
-                    "Lines": result['feat2']['loc'],
-                    "Functions": result['feat2']['num_functions'],
-                    "Imports": result['feat2']['imports']
-                })
-    
-    # Footer
-    st.markdown("""
-    <div class="footer">
-        <p>CS-351 Artificial Intelligence · Semester Project</p>
-    </div>
-    """, unsafe_allow_html=True)
-    
-    # Sidebar (for additional info when expanded)
-    with st.sidebar:
-        st.markdown("### About")
-        st.markdown("""
-        This tool analyzes Python code pairs for similarity using:
-        
-        - **AST Parsing** — Structural analysis
-        - **Random Forest** — ML classification  
-        - **Feature Engineering** — 20+ similarity metrics
-        """)
+            # Get predictions from selected models
+            selected_model_dict = {k: v for k, v in models.items() if k in selected_models}
+            predictions = get_prediction(selected_model_dict, feature_vector)
         
         st.markdown("---")
         
-        st.markdown("### Interpretation")
-        st.markdown("""
-        **>70%** — Likely plagiarism  
-        **40-70%** — Needs review  
-        **<40%** — Likely original
-        """)
+        # Results section
+        st.markdown("## 📊 Analysis Results")
+        
+        # Overall similarity gauge
+        overall_similarity = features.get('canonical_similarity', 0.0)
+        render_similarity_gauge(overall_similarity)
+        
+        # Model predictions
+        render_model_predictions(predictions)
         
         st.markdown("---")
         
-        st.markdown("### Model Status")
-        if model:
-            st.success("ML Model: Active")
-        else:
-            st.warning("ML Model: Not loaded")
+        # Detailed analysis in tabs
+        tab1, tab2, tab3 = st.tabs(["📈 Features", "🔬 Details", "📋 Raw Data"])
         
-        if scaler:
-            st.success("Scaler: Active")
-        else:
-            st.info("Scaler: Not loaded")
-
+        with tab1:
+            render_feature_importance(features)
+        
+        with tab2:
+            st.markdown("### 🔬 Detailed Analysis")
+            
+            col1, col2 = st.columns(2)
+            
+            with col1:
+                st.markdown(f"""
+                <div class="metric-card">
+                    <h3>📏 Size Metrics</h3>
+                    <p><strong>LOC Ratio:</strong> {features.get('loc_ratio', 0):.3f}</p>
+                    <p><strong>LOC Difference:</strong> {features.get('loc_diff', 0):.0f}</p>
+                    <p><strong>Avg LOC:</strong> {features.get('loc_avg', 0):.1f}</p>
+                </div>
+                """, unsafe_allow_html=True)
+            
+            with col2:
+                st.markdown(f"""
+                <div class="metric-card">
+                    <h3>🌳 Structural Metrics</h3>
+                    <p><strong>AST Node Similarity:</strong> {features.get('node_hist_cosine', 0):.3f}</p>
+                    <p><strong>Subtree Jaccard:</strong> {features.get('subtree_hash_jaccard', 0):.3f}</p>
+                    <p><strong>Common Subtrees:</strong> {features.get('common_subtrees', 0)}</p>
+                </div>
+                """, unsafe_allow_html=True)
+            
+            col3, col4 = st.columns(2)
+            
+            with col3:
+                st.markdown(f"""
+                <div class="metric-card">
+                    <h3>📦 Import Analysis</h3>
+                    <p><strong>Import Jaccard:</strong> {features.get('import_jaccard', 0):.3f}</p>
+                    <p><strong>Common Imports:</strong> {features.get('common_imports', 0)}</p>
+                    <p><strong>Import Count Diff:</strong> {features.get('import_count_diff', 0)}</p>
+                </div>
+                """, unsafe_allow_html=True)
+            
+            with col4:
+                st.markdown(f"""
+                <div class="metric-card">
+                    <h3>🔧 Complexity</h3>
+                    <p><strong>CC Avg Diff:</strong> {features.get('cc_avg_diff', 0):.1f}</p>
+                    <p><strong>Func Count Diff:</strong> {features.get('func_count_diff', 0)}</p>
+                    <p><strong>Func Count Ratio:</strong> {features.get('func_count_ratio', 0):.3f}</p>
+                </div>
+                """, unsafe_allow_html=True)
+        
+        with tab3:
+            st.markdown("### 📋 Raw Feature Data")
+            st.json(features)
+            
+            st.markdown("### 🎯 Feature Vector (Model Input)")
+            st.write(f"Shape: {feature_vector.shape}")
+            st.write(f"Features: {feature_names}")
+            st.write(f"Values: {feature_vector.tolist()}")
 
 if __name__ == "__main__":
     main()

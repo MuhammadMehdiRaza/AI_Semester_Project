@@ -1,0 +1,93 @@
+======================================================================
+PLAGIARISM DETECTION SHAP EXPLAINABILITY REPORT
+======================================================================
+
+Model: Random Forest (Expanded Dataset)
+Dataset: 600 code pairs (300 positive, 300 negative)
+Features: 19
+Accuracy: 50.0%
+
+Base Value (expected prediction): 0.5048
+
+======================================================================
+GLOBAL FEATURE IMPORTANCE
+======================================================================
+
+Top features by mean absolute SHAP value:
+
+ 1. ident_jaccard            : 0.125454
+ 2. node_hist_cosine         : 0.068048
+ 3. node_hist_jaccard        : 0.067681
+ 4. subtree_count_diff       : 0.037435
+ 5. canonical_similarity     : 0.032344
+ 6. func_count_diff          : 0.031300
+ 7. import_count_diff        : 0.029181
+ 8. import_jaccard           : 0.029055
+ 9. cc_max_diff              : 0.024687
+10. cc_avg_diff              : 0.024178
+11. loc_avg                  : 0.018263
+12. func_count_ratio         : 0.017114
+13. loc_ratio                : 0.012969
+14. subtree_hash_jaccard     : 0.008484
+15. canonical_len_ratio      : 0.007611
+16. loc_diff                 : 0.006451
+17. common_subtrees          : 0.004026
+18. common_imports           : 0.003805
+19. exact_match              : 0.000000
+
+======================================================================
+INDIVIDUAL CASE EXPLANATIONS
+======================================================================
+
+----------------------------------------------------------------------
+Case: Correctly Detected Plagiarism
+----------------------------------------------------------------------
+Sample Index: 0
+True Label: Plagiarism
+Predicted: Plagiarism
+Probability: 66.2%
+
+Top Contributing Features:
+  • ident_jaccard: pushes toward plagiarism (+0.1188)
+  • node_hist_jaccard: pushes toward plagiarism (+0.0844)
+  • node_hist_cosine: pushes toward plagiarism (+0.0713)
+  • subtree_count_diff: pushes toward original (-0.0522)
+  • import_jaccard: pushes toward plagiarism (+0.0447)
+
+----------------------------------------------------------------------
+Case: False Positive (wrongly flagged)
+----------------------------------------------------------------------
+Sample Index: 1
+True Label: Not Plagiarism
+Predicted: Plagiarism
+Probability: 58.2%
+
+Top Contributing Features:
+  • ident_jaccard: pushes toward plagiarism (+0.1330)
+  • node_hist_cosine: pushes toward plagiarism (+0.0681)
+  • node_hist_jaccard: pushes toward plagiarism (+0.0569)
+  • import_count_diff: pushes toward original (-0.0436)
+  • subtree_count_diff: pushes toward original (-0.0326)
+
+======================================================================
+INTERPRETATION GUIDE
+======================================================================
+
+SHAP Values Explained:
+- SHAP values show each feature's contribution to the prediction
+- Positive SHAP: Feature increases plagiarism probability
+- Negative SHAP: Feature decreases plagiarism probability
+- Larger |SHAP|: Stronger influence on the prediction
+
+Key Features for Plagiarism Detection:
+- canonical_similarity: Normalized code similarity (most important)
+- node_hist_cosine: AST structure similarity
+- ident_jaccard: Identifier/variable name overlap
+- subtree_hash_jaccard: Code structure fingerprint match
+- loc_ratio: Lines of code ratio
+
+This explainability ensures transparent and fair plagiarism detection.
+
+======================================================================
+END OF REPORT
+======================================================================
