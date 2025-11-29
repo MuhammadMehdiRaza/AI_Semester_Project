@@ -1,0 +1,94 @@
+{
+  "path": "data/augmented\\original_18.py",
+  "loc": 11,
+  "imports": [
+    "math"
+  ],
+  "node_hist": {
+    "Module": 1,
+    "Import": 1,
+    "FunctionDef": 2,
+    "Assign": 1,
+    "Expr": 1,
+    "alias": 1,
+    "arguments": 2,
+    "Return": 2,
+    "Name": 13,
+    "Call": 6,
+    "arg": 2,
+    "Store": 1,
+    "Constant": 6,
+    "IfExp": 1,
+    "Load": 13,
+    "Compare": 1,
+    "BinOp": 2,
+    "Eq": 1,
+    "Attribute": 1,
+    "Mod": 1,
+    "Add": 1
+  },
+  "num_functions": 2,
+  "functions": [
+    {
+      "name": "ft",
+      "args": 1,
+      "lineno": 4,
+      "end_lineno": 7
+    },
+    {
+      "name": "process",
+      "args": 1,
+      "lineno": 5,
+      "end_lineno": 6
+    }
+  ],
+  "avg_cc": 1.0,
+  "max_cc": 1,
+  "top_idents": [
+    [
+      "i",
+      3
+    ],
+    [
+      "rst",
+      2
+    ],
+    [
+      "ft",
+      1
+    ],
+    [
+      "print",
+      1
+    ],
+    [
+      "sum",
+      1
+    ],
+    [
+      "map",
+      1
+    ],
+    [
+      "process",
+      1
+    ],
+    [
+      "range",
+      1
+    ],
+    [
+      "math",
+      1
+    ],
+    [
+      "n",
+      1
+    ]
+  ],
+  "subtree_hashes": [
+    "70c0d1c7c8e5dd396285d63624f9f3d4657bc612bcd36e8fa4771b6847dc3677",
+    "6ee856c7a065dfd16494f6da7fda743d7c9386734106415ccf1bc2d6c6c30617"
+  ],
+  "canonical_code": "import math\n\ndef f1(v1):\n\n    def f2(v2):\n        return v3.factorial(v2) if v2 % 2 == 0 else v2\n    return v4(v5(f2, v6(1, v1 + 1)))\nv7 = f1(5)\nv8('Result:', v7)"
+}

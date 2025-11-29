@@ -1,0 +1,86 @@
+{
+  "path": "data/augmented\\plagiarized_5.py",
+  "loc": 12,
+  "imports": [
+    "functools",
+    "math"
+  ],
+  "node_hist": {
+    "Module": 1,
+    "Import": 1,
+    "ImportFrom": 1,
+    "FunctionDef": 1,
+    "Expr": 1,
+    "Assign": 1,
+    "alias": 2,
+    "arguments": 2,
+    "Return": 1,
+    "Call": 5,
+    "Name": 12,
+    "arg": 3,
+    "Constant": 7,
+    "Store": 1,
+    "Lambda": 1,
+    "Load": 12,
+    "BinOp": 3,
+    "Add": 2,
+    "IfExp": 1,
+    "Compare": 1,
+    "Eq": 1,
+    "Attribute": 1,
+    "Mod": 1
+  },
+  "num_functions": 1,
+  "functions": [
+    {
+      "name": "ft_v7",
+      "args": 1,
+      "lineno": 5,
+      "end_lineno": 6
+    }
+  ],
+  "avg_cc": 2.0,
+  "max_cc": 2,
+  "top_idents": [
+    [
+      "i",
+      3
+    ],
+    [
+      "rst_v9",
+      2
+    ],
+    [
+      "print",
+      1
+    ],
+    [
+      "ft_v7",
+      1
+    ],
+    [
+      "reduce_v7",
+      1
+    ],
+    [
+      "range",
+      1
+    ],
+    [
+      "ttl_v8",
+      1
+    ],
+    [
+      "n",
+      1
+    ],
+    [
+      "math",
+      1
+    ]
+  ],
+  "subtree_hashes": [
+    "e5dcdaae8ec058e1ce5984ae5893239b8737b116a8c2a56fdb7f76a763b9c98a"
+  ],
+  "canonical_code": "import math\nfrom functools import reduce_v7\n\ndef f1(v1):\n    return v2(lambda ttl_v8, i: v3 + (v5.factorial(v4) if v4 % 2 == 0 else v4), v6(1, v1 + 1), 0)\nv7('Result:', v8)\nv8 = f1(5)"
+}

@@ -1,0 +1,79 @@
+{
+  "path": "data/augmented\\plagiarized_22.py",
+  "loc": 15,
+  "imports": [
+    "math"
+  ],
+  "node_hist": {
+    "Module": 1,
+    "Import": 1,
+    "FunctionDef": 1,
+    "Assign": 3,
+    "Expr": 1,
+    "alias": 1,
+    "arguments": 1,
+    "While": 1,
+    "Return": 1,
+    "Name": 15,
+    "Call": 3,
+    "arg": 1,
+    "Constant": 7,
+    "Compare": 2,
+    "AugAssign": 2,
+    "Store": 5,
+    "LtE": 1,
+    "Add": 2,
+    "IfExp": 1,
+    "Load": 11,
+    "BinOp": 1,
+    "Eq": 1,
+    "Attribute": 1,
+    "Mod": 1
+  },
+  "num_functions": 1,
+  "functions": [
+    {
+      "name": "ft_v6",
+      "args": 1,
+      "lineno": 4,
+      "end_lineno": 12
+    }
+  ],
+  "avg_cc": 3.0,
+  "max_cc": 3,
+  "top_idents": [
+    [
+      "i",
+      6
+    ],
+    [
+      "ttl_v3",
+      3
+    ],
+    [
+      "rst_v7",
+      2
+    ],
+    [
+      "ft_v6",
+      1
+    ],
+    [
+      "print",
+      1
+    ],
+    [
+      "n",
+      1
+    ],
+    [
+      "math",
+      1
+    ]
+  ],
+  "subtree_hashes": [
+    "3921b38938f6dc022a9e67731b88aa6e233910be7cadb9b0aa59c9aff2b14cb5",
+    "17a1e311790cf518a551dc5d980d3f204f127fd15f16c95105d08d07bd02f995"
+  ],
+  "canonical_code": "import math\n\ndef f1(v1):\n    v2 = 0\n    v3 = 1\n    while v3 <= v1:\n        v2 += v4.factorial(v3) if v3 % 2 == 0 else v3\n        v3 += 1\n    return v2\nv5 = f1(5)\nv6('Result:', v5)"
+}

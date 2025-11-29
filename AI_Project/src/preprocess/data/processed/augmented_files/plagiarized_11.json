@@ -1,0 +1,83 @@
+{
+  "path": "data/augmented\\plagiarized_11.py",
+  "loc": 16,
+  "imports": [
+    "math"
+  ],
+  "node_hist": {
+    "Module": 1,
+    "Import": 1,
+    "FunctionDef": 1,
+    "Assign": 2,
+    "Expr": 1,
+    "alias": 1,
+    "arguments": 1,
+    "For": 1,
+    "Return": 1,
+    "Name": 15,
+    "Call": 4,
+    "arg": 1,
+    "Constant": 7,
+    "If": 1,
+    "Store": 5,
+    "BinOp": 2,
+    "Compare": 1,
+    "AugAssign": 2,
+    "Load": 11,
+    "Add": 3,
+    "Eq": 1,
+    "Mod": 1,
+    "Attribute": 1
+  },
+  "num_functions": 1,
+  "functions": [
+    {
+      "name": "factorial_sum_v5",
+      "args": 1,
+      "lineno": 3,
+      "end_lineno": 11
+    }
+  ],
+  "avg_cc": 3.0,
+  "max_cc": 3,
+  "top_idents": [
+    [
+      "accumulator",
+      4
+    ],
+    [
+      "i",
+      4
+    ],
+    [
+      "output",
+      2
+    ],
+    [
+      "factorial_sum_v5",
+      1
+    ],
+    [
+      "print",
+      1
+    ],
+    [
+      "range",
+      1
+    ],
+    [
+      "n",
+      1
+    ],
+    [
+      "math",
+      1
+    ]
+  ],
+  "subtree_hashes": [
+    "5a8f31fbd3d05fd04498a28356b8de0eee3f5cc1ef6da0035a3e6ccae0046cea",
+    "76b3492524dc028809a420dfe0e2a6c82bdeaf658b51912b884d12eb893bcfe9",
+    "a4b0ea38a8824a1e5a36b38db5d4ed1b84484c8ef1ba6e283fec4bd6f1f73e78"
+  ],
+  "canonical_code": "import math\n\ndef f1(v1):\n    v2 = 0\n    for v3 in v4(1, v1 + 1):\n        if v3 % 2 == 0:\n            v2 += v5.factorial(v3)\n        else:\n            v2 += v3\n    return v2\nv6 = f1(5)\nv7('Result:', v6)"
+}

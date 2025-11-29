@@ -1,0 +1,70 @@
+{
+  "path": "data/augmented\\unrelated_a_27.py",
+  "loc": 11,
+  "imports": [
+    "math"
+  ],
+  "node_hist": {
+    "Module": 1,
+    "Import": 1,
+    "FunctionDef": 1,
+    "Assign": 1,
+    "Expr": 1,
+    "alias": 1,
+    "arguments": 1,
+    "If": 1,
+    "Return": 2,
+    "Name": 11,
+    "Call": 4,
+    "arg": 1,
+    "Compare": 2,
+    "BinOp": 3,
+    "Store": 1,
+    "Constant": 7,
+    "Eq": 2,
+    "IfExp": 1,
+    "Add": 1,
+    "Load": 11,
+    "Attribute": 1,
+    "Sub": 1,
+    "Mod": 1
+  },
+  "num_functions": 1,
+  "functions": [
+    {
+      "name": "ft",
+      "args": 1,
+      "lineno": 4,
+      "end_lineno": 7
+    }
+  ],
+  "avg_cc": 3.0,
+  "max_cc": 3,
+  "top_idents": [
+    [
+      "n",
+      5
+    ],
+    [
+      "rst",
+      2
+    ],
+    [
+      "ft",
+      2
+    ],
+    [
+      "print",
+      1
+    ],
+    [
+      "math",
+      1
+    ]
+  ],
+  "subtree_hashes": [
+    "f65fe6cbd536d4916deea1af4bb12b2ffe7c448fac4c769133d2682f7664bd29",
+    "e57f8c1ed050cfb0ec6dd30d2bfb52e52cfed53ca512cd6ccf0ecf5fb48a47d3"
+  ],
+  "canonical_code": "import math\n\ndef f1(v1):\n    if v1 == 0:\n        return 0\n    return (v2.factorial(v1) if v1 % 2 == 0 else v1) + f1(v1 - 1)\nv3 = f1(5)\nv4('Result:', v3)"
+}

@@ -1,0 +1,93 @@
+{
+  "path": "data/augmented\\plagiarized_21.py",
+  "loc": 18,
+  "imports": [
+    "math"
+  ],
+  "node_hist": {
+    "Module": 1,
+    "Import": 1,
+    "FunctionDef": 2,
+    "Assign": 2,
+    "Expr": 1,
+    "alias": 1,
+    "arguments": 2,
+    "Return": 2,
+    "For": 1,
+    "Name": 16,
+    "Call": 5,
+    "arg": 2,
+    "IfExp": 1,
+    "Constant": 7,
+    "AugAssign": 1,
+    "Store": 4,
+    "Compare": 1,
+    "BinOp": 2,
+    "Add": 2,
+    "Load": 13,
+    "Eq": 1,
+    "Attribute": 1,
+    "Mod": 1
+  },
+  "num_functions": 2,
+  "functions": [
+    {
+      "name": "even_factorial_v9",
+      "args": 1,
+      "lineno": 4,
+      "end_lineno": 5
+    },
+    {
+      "name": "ft_v4",
+      "args": 1,
+      "lineno": 9,
+      "end_lineno": 13
+    }
+  ],
+  "avg_cc": 2.0,
+  "max_cc": 2,
+  "top_idents": [
+    [
+      "i",
+      5
+    ],
+    [
+      "ttl_v9",
+      3
+    ],
+    [
+      "rst_v3",
+      2
+    ],
+    [
+      "ft_v4",
+      1
+    ],
+    [
+      "print",
+      1
+    ],
+    [
+      "range",
+      1
+    ],
+    [
+      "n",
+      1
+    ],
+    [
+      "even_factorial_v9",
+      1
+    ],
+    [
+      "math",
+      1
+    ]
+  ],
+  "subtree_hashes": [
+    "88000ea6e9e463c4f40a06960c8672c9265615455b32ee429f315263ca7157ff",
+    "bb297502ee4d52bc468a102a01ebede5816069c7d4f76c517b9db88e4fc0682a",
+    "26099ac20d0b286f016aa0c92584c8bc693a70f591373e47426a7ed6904f805d"
+  ],
+  "canonical_code": "import math\n\ndef f1(v1):\n    return v2.factorial(v1) if v1 % 2 == 0 else v1\n\ndef f2(v3):\n    v4 = 0\n    for v1 in v5(1, v3 + 1):\n        v4 += f1(v1)\n    return v4\nv6 = f2(5)\nv7('Result:', v6)"
+}

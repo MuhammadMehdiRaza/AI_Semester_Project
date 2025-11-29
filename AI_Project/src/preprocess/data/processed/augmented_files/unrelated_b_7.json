@@ -1,0 +1,230 @@
+{
+  "path": "data/augmented\\unrelated_b_7.py",
+  "loc": 184,
+  "imports": [
+    "ast",
+    "collections",
+    "hashlib",
+    "json",
+    "os",
+    "radon",
+    "sys"
+  ],
+  "node_hist": {
+    "Module": 1,
+    "Expr": 18,
+    "Import": 5,
+    "ImportFrom": 2,
+    "ClassDef": 1,
+    "FunctionDef": 8,
+    "If": 12,
+    "Constant": 65,
+    "alias": 7,
+    "Attribute": 98,
+    "arguments": 8,
+    "Assign": 39,
+    "Return": 7,
+    "Name": 247,
+    "With": 2,
+    "Try": 4,
+    "For": 7,
+    "Compare": 5,
+    "Load": 307,
+    "arg": 11,
+    "Call": 77,
+    "withitem": 2,
+    "ExceptHandler": 4,
+    "BinOp": 3,
+    "ListComp": 4,
+    "List": 4,
+    "Dict": 3,
+    "Subscript": 10,
+    "IfExp": 4,
+    "Eq": 1,
+    "AugAssign": 2,
+    "Store": 54,
+    "keyword": 7,
+    "Raise": 1,
+    "Add": 4,
+    "comprehension": 4,
+    "Lt": 1,
+    "NotIn": 2,
+    "JoinedStr": 3,
+    "Tuple": 2,
+    "Gt": 1,
+    "FormattedValue": 4,
+    "Div": 1,
+    "Slice": 1
+  },
+  "num_functions": 8,
+  "functions": [
+    {
+      "name": "subtree_hash",
+      "args": 1,
+      "lineno": 62,
+      "end_lineno": 68
+    },
+    {
+      "name": "extract_per_file",
+      "args": 1,
+      "lineno": 71,
+      "end_lineno": 152
+    },
+    {
+      "name": "main",
+      "args": 0,
+      "lineno": 155,
+      "end_lineno": 180
+    },
+    {
+      "name": "__init__",
+      "args": 1,
+      "lineno": 27,
+      "end_lineno": 31
+    },
+    {
+      "name": "_new_var",
+      "args": 2,
+      "lineno": 33,
+      "end_lineno": 37
+    },
+    {
+      "name": "_new_func",
+      "args": 2,
+      "lineno": 39,
+      "end_lineno": 43
+    },
+    {
+      "name": "visit_Name",
+      "args": 2,
+      "lineno": 45,
+      "end_lineno": 50
+    },
+    {
+      "name": "visit_FunctionDef",
+      "args": 2,
+      "lineno": 52,
+      "end_lineno": 59
+    }
+  ],
+  "avg_cc": 4.666666666666667,
+  "max_cc": 21,
+  "top_idents": [
+    [
+      "ast",
+      29
+    ],
+    [
+      "n",
+      18
+    ],
+    [
+      "node",
+      17
+    ],
+    [
+      "self",
+      17
+    ],
+    [
+      "os",
+      7
+    ],
+    [
+      "tree",
+      6
+    ],
+    [
+      "cc_vals",
+      6
+    ],
+    [
+      "original",
+      6
+    ],
+    [
+      "isinstance",
+      6
+    ],
+    [
+      "src",
+      5
+    ],
+    [
+      "code",
+      5
+    ],
+    [
+      "len",
+      5
+    ],
+    [
+      "sys",
+      5
+    ],
+    [
+      "imports",
+      4
+    ],
+    [
+      "funcs",
+      4
+    ],
+    [
+      "files",
+      4
+    ],
+    [
+      "p",
+      4
+    ],
+    [
+      "Exception",
+      4
+    ],
+    [
+      "canon_tree",
+      4
+    ],
+    [
+      "subtree_nodes",
+      3
+    ]
+  ],
+  "subtree_hashes": [
+    "b554c19462720e2a8d5ddab060e0bdfc3f610093c6c56c8a0f6dd9fb1e78d07d",
+    "2b326984fcd86698ed2ed604cc587823b5ddcc109e92c8b8be8638ae76635a6c",
+    "864239216ffd6c100494b172334543074aeedb6f32673be6ef9a1d2e8248e651",
+    "3340fd16ba41ba1ddf3989cd136a498b72a97f7796e0f7fad6e815585dbc1c52",
+    "e7e18aa47af7713ef3165d3efe3e8da1bb459b729ae479fe7a06ba944d89882a",
+    "77c020b4932023c7263bff75ad5bda59592b6f4c83deaffa904cc94392faefbb",
+    "880c0390e9ea9d9bcf47d441e8fed02af05ecbb5e94a1dcae0ea0bc7181d1122",
+    "abc1be979ad8764110d54c259ffe3cd9d589251a40c8c581ded82a0904443eec",
+    "864b1311e98adaa9a3269f75de2cb15bd1ad9ea93a98ba092509fa17e0da2183",
+    "d4194a3ea428e17328022d8c7134d34dbe08fae6dbb5e225a171748297acdf20",
+    "accd8e97ef986eba9c9c45afccafe0195bf0031b5e6d70c028a20155f48affdd",
+    "62381ad5e05e7b745e25a57c9a001845e1c7e52af42876103e806f56e1b9d520",
+    "30514266b48428d30057c9b8fcddc5170375d5e5abb358964019994595ade07f",
+    "3febcb2db844acc706c5a0ce1eacabb19e33f3b9b43e5451fd80dc721609cb3e",
+    "1f73fdc52b7cb6c1b7f01dbcc94117a37a787745e0be86189947aee34bb9ee1f",
+    "a1be7cb5cae3e73d58bb2fc99557d361d6216ead2527b82c8773b923e2c9e8db",
+    "3b20f62fd83cf0694e66f6a9da17c0cce1cc2566ab38138a30e9407a5a6da24a",
+    "1691afc82c4cea6ba1668aee5a6366b2c99eaa39cee69f43890d5819df58c5fb",
+    "ea08a64a7b4f8238c816d4f03e053c9bced1a8a0942f65e59a62d4fab1d889ff",
+    "1bad78b906fee833f29702ea6c838f41e8cac6c0aa324d2da07b6a2083bd35fe",
+    "6ed3a585d5558dfbb77dfa385fe9ab5fc42e1a7e242b892cb330a8a7529f7b20",
+    "31cb251377a54b796edd3ad196db6d8bf29ceaf041b87d826cd40eb1c218c18b",
+    "109cda376cda561a895775ad2df809c689cbc0445d867b46c9d449e099704c61",
+    "1afadbb0bc5b233960912ea679045dc9421201e2650f9dc4bc4546b51a9d3a9c",
+    "9ee865bb0c0837d3a2bd14777f526be5a0f1b3642314e3a12b1c5279670deb73",
+    "07d5d0940d76d1dd4666f326f426be060d26832398fd6f7198c333c8a89148e8",
+    "a92ff02549386a205939087587eaa14849a1671f9426a5deb358396515c4ca77",
+    "74f5897979193807b484714790d12223b36f4caaab16caddff4e4cf493e6d1b4",
+    "91215b0e1f136bacb97aa2c856bc9db62f057f8cdc151fdf2a3bdcf2d739495b",
+    "4017586e8e6c31a4e208f0e2f31e437c56c912bab0bb9d7de15b7746ad8aeefa",
+    "b5d3f794e34b91c8200ba3231df1e9096e66bd510563684b836a438c91b3fbc6",
+    "4b2b8ca2e64828e633b47a597a42cd4b0083b0c15b4d25e7ec2e34dd52628f6f",
+    "ce9149a69fcf988b63c229c1bd02113af3d8670d7ebd6dddbe58d9c9d3582ccc"
+  ],
+  "canonical_code": "\"\"\"\nextract_perfile.py\nParse Python files to AST-derived JSON records for the plagiarism project.\n\nUsage:\n  python src/preprocess/extract_perfile.py <file_or_dir> [outdir]\n\nExample:\n  python src/preprocess/extract_perfile.py submissions/ data/processed/files\n  python src/preprocess/extract_perfile.py submissions/A.py data/processed/files\n\"\"\"\nimport ast\nimport sys\nimport os\nimport json\nfrom collections import Counter\nfrom radon.complexity import cc_visit\nimport hashlib\n\nclass NameNormalizer(v1.NodeTransformer):\n    \"\"\"\n    Replace identifier names with generic tokens: var1, var2, func1, ...\n    This yields canonical code that ignores identifier renaming.\n    \"\"\"\n\n    def f1(v2):\n        v3().__init__()\n        v2.name_map = {}\n        v2.var_count = 0\n        v2.func_count = 0\n\n    def f2(v2, v4):\n        if v4 not in v2.name_map:\n            v2.var_count += 1\n            v2.name_map[v4] = f'v{v2.var_count}'\n        return v2.name_map[v4]\n\n    def f3(v2, v4):\n        if v4 not in v2.name_map:\n            v2.func_count += 1\n            v2.name_map[v4] = f'f{v2.func_count}'\n        return v2.name_map[v4]\n\n    def f4(v2, v5):\n        if v6(v5.ctx, (v1.Store, v1.Load, v1.Del)):\n            v7 = v2._new_var(v5.id)\n            return v1.copy_location(v1.Name(id=v7, ctx=v5.ctx), v5)\n        return v5\n\n    def f5(v2, v5):\n        v8 = v2._new_func(v5.name)\n        v5.name = v8\n        for v9 in v5.args.args:\n            v9.arg = v2._new_var(v9.arg)\n        v2.generic_visit(v5)\n        return v5\n\ndef f6(v5: v1.AST) -> v12:\n    \"\"\"\n    Deterministic hash of an AST subtree.\n    Uses ast.dump with sorted attributes to stabilize representation.\n    \"\"\"\n    v10 = v1.dump(v5, include_attributes=False)\n    return v11.sha256(v10.encode('utf8')).hexdigest()\n\ndef f7(v13):\n    with v14(v13, 'r', encoding='utf8') as v15:\n        v16 = v15.read()\n    try:\n        v17 = v1.parse(v16)\n    except v18 as e:\n        raise v19(f'Failed to parse {v13}: {v20}')\n    v21 = v16.count('\\n') + 1\n    v22 = v23()\n    for v5 in v1.walk(v17):\n        if v6(v5, v1.Import):\n            for v24 in v5.names:\n                v22.add(v24.name.split('.')[0])\n        elif v6(v5, v1.ImportFrom):\n            if v5.module:\n                v22.add(v5.module.split('.')[0])\n    v25 = [v26(v24).__name__ for v24 in v1.walk(v17)]\n    v27 = v28(v29(v25))\n    v30 = []\n    for v24 in v1.walk(v17):\n        if v6(v24, v1.FunctionDef):\n            v30.append({'name': v24.name, 'args': v31(v24.args.args), 'lineno': v32(v24, 'lineno', None), 'end_lineno': v32(v24, 'end_lineno', None)})\n    try:\n        v33 = v34(v16)\n        v35 = [v36.complexity for v36 in v33]\n        v37 = v38(v35) / v31(v35) if v35 else 0\n        v39 = v40(v35) if v35 else 0\n    except v18:\n        v37 = 0\n        v39 = 0\n    v41 = [v24.id for v24 in v1.walk(v17) if v6(v24, v1.Name)]\n    v42 = v29(v41).most_common(20)\n    v43 = []\n    for v24 in v1.walk(v17):\n        if v6(v24, (v1.FunctionDef, v1.If, v1.For, v1.While, v1.With, v1.Try)):\n            v43.append(v24)\n    v44 = [f6(v24) for v24 in v43[:200]]\n    try:\n        v45 = v46()\n        v47 = v45.visit(v1.parse(v16))\n        v1.fix_missing_locations(v47)\n        v48 = v1.unparse(v47) if v49(v1, 'unparse') else v1.dump(v47)\n    except v18:\n        v48 = ''\n    v50 = {'path': v13, 'loc': v21, 'imports': v51(v52(v22)), 'node_hist': v27, 'num_functions': v31(v30), 'functions': v30, 'avg_cc': v37, 'max_cc': v39, 'top_idents': v42, 'subtree_hashes': v44, 'canonical_code': v48}\n    return v50\n\ndef f8():\n    if v31(v53.argv) < 2:\n        v54('Usage: extract_perfile.py <file_or_dir> [outdir]')\n        v53.exit(1)\n    v55 = v53.argv[1]\n    v56 = v53.argv[2] if v31(v53.argv) > 2 else 'data/processed/files'\n    v57.makedirs(v56, exist_ok=True)\n    v58 = []\n    if v57.path.isdir(v55):\n        for v59 in v57.listdir(v55):\n            if v59.endswith('.py'):\n                v58.append(v57.path.join(v55, v59))\n    else:\n        v58 = [v55]\n    for v60 in v58:\n        try:\n            v61 = f7(v60)\n            v62 = v57.path.splitext(v57.path.basename(v60))[0]\n            v63 = v57.path.join(v56, v62 + '.json')\n            with v14(v63, 'w', encoding='utf8') as v64:\n                v65.dump(v61, v64, indent=2)\n            v54('WROTE:', v63)\n        except v18 as e:\n            v54('ERROR processing', v60, v20)\nif v66 == '__main__':\n    f8()"
+}

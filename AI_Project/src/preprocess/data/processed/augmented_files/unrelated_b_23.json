@@ -1,0 +1,83 @@
+{
+  "path": "data/augmented\\unrelated_b_23.py",
+  "loc": 14,
+  "imports": [
+    "math"
+  ],
+  "node_hist": {
+    "Module": 1,
+    "Import": 1,
+    "FunctionDef": 1,
+    "Assign": 2,
+    "Expr": 1,
+    "alias": 1,
+    "arguments": 1,
+    "For": 1,
+    "Return": 1,
+    "Name": 15,
+    "Call": 4,
+    "arg": 1,
+    "Constant": 7,
+    "If": 1,
+    "Store": 5,
+    "BinOp": 2,
+    "Compare": 1,
+    "AugAssign": 2,
+    "Load": 11,
+    "Add": 3,
+    "Eq": 1,
+    "Mod": 1,
+    "Attribute": 1
+  },
+  "num_functions": 1,
+  "functions": [
+    {
+      "name": "factorial_sum",
+      "args": 1,
+      "lineno": 3,
+      "end_lineno": 10
+    }
+  ],
+  "avg_cc": 3.0,
+  "max_cc": 3,
+  "top_idents": [
+    [
+      "total",
+      4
+    ],
+    [
+      "i",
+      4
+    ],
+    [
+      "result",
+      2
+    ],
+    [
+      "factorial_sum",
+      1
+    ],
+    [
+      "print",
+      1
+    ],
+    [
+      "range",
+      1
+    ],
+    [
+      "n",
+      1
+    ],
+    [
+      "math",
+      1
+    ]
+  ],
+  "subtree_hashes": [
+    "3f84eccfd8a84495efb919878566f99a63e98a4256a76286ad763321b0dd6bd1",
+    "5e5c0b1678e2fa6a16e37fe7bb0fef0e4745c25bb819c6ae4875606ca09b2657",
+    "528ba37349cc681aee85f73603cdd4c9d4c69886032beebd74cf067558d34437"
+  ],
+  "canonical_code": "import math\n\ndef f1(v1):\n    v2 = 0\n    for v3 in v4(1, v1 + 1):\n        if v3 % 2 == 0:\n            v2 += v5.factorial(v3)\n        else:\n            v2 += v3\n    return v2\nv6 = f1(5)\nv7('Result:', v6)"
+}
