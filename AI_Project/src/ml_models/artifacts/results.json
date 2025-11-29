@@ -1,6 +1,6 @@
 {
   "logistic_regression": {
-    "train_time": 0.0059506893157958984,
+    "train_time": 0.03478288650512695,
     "train_accuracy": 1.0,
     "test_accuracy": 1.0,
     "precision": 1.0,
@@ -42,7 +42,7 @@
     "cv_f1_std": 0.0
   },
   "random_forest": {
-    "train_time": 0.2372581958770752,
+    "train_time": 0.418013334274292,
     "train_accuracy": 1.0,
     "test_accuracy": 1.0,
     "precision": 1.0,
@@ -99,7 +99,7 @@
     ]
   },
   "svm": {
-    "train_time": 0.0026597976684570312,
+    "train_time": 0.008405208587646484,
     "train_accuracy": 1.0,
     "test_accuracy": 1.0,
     "precision": 1.0,
@@ -141,7 +141,7 @@
     "cv_f1_std": 0.0
   },
   "deep_neural_network": {
-    "train_time": 18.97148609161377,
+    "train_time": 32.96158266067505,
     "train_accuracy": 1.0,
     "test_accuracy": 1.0,
     "precision": 1.0,
@@ -174,18 +174,18 @@
       ],
       "thresholds": [
         Infinity,
-        0.9639632701873779,
-        0.9400333762168884,
-        0.001982456538826227
+        0.9562556743621826,
+        0.9336291551589966,
+        0.0017085422296077013
       ]
     },
     "cv_f1_mean": 1.0,
     "cv_f1_std": 0.0,
     "training_history": {
       "final_epoch": 100,
-      "final_train_loss": 0.32604172825813293,
-      "final_val_loss": 0.28235605359077454,
-      "final_train_accuracy": 0.9714285731315613,
+      "final_train_loss": 0.2684553563594818,
+      "final_val_loss": 0.19667847454547882,
+      "final_train_accuracy": 1.0,
       "final_val_accuracy": 1.0
     }
   }
