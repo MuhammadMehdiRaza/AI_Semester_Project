@@ -1,0 +1,4802 @@
+[
+  {
+    "pair_id": 0,
+    "original_file": "code_orig_0.py",
+    "transformed_file": "code_trans_0.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "strings"
+  },
+  {
+    "pair_id": 1,
+    "original_file": "code_orig_1.py",
+    "transformed_file": "code_trans_1.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 2,
+    "original_file": "code_orig_2.py",
+    "transformed_file": "code_trans_2.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "web_programming"
+  },
+  {
+    "pair_id": 3,
+    "original_file": "code_orig_3.py",
+    "transformed_file": "code_trans_3.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "bit_manipulation"
+  },
+  {
+    "pair_id": 4,
+    "original_file": "code_orig_4.py",
+    "transformed_file": "code_trans_4.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "physics"
+  },
+  {
+    "pair_id": 5,
+    "original_file": "code_orig_5.py",
+    "transformed_file": "code_trans_5.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "genetic_algorithm"
+  },
+  {
+    "pair_id": 6,
+    "original_file": "code_orig_6.py",
+    "transformed_file": "code_trans_6.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "matrix"
+  },
+  {
+    "pair_id": 7,
+    "original_file": "code_orig_7.py",
+    "transformed_file": "code_trans_7.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "electronics"
+  },
+  {
+    "pair_id": 8,
+    "original_file": "code_orig_8.py",
+    "transformed_file": "code_trans_8.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "dynamic_programming"
+  },
+  {
+    "pair_id": 9,
+    "original_file": "code_orig_9.py",
+    "transformed_file": "code_trans_9.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "graphs"
+  },
+  {
+    "pair_id": 10,
+    "original_file": "code_orig_10.py",
+    "transformed_file": "code_trans_10.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "geodesy"
+  },
+  {
+    "pair_id": 11,
+    "original_file": "code_orig_11.py",
+    "transformed_file": "code_trans_11.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "neural_network"
+  },
+  {
+    "pair_id": 12,
+    "original_file": "code_orig_12.py",
+    "transformed_file": "code_trans_12.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "searches"
+  },
+  {
+    "pair_id": 13,
+    "original_file": "code_orig_13.py",
+    "transformed_file": "code_trans_13.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "bit_manipulation"
+  },
+  {
+    "pair_id": 14,
+    "original_file": "code_orig_14.py",
+    "transformed_file": "code_trans_14.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "strings"
+  },
+  {
+    "pair_id": 15,
+    "original_file": "code_orig_15.py",
+    "transformed_file": "code_trans_15.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "audio_filters"
+  },
+  {
+    "pair_id": 16,
+    "original_file": "code_orig_16.py",
+    "transformed_file": "code_trans_16.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "sorts"
+  },
+  {
+    "pair_id": 17,
+    "original_file": "code_orig_17.py",
+    "transformed_file": "code_trans_17.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "bit_manipulation"
+  },
+  {
+    "pair_id": 18,
+    "original_file": "code_orig_18.py",
+    "transformed_file": "code_trans_18.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "dynamic_programming"
+  },
+  {
+    "pair_id": 19,
+    "original_file": "code_orig_19.py",
+    "transformed_file": "code_trans_19.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "sorts"
+  },
+  {
+    "pair_id": 20,
+    "original_file": "code_orig_20.py",
+    "transformed_file": "code_trans_20.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "divide_and_conquer"
+  },
+  {
+    "pair_id": 21,
+    "original_file": "code_orig_21.py",
+    "transformed_file": "code_trans_21.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "dynamic_programming"
+  },
+  {
+    "pair_id": 22,
+    "original_file": "code_orig_22.py",
+    "transformed_file": "code_trans_22.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "divide_and_conquer"
+  },
+  {
+    "pair_id": 23,
+    "original_file": "code_orig_23.py",
+    "transformed_file": "code_trans_23.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "linear_algebra"
+  },
+  {
+    "pair_id": 24,
+    "original_file": "code_orig_24.py",
+    "transformed_file": "code_trans_24.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "ciphers"
+  },
+  {
+    "pair_id": 25,
+    "original_file": "code_orig_25.py",
+    "transformed_file": "code_trans_25.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 26,
+    "original_file": "code_orig_26.py",
+    "transformed_file": "code_trans_26.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "machine_learning"
+  },
+  {
+    "pair_id": 27,
+    "original_file": "code_orig_27.py",
+    "transformed_file": "code_trans_27.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "linear_programming"
+  },
+  {
+    "pair_id": 28,
+    "original_file": "code_orig_28.py",
+    "transformed_file": "code_trans_28.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "web_programming"
+  },
+  {
+    "pair_id": 29,
+    "original_file": "code_orig_29.py",
+    "transformed_file": "code_trans_29.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "financial"
+  },
+  {
+    "pair_id": 30,
+    "original_file": "code_orig_30.py",
+    "transformed_file": "code_trans_30.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "physics"
+  },
+  {
+    "pair_id": 31,
+    "original_file": "code_orig_31.py",
+    "transformed_file": "code_trans_31.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "machine_learning"
+  },
+  {
+    "pair_id": 32,
+    "original_file": "code_orig_32.py",
+    "transformed_file": "code_trans_32.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "greedy_methods"
+  },
+  {
+    "pair_id": 33,
+    "original_file": "code_orig_33.py",
+    "transformed_file": "code_trans_33.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "geodesy"
+  },
+  {
+    "pair_id": 34,
+    "original_file": "code_orig_34.py",
+    "transformed_file": "code_trans_34.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "bit_manipulation"
+  },
+  {
+    "pair_id": 35,
+    "original_file": "code_orig_35.py",
+    "transformed_file": "code_trans_35.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "machine_learning"
+  },
+  {
+    "pair_id": 36,
+    "original_file": "code_orig_36.py",
+    "transformed_file": "code_trans_36.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "greedy_methods"
+  },
+  {
+    "pair_id": 37,
+    "original_file": "code_orig_37.py",
+    "transformed_file": "code_trans_37.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "graphs"
+  },
+  {
+    "pair_id": 38,
+    "original_file": "code_orig_38.py",
+    "transformed_file": "code_trans_38.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "data_compression"
+  },
+  {
+    "pair_id": 39,
+    "original_file": "code_orig_39.py",
+    "transformed_file": "code_trans_39.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "linear_algebra"
+  },
+  {
+    "pair_id": 40,
+    "original_file": "code_orig_40.py",
+    "transformed_file": "code_trans_40.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "bit_manipulation"
+  },
+  {
+    "pair_id": 41,
+    "original_file": "code_orig_41.py",
+    "transformed_file": "code_trans_41.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "boolean_algebra"
+  },
+  {
+    "pair_id": 42,
+    "original_file": "code_orig_42.py",
+    "transformed_file": "code_trans_42.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "financial"
+  },
+  {
+    "pair_id": 43,
+    "original_file": "code_orig_43.py",
+    "transformed_file": "code_trans_43.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "financial"
+  },
+  {
+    "pair_id": 44,
+    "original_file": "code_orig_44.py",
+    "transformed_file": "code_trans_44.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "financial"
+  },
+  {
+    "pair_id": 45,
+    "original_file": "code_orig_45.py",
+    "transformed_file": "code_trans_45.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "financial"
+  },
+  {
+    "pair_id": 46,
+    "original_file": "code_orig_46.py",
+    "transformed_file": "code_trans_46.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "scheduling"
+  },
+  {
+    "pair_id": 47,
+    "original_file": "code_orig_47.py",
+    "transformed_file": "code_trans_47.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "genetic_algorithm"
+  },
+  {
+    "pair_id": 48,
+    "original_file": "code_orig_48.py",
+    "transformed_file": "code_trans_48.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 49,
+    "original_file": "code_orig_49.py",
+    "transformed_file": "code_trans_49.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "scripts"
+  },
+  {
+    "pair_id": 50,
+    "original_file": "code_orig_50.py",
+    "transformed_file": "code_trans_50.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "conversions"
+  },
+  {
+    "pair_id": 51,
+    "original_file": "code_orig_51.py",
+    "transformed_file": "code_trans_51.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "maths"
+  },
+  {
+    "pair_id": 52,
+    "original_file": "code_orig_52.py",
+    "transformed_file": "code_trans_52.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "maths"
+  },
+  {
+    "pair_id": 53,
+    "original_file": "code_orig_53.py",
+    "transformed_file": "code_trans_53.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "machine_learning"
+  },
+  {
+    "pair_id": 54,
+    "original_file": "code_orig_54.py",
+    "transformed_file": "code_trans_54.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "neural_network"
+  },
+  {
+    "pair_id": 55,
+    "original_file": "code_orig_55.py",
+    "transformed_file": "code_trans_55.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "hashes"
+  },
+  {
+    "pair_id": 56,
+    "original_file": "code_orig_56.py",
+    "transformed_file": "code_trans_56.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "dynamic_programming"
+  },
+  {
+    "pair_id": 57,
+    "original_file": "code_orig_57.py",
+    "transformed_file": "code_trans_57.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "graphs"
+  },
+  {
+    "pair_id": 58,
+    "original_file": "code_orig_58.py",
+    "transformed_file": "code_trans_58.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "linear_algebra"
+  },
+  {
+    "pair_id": 59,
+    "original_file": "code_orig_59.py",
+    "transformed_file": "code_trans_59.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "maths"
+  },
+  {
+    "pair_id": 60,
+    "original_file": "code_orig_60.py",
+    "transformed_file": "code_trans_60.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "networking_flow"
+  },
+  {
+    "pair_id": 61,
+    "original_file": "code_orig_61.py",
+    "transformed_file": "code_trans_61.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "web_programming"
+  },
+  {
+    "pair_id": 62,
+    "original_file": "code_orig_62.py",
+    "transformed_file": "code_trans_62.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "backtracking"
+  },
+  {
+    "pair_id": 63,
+    "original_file": "code_orig_63.py",
+    "transformed_file": "code_trans_63.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "greedy_methods"
+  },
+  {
+    "pair_id": 64,
+    "original_file": "code_orig_64.py",
+    "transformed_file": "code_trans_64.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "conversions"
+  },
+  {
+    "pair_id": 65,
+    "original_file": "code_orig_65.py",
+    "transformed_file": "code_trans_65.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "strings"
+  },
+  {
+    "pair_id": 66,
+    "original_file": "code_orig_66.py",
+    "transformed_file": "code_trans_66.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "greedy_methods"
+  },
+  {
+    "pair_id": 67,
+    "original_file": "code_orig_67.py",
+    "transformed_file": "code_trans_67.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "ciphers"
+  },
+  {
+    "pair_id": 68,
+    "original_file": "code_orig_68.py",
+    "transformed_file": "code_trans_68.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "physics"
+  },
+  {
+    "pair_id": 69,
+    "original_file": "code_orig_69.py",
+    "transformed_file": "code_trans_69.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "graphics"
+  },
+  {
+    "pair_id": 70,
+    "original_file": "code_orig_70.py",
+    "transformed_file": "code_trans_70.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "digital_image_processing"
+  },
+  {
+    "pair_id": 71,
+    "original_file": "code_orig_71.py",
+    "transformed_file": "code_trans_71.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "strings"
+  },
+  {
+    "pair_id": 72,
+    "original_file": "code_orig_72.py",
+    "transformed_file": "code_trans_72.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "electronics"
+  },
+  {
+    "pair_id": 73,
+    "original_file": "code_orig_73.py",
+    "transformed_file": "code_trans_73.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "maths"
+  },
+  {
+    "pair_id": 74,
+    "original_file": "code_orig_74.py",
+    "transformed_file": "code_trans_74.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "file_transfer"
+  },
+  {
+    "pair_id": 75,
+    "original_file": "code_orig_75.py",
+    "transformed_file": "code_trans_75.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "graphs"
+  },
+  {
+    "pair_id": 76,
+    "original_file": "code_orig_76.py",
+    "transformed_file": "code_trans_76.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "hashes"
+  },
+  {
+    "pair_id": 77,
+    "original_file": "code_orig_77.py",
+    "transformed_file": "code_trans_77.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "matrix"
+  },
+  {
+    "pair_id": 78,
+    "original_file": "code_orig_78.py",
+    "transformed_file": "code_trans_78.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "graphs"
+  },
+  {
+    "pair_id": 79,
+    "original_file": "code_orig_79.py",
+    "transformed_file": "code_trans_79.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "graphics"
+  },
+  {
+    "pair_id": 80,
+    "original_file": "code_orig_80.py",
+    "transformed_file": "code_trans_80.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "greedy_methods"
+  },
+  {
+    "pair_id": 81,
+    "original_file": "code_orig_81.py",
+    "transformed_file": "code_trans_81.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "web_programming"
+  },
+  {
+    "pair_id": 82,
+    "original_file": "code_orig_82.py",
+    "transformed_file": "code_trans_82.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "scripts"
+  },
+  {
+    "pair_id": 83,
+    "original_file": "code_orig_83.py",
+    "transformed_file": "code_trans_83.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "boolean_algebra"
+  },
+  {
+    "pair_id": 84,
+    "original_file": "code_orig_84.py",
+    "transformed_file": "code_trans_84.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "blockchain"
+  },
+  {
+    "pair_id": 85,
+    "original_file": "code_orig_85.py",
+    "transformed_file": "code_trans_85.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "scripts"
+  },
+  {
+    "pair_id": 86,
+    "original_file": "code_orig_86.py",
+    "transformed_file": "code_trans_86.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "divide_and_conquer"
+  },
+  {
+    "pair_id": 87,
+    "original_file": "code_orig_87.py",
+    "transformed_file": "code_trans_87.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "data_compression"
+  },
+  {
+    "pair_id": 88,
+    "original_file": "code_orig_88.py",
+    "transformed_file": "code_trans_88.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "ciphers"
+  },
+  {
+    "pair_id": 89,
+    "original_file": "code_orig_89.py",
+    "transformed_file": "code_trans_89.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "strings"
+  },
+  {
+    "pair_id": 90,
+    "original_file": "code_orig_90.py",
+    "transformed_file": "code_trans_90.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "physics"
+  },
+  {
+    "pair_id": 91,
+    "original_file": "code_orig_91.py",
+    "transformed_file": "code_trans_91.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "graphs"
+  },
+  {
+    "pair_id": 92,
+    "original_file": "code_orig_92.py",
+    "transformed_file": "code_trans_92.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "quantum"
+  },
+  {
+    "pair_id": 93,
+    "original_file": "code_orig_93.py",
+    "transformed_file": "code_trans_93.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "searches"
+  },
+  {
+    "pair_id": 94,
+    "original_file": "code_orig_94.py",
+    "transformed_file": "code_trans_94.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 95,
+    "original_file": "code_orig_95.py",
+    "transformed_file": "code_trans_95.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "strings"
+  },
+  {
+    "pair_id": 96,
+    "original_file": "code_orig_96.py",
+    "transformed_file": "code_trans_96.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "neural_network"
+  },
+  {
+    "pair_id": 97,
+    "original_file": "code_orig_97.py",
+    "transformed_file": "code_trans_97.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "physics"
+  },
+  {
+    "pair_id": 98,
+    "original_file": "code_orig_98.py",
+    "transformed_file": "code_trans_98.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "neural_network"
+  },
+  {
+    "pair_id": 99,
+    "original_file": "code_orig_99.py",
+    "transformed_file": "code_trans_99.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "machine_learning"
+  },
+  {
+    "pair_id": 100,
+    "original_file": "code_orig_100.py",
+    "transformed_file": "code_trans_100.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "cellular_automata"
+  },
+  {
+    "pair_id": 101,
+    "original_file": "code_orig_101.py",
+    "transformed_file": "code_trans_101.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "strings"
+  },
+  {
+    "pair_id": 102,
+    "original_file": "code_orig_102.py",
+    "transformed_file": "code_trans_102.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "data_compression"
+  },
+  {
+    "pair_id": 103,
+    "original_file": "code_orig_103.py",
+    "transformed_file": "code_trans_103.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "dynamic_programming"
+  },
+  {
+    "pair_id": 104,
+    "original_file": "code_orig_104.py",
+    "transformed_file": "code_trans_104.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "backtracking"
+  },
+  {
+    "pair_id": 105,
+    "original_file": "code_orig_105.py",
+    "transformed_file": "code_trans_105.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "file_transfer"
+  },
+  {
+    "pair_id": 106,
+    "original_file": "code_orig_106.py",
+    "transformed_file": "code_trans_106.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "blockchain"
+  },
+  {
+    "pair_id": 107,
+    "original_file": "code_orig_107.py",
+    "transformed_file": "code_trans_107.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "graphs"
+  },
+  {
+    "pair_id": 108,
+    "original_file": "code_orig_108.py",
+    "transformed_file": "code_trans_108.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "sorts"
+  },
+  {
+    "pair_id": 109,
+    "original_file": "code_orig_109.py",
+    "transformed_file": "code_trans_109.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "bit_manipulation"
+  },
+  {
+    "pair_id": 110,
+    "original_file": "code_orig_110.py",
+    "transformed_file": "code_trans_110.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "fractals"
+  },
+  {
+    "pair_id": 111,
+    "original_file": "code_orig_111.py",
+    "transformed_file": "code_trans_111.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "physics"
+  },
+  {
+    "pair_id": 112,
+    "original_file": "code_orig_112.py",
+    "transformed_file": "code_trans_112.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "networking_flow"
+  },
+  {
+    "pair_id": 113,
+    "original_file": "code_orig_113.py",
+    "transformed_file": "code_trans_113.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "hashes"
+  },
+  {
+    "pair_id": 114,
+    "original_file": "code_orig_114.py",
+    "transformed_file": "code_trans_114.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "maths"
+  },
+  {
+    "pair_id": 115,
+    "original_file": "code_orig_115.py",
+    "transformed_file": "code_trans_115.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "data_structures"
+  },
+  {
+    "pair_id": 116,
+    "original_file": "code_orig_116.py",
+    "transformed_file": "code_trans_116.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "strings"
+  },
+  {
+    "pair_id": 117,
+    "original_file": "code_orig_117.py",
+    "transformed_file": "code_trans_117.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "genetic_algorithm"
+  },
+  {
+    "pair_id": 118,
+    "original_file": "code_orig_118.py",
+    "transformed_file": "code_trans_118.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "data_compression"
+  },
+  {
+    "pair_id": 119,
+    "original_file": "code_orig_119.py",
+    "transformed_file": "code_trans_119.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "computer_vision"
+  },
+  {
+    "pair_id": 120,
+    "original_file": "code_orig_120.py",
+    "transformed_file": "code_trans_120.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "conversions"
+  },
+  {
+    "pair_id": 121,
+    "original_file": "code_orig_121.py",
+    "transformed_file": "code_trans_121.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 122,
+    "original_file": "code_orig_122.py",
+    "transformed_file": "code_trans_122.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "scripts"
+  },
+  {
+    "pair_id": 123,
+    "original_file": "code_orig_123.py",
+    "transformed_file": "code_trans_123.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "matrix"
+  },
+  {
+    "pair_id": 124,
+    "original_file": "code_orig_124.py",
+    "transformed_file": "code_trans_124.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "computer_vision"
+  },
+  {
+    "pair_id": 125,
+    "original_file": "code_orig_125.py",
+    "transformed_file": "code_trans_125.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "sorts"
+  },
+  {
+    "pair_id": 126,
+    "original_file": "code_orig_126.py",
+    "transformed_file": "code_trans_126.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "financial"
+  },
+  {
+    "pair_id": 127,
+    "original_file": "code_orig_127.py",
+    "transformed_file": "code_trans_127.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "strings"
+  },
+  {
+    "pair_id": 128,
+    "original_file": "code_orig_128.py",
+    "transformed_file": "code_trans_128.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "hashes"
+  },
+  {
+    "pair_id": 129,
+    "original_file": "code_orig_129.py",
+    "transformed_file": "code_trans_129.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "linear_programming"
+  },
+  {
+    "pair_id": 130,
+    "original_file": "code_orig_130.py",
+    "transformed_file": "code_trans_130.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "bit_manipulation"
+  },
+  {
+    "pair_id": 131,
+    "original_file": "code_orig_131.py",
+    "transformed_file": "code_trans_131.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "backtracking"
+  },
+  {
+    "pair_id": 132,
+    "original_file": "code_orig_132.py",
+    "transformed_file": "code_trans_132.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "knapsack"
+  },
+  {
+    "pair_id": 133,
+    "original_file": "code_orig_133.py",
+    "transformed_file": "code_trans_133.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "machine_learning"
+  },
+  {
+    "pair_id": 134,
+    "original_file": "code_orig_134.py",
+    "transformed_file": "code_trans_134.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "sorts"
+  },
+  {
+    "pair_id": 135,
+    "original_file": "code_orig_135.py",
+    "transformed_file": "code_trans_135.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "networking_flow"
+  },
+  {
+    "pair_id": 136,
+    "original_file": "code_orig_136.py",
+    "transformed_file": "code_trans_136.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "dynamic_programming"
+  },
+  {
+    "pair_id": 137,
+    "original_file": "code_orig_137.py",
+    "transformed_file": "code_trans_137.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "data_structures"
+  },
+  {
+    "pair_id": 138,
+    "original_file": "code_orig_138.py",
+    "transformed_file": "code_trans_138.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "file_transfer"
+  },
+  {
+    "pair_id": 139,
+    "original_file": "code_orig_139.py",
+    "transformed_file": "code_trans_139.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "conversions"
+  },
+  {
+    "pair_id": 140,
+    "original_file": "code_orig_140.py",
+    "transformed_file": "code_trans_140.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "financial"
+  },
+  {
+    "pair_id": 141,
+    "original_file": "code_orig_141.py",
+    "transformed_file": "code_trans_141.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "divide_and_conquer"
+  },
+  {
+    "pair_id": 142,
+    "original_file": "code_orig_142.py",
+    "transformed_file": "code_trans_142.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "searches"
+  },
+  {
+    "pair_id": 143,
+    "original_file": "code_orig_143.py",
+    "transformed_file": "code_trans_143.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "ciphers"
+  },
+  {
+    "pair_id": 144,
+    "original_file": "code_orig_144.py",
+    "transformed_file": "code_trans_144.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "file_transfer"
+  },
+  {
+    "pair_id": 145,
+    "original_file": "code_orig_145.py",
+    "transformed_file": "code_trans_145.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "web_programming"
+  },
+  {
+    "pair_id": 146,
+    "original_file": "code_orig_146.py",
+    "transformed_file": "code_trans_146.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "digital_image_processing"
+  },
+  {
+    "pair_id": 147,
+    "original_file": "code_orig_147.py",
+    "transformed_file": "code_trans_147.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "conversions"
+  },
+  {
+    "pair_id": 148,
+    "original_file": "code_orig_148.py",
+    "transformed_file": "code_trans_148.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "data_structures"
+  },
+  {
+    "pair_id": 149,
+    "original_file": "code_orig_149.py",
+    "transformed_file": "code_trans_149.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "boolean_algebra"
+  },
+  {
+    "pair_id": 150,
+    "original_file": "code_orig_150.py",
+    "transformed_file": "code_trans_150.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "graphics"
+  },
+  {
+    "pair_id": 151,
+    "original_file": "code_orig_151.py",
+    "transformed_file": "code_trans_151.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "strings"
+  },
+  {
+    "pair_id": 152,
+    "original_file": "code_orig_152.py",
+    "transformed_file": "code_trans_152.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "audio_filters"
+  },
+  {
+    "pair_id": 153,
+    "original_file": "code_orig_153.py",
+    "transformed_file": "code_trans_153.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "searches"
+  },
+  {
+    "pair_id": 154,
+    "original_file": "code_orig_154.py",
+    "transformed_file": "code_trans_154.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "geodesy"
+  },
+  {
+    "pair_id": 155,
+    "original_file": "code_orig_155.py",
+    "transformed_file": "code_trans_155.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "networking_flow"
+  },
+  {
+    "pair_id": 156,
+    "original_file": "code_orig_156.py",
+    "transformed_file": "code_trans_156.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "blockchain"
+  },
+  {
+    "pair_id": 157,
+    "original_file": "code_orig_157.py",
+    "transformed_file": "code_trans_157.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "other"
+  },
+  {
+    "pair_id": 158,
+    "original_file": "code_orig_158.py",
+    "transformed_file": "code_trans_158.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "geodesy"
+  },
+  {
+    "pair_id": 159,
+    "original_file": "code_orig_159.py",
+    "transformed_file": "code_trans_159.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "other"
+  },
+  {
+    "pair_id": 160,
+    "original_file": "code_orig_160.py",
+    "transformed_file": "code_trans_160.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 161,
+    "original_file": "code_orig_161.py",
+    "transformed_file": "code_trans_161.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "dynamic_programming"
+  },
+  {
+    "pair_id": 162,
+    "original_file": "code_orig_162.py",
+    "transformed_file": "code_trans_162.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "other"
+  },
+  {
+    "pair_id": 163,
+    "original_file": "code_orig_163.py",
+    "transformed_file": "code_trans_163.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "sorts"
+  },
+  {
+    "pair_id": 164,
+    "original_file": "code_orig_164.py",
+    "transformed_file": "code_trans_164.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "maths"
+  },
+  {
+    "pair_id": 165,
+    "original_file": "code_orig_165.py",
+    "transformed_file": "code_trans_165.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "graphs"
+  },
+  {
+    "pair_id": 166,
+    "original_file": "code_orig_166.py",
+    "transformed_file": "code_trans_166.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "data_compression"
+  },
+  {
+    "pair_id": 167,
+    "original_file": "code_orig_167.py",
+    "transformed_file": "code_trans_167.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "ciphers"
+  },
+  {
+    "pair_id": 168,
+    "original_file": "code_orig_168.py",
+    "transformed_file": "code_trans_168.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "financial"
+  },
+  {
+    "pair_id": 169,
+    "original_file": "code_orig_169.py",
+    "transformed_file": "code_trans_169.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 170,
+    "original_file": "code_orig_170.py",
+    "transformed_file": "code_trans_170.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 171,
+    "original_file": "code_orig_171.py",
+    "transformed_file": "code_trans_171.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "neural_network"
+  },
+  {
+    "pair_id": 172,
+    "original_file": "code_orig_172.py",
+    "transformed_file": "code_trans_172.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "searches"
+  },
+  {
+    "pair_id": 173,
+    "original_file": "code_orig_173.py",
+    "transformed_file": "code_trans_173.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "networking_flow"
+  },
+  {
+    "pair_id": 174,
+    "original_file": "code_orig_174.py",
+    "transformed_file": "code_trans_174.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "ciphers"
+  },
+  {
+    "pair_id": 175,
+    "original_file": "code_orig_175.py",
+    "transformed_file": "code_trans_175.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "graphs"
+  },
+  {
+    "pair_id": 176,
+    "original_file": "code_orig_176.py",
+    "transformed_file": "code_trans_176.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "backtracking"
+  },
+  {
+    "pair_id": 177,
+    "original_file": "code_orig_177.py",
+    "transformed_file": "code_trans_177.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "maths"
+  },
+  {
+    "pair_id": 178,
+    "original_file": "code_orig_178.py",
+    "transformed_file": "code_trans_178.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "machine_learning"
+  },
+  {
+    "pair_id": 179,
+    "original_file": "code_orig_179.py",
+    "transformed_file": "code_trans_179.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "other"
+  },
+  {
+    "pair_id": 180,
+    "original_file": "code_orig_180.py",
+    "transformed_file": "code_trans_180.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "strings"
+  },
+  {
+    "pair_id": 181,
+    "original_file": "code_orig_181.py",
+    "transformed_file": "code_trans_181.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "blockchain"
+  },
+  {
+    "pair_id": 182,
+    "original_file": "code_orig_182.py",
+    "transformed_file": "code_trans_182.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "conversions"
+  },
+  {
+    "pair_id": 183,
+    "original_file": "code_orig_183.py",
+    "transformed_file": "code_trans_183.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "geometry"
+  },
+  {
+    "pair_id": 184,
+    "original_file": "code_orig_184.py",
+    "transformed_file": "code_trans_184.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "graphs"
+  },
+  {
+    "pair_id": 185,
+    "original_file": "code_orig_185.py",
+    "transformed_file": "code_trans_185.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "other"
+  },
+  {
+    "pair_id": 186,
+    "original_file": "code_orig_186.py",
+    "transformed_file": "code_trans_186.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "linear_algebra"
+  },
+  {
+    "pair_id": 187,
+    "original_file": "code_orig_187.py",
+    "transformed_file": "code_trans_187.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "searches"
+  },
+  {
+    "pair_id": 188,
+    "original_file": "code_orig_188.py",
+    "transformed_file": "code_trans_188.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "data_structures"
+  },
+  {
+    "pair_id": 189,
+    "original_file": "code_orig_189.py",
+    "transformed_file": "code_trans_189.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "linear_programming"
+  },
+  {
+    "pair_id": 190,
+    "original_file": "code_orig_190.py",
+    "transformed_file": "code_trans_190.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "financial"
+  },
+  {
+    "pair_id": 191,
+    "original_file": "code_orig_191.py",
+    "transformed_file": "code_trans_191.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "hashes"
+  },
+  {
+    "pair_id": 192,
+    "original_file": "code_orig_192.py",
+    "transformed_file": "code_trans_192.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "neural_network"
+  },
+  {
+    "pair_id": 193,
+    "original_file": "code_orig_193.py",
+    "transformed_file": "code_trans_193.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "hashes"
+  },
+  {
+    "pair_id": 194,
+    "original_file": "code_orig_194.py",
+    "transformed_file": "code_trans_194.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "linear_algebra"
+  },
+  {
+    "pair_id": 195,
+    "original_file": "code_orig_195.py",
+    "transformed_file": "code_trans_195.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "computer_vision"
+  },
+  {
+    "pair_id": 196,
+    "original_file": "code_orig_196.py",
+    "transformed_file": "code_trans_196.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "hashes"
+  },
+  {
+    "pair_id": 197,
+    "original_file": "code_orig_197.py",
+    "transformed_file": "code_trans_197.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "data_structures"
+  },
+  {
+    "pair_id": 198,
+    "original_file": "code_orig_198.py",
+    "transformed_file": "code_trans_198.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "neural_network"
+  },
+  {
+    "pair_id": 199,
+    "original_file": "code_orig_199.py",
+    "transformed_file": "code_trans_199.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "maths"
+  },
+  {
+    "pair_id": 200,
+    "original_file": "code_orig_200.py",
+    "transformed_file": "code_trans_200.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 201,
+    "original_file": "code_orig_201.py",
+    "transformed_file": "code_trans_201.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "maths"
+  },
+  {
+    "pair_id": 202,
+    "original_file": "code_orig_202.py",
+    "transformed_file": "code_trans_202.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "audio_filters"
+  },
+  {
+    "pair_id": 203,
+    "original_file": "code_orig_203.py",
+    "transformed_file": "code_trans_203.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "genetic_algorithm"
+  },
+  {
+    "pair_id": 204,
+    "original_file": "code_orig_204.py",
+    "transformed_file": "code_trans_204.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "knapsack"
+  },
+  {
+    "pair_id": 205,
+    "original_file": "code_orig_205.py",
+    "transformed_file": "code_trans_205.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "graphics"
+  },
+  {
+    "pair_id": 206,
+    "original_file": "code_orig_206.py",
+    "transformed_file": "code_trans_206.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "computer_vision"
+  },
+  {
+    "pair_id": 207,
+    "original_file": "code_orig_207.py",
+    "transformed_file": "code_trans_207.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "maths"
+  },
+  {
+    "pair_id": 208,
+    "original_file": "code_orig_208.py",
+    "transformed_file": "code_trans_208.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "geodesy"
+  },
+  {
+    "pair_id": 209,
+    "original_file": "code_orig_209.py",
+    "transformed_file": "code_trans_209.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "computer_vision"
+  },
+  {
+    "pair_id": 210,
+    "original_file": "code_orig_210.py",
+    "transformed_file": "code_trans_210.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "other"
+  },
+  {
+    "pair_id": 211,
+    "original_file": "code_orig_211.py",
+    "transformed_file": "code_trans_211.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "other"
+  },
+  {
+    "pair_id": 212,
+    "original_file": "code_orig_212.py",
+    "transformed_file": "code_trans_212.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "machine_learning"
+  },
+  {
+    "pair_id": 213,
+    "original_file": "code_orig_213.py",
+    "transformed_file": "code_trans_213.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "machine_learning"
+  },
+  {
+    "pair_id": 214,
+    "original_file": "code_orig_214.py",
+    "transformed_file": "code_trans_214.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "hashes"
+  },
+  {
+    "pair_id": 215,
+    "original_file": "code_orig_215.py",
+    "transformed_file": "code_trans_215.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "other"
+  },
+  {
+    "pair_id": 216,
+    "original_file": "code_orig_216.py",
+    "transformed_file": "code_trans_216.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 217,
+    "original_file": "code_orig_217.py",
+    "transformed_file": "code_trans_217.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "sorts"
+  },
+  {
+    "pair_id": 218,
+    "original_file": "code_orig_218.py",
+    "transformed_file": "code_trans_218.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "sorts"
+  },
+  {
+    "pair_id": 219,
+    "original_file": "code_orig_219.py",
+    "transformed_file": "code_trans_219.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "machine_learning"
+  },
+  {
+    "pair_id": 220,
+    "original_file": "code_orig_220.py",
+    "transformed_file": "code_trans_220.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "strings"
+  },
+  {
+    "pair_id": 221,
+    "original_file": "code_orig_221.py",
+    "transformed_file": "code_trans_221.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "blockchain"
+  },
+  {
+    "pair_id": 222,
+    "original_file": "code_orig_222.py",
+    "transformed_file": "code_trans_222.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 223,
+    "original_file": "code_orig_223.py",
+    "transformed_file": "code_trans_223.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "quantum"
+  },
+  {
+    "pair_id": 224,
+    "original_file": "code_orig_224.py",
+    "transformed_file": "code_trans_224.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 225,
+    "original_file": "code_orig_225.py",
+    "transformed_file": "code_trans_225.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "ciphers"
+  },
+  {
+    "pair_id": 226,
+    "original_file": "code_orig_226.py",
+    "transformed_file": "code_trans_226.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "greedy_methods"
+  },
+  {
+    "pair_id": 227,
+    "original_file": "code_orig_227.py",
+    "transformed_file": "code_trans_227.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "computer_vision"
+  },
+  {
+    "pair_id": 228,
+    "original_file": "code_orig_228.py",
+    "transformed_file": "code_trans_228.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "networking_flow"
+  },
+  {
+    "pair_id": 229,
+    "original_file": "code_orig_229.py",
+    "transformed_file": "code_trans_229.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "other"
+  },
+  {
+    "pair_id": 230,
+    "original_file": "code_orig_230.py",
+    "transformed_file": "code_trans_230.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 231,
+    "original_file": "code_orig_231.py",
+    "transformed_file": "code_trans_231.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "other"
+  },
+  {
+    "pair_id": 232,
+    "original_file": "code_orig_232.py",
+    "transformed_file": "code_trans_232.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "ciphers"
+  },
+  {
+    "pair_id": 233,
+    "original_file": "code_orig_233.py",
+    "transformed_file": "code_trans_233.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "genetic_algorithm"
+  },
+  {
+    "pair_id": 234,
+    "original_file": "code_orig_234.py",
+    "transformed_file": "code_trans_234.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "financial"
+  },
+  {
+    "pair_id": 235,
+    "original_file": "code_orig_235.py",
+    "transformed_file": "code_trans_235.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "bit_manipulation"
+  },
+  {
+    "pair_id": 236,
+    "original_file": "code_orig_236.py",
+    "transformed_file": "code_trans_236.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "knapsack"
+  },
+  {
+    "pair_id": 237,
+    "original_file": "code_orig_237.py",
+    "transformed_file": "code_trans_237.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "fractals"
+  },
+  {
+    "pair_id": 238,
+    "original_file": "code_orig_238.py",
+    "transformed_file": "code_trans_238.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "linear_programming"
+  },
+  {
+    "pair_id": 239,
+    "original_file": "code_orig_239.py",
+    "transformed_file": "code_trans_239.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "scheduling"
+  },
+  {
+    "pair_id": 240,
+    "original_file": "code_orig_240.py",
+    "transformed_file": "code_trans_240.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "hashes"
+  },
+  {
+    "pair_id": 241,
+    "original_file": "code_orig_241.py",
+    "transformed_file": "code_trans_241.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "searches"
+  },
+  {
+    "pair_id": 242,
+    "original_file": "code_orig_242.py",
+    "transformed_file": "code_trans_242.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "cellular_automata"
+  },
+  {
+    "pair_id": 243,
+    "original_file": "code_orig_243.py",
+    "transformed_file": "code_trans_243.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "knapsack"
+  },
+  {
+    "pair_id": 244,
+    "original_file": "code_orig_244.py",
+    "transformed_file": "code_trans_244.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 245,
+    "original_file": "code_orig_245.py",
+    "transformed_file": "code_trans_245.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "networking_flow"
+  },
+  {
+    "pair_id": 246,
+    "original_file": "code_orig_246.py",
+    "transformed_file": "code_trans_246.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "cellular_automata"
+  },
+  {
+    "pair_id": 247,
+    "original_file": "code_orig_247.py",
+    "transformed_file": "code_trans_247.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "financial"
+  },
+  {
+    "pair_id": 248,
+    "original_file": "code_orig_248.py",
+    "transformed_file": "code_trans_248.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "web_programming"
+  },
+  {
+    "pair_id": 249,
+    "original_file": "code_orig_249.py",
+    "transformed_file": "code_trans_249.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "bit_manipulation"
+  },
+  {
+    "pair_id": 250,
+    "original_file": "code_orig_250.py",
+    "transformed_file": "code_trans_250.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "data_compression"
+  },
+  {
+    "pair_id": 251,
+    "original_file": "code_orig_251.py",
+    "transformed_file": "code_trans_251.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "physics"
+  },
+  {
+    "pair_id": 252,
+    "original_file": "code_orig_252.py",
+    "transformed_file": "code_trans_252.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "strings"
+  },
+  {
+    "pair_id": 253,
+    "original_file": "code_orig_253.py",
+    "transformed_file": "code_trans_253.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "linear_algebra"
+  },
+  {
+    "pair_id": 254,
+    "original_file": "code_orig_254.py",
+    "transformed_file": "code_trans_254.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "web_programming"
+  },
+  {
+    "pair_id": 255,
+    "original_file": "code_orig_255.py",
+    "transformed_file": "code_trans_255.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "dynamic_programming"
+  },
+  {
+    "pair_id": 256,
+    "original_file": "code_orig_256.py",
+    "transformed_file": "code_trans_256.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "maths"
+  },
+  {
+    "pair_id": 257,
+    "original_file": "code_orig_257.py",
+    "transformed_file": "code_trans_257.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "linear_programming"
+  },
+  {
+    "pair_id": 258,
+    "original_file": "code_orig_258.py",
+    "transformed_file": "code_trans_258.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "knapsack"
+  },
+  {
+    "pair_id": 259,
+    "original_file": "code_orig_259.py",
+    "transformed_file": "code_trans_259.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "graphs"
+  },
+  {
+    "pair_id": 260,
+    "original_file": "code_orig_260.py",
+    "transformed_file": "code_trans_260.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "data_structures"
+  },
+  {
+    "pair_id": 261,
+    "original_file": "code_orig_261.py",
+    "transformed_file": "code_trans_261.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "boolean_algebra"
+  },
+  {
+    "pair_id": 262,
+    "original_file": "code_orig_262.py",
+    "transformed_file": "code_trans_262.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "sorts"
+  },
+  {
+    "pair_id": 263,
+    "original_file": "code_orig_263.py",
+    "transformed_file": "code_trans_263.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "matrix"
+  },
+  {
+    "pair_id": 264,
+    "original_file": "code_orig_264.py",
+    "transformed_file": "code_trans_264.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "digital_image_processing"
+  },
+  {
+    "pair_id": 265,
+    "original_file": "code_orig_265.py",
+    "transformed_file": "code_trans_265.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "data_structures"
+  },
+  {
+    "pair_id": 266,
+    "original_file": "code_orig_266.py",
+    "transformed_file": "code_trans_266.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "linear_programming"
+  },
+  {
+    "pair_id": 267,
+    "original_file": "code_orig_267.py",
+    "transformed_file": "code_trans_267.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 268,
+    "original_file": "code_orig_268.py",
+    "transformed_file": "code_trans_268.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "matrix"
+  },
+  {
+    "pair_id": 269,
+    "original_file": "code_orig_269.py",
+    "transformed_file": "code_trans_269.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "hashes"
+  },
+  {
+    "pair_id": 270,
+    "original_file": "code_orig_270.py",
+    "transformed_file": "code_trans_270.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "scripts"
+  },
+  {
+    "pair_id": 271,
+    "original_file": "code_orig_271.py",
+    "transformed_file": "code_trans_271.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "matrix"
+  },
+  {
+    "pair_id": 272,
+    "original_file": "code_orig_272.py",
+    "transformed_file": "code_trans_272.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "geodesy"
+  },
+  {
+    "pair_id": 273,
+    "original_file": "code_orig_273.py",
+    "transformed_file": "code_trans_273.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "backtracking"
+  },
+  {
+    "pair_id": 274,
+    "original_file": "code_orig_274.py",
+    "transformed_file": "code_trans_274.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "data_structures"
+  },
+  {
+    "pair_id": 275,
+    "original_file": "code_orig_275.py",
+    "transformed_file": "code_trans_275.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "blockchain"
+  },
+  {
+    "pair_id": 276,
+    "original_file": "code_orig_276.py",
+    "transformed_file": "code_trans_276.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "conversions"
+  },
+  {
+    "pair_id": 277,
+    "original_file": "code_orig_277.py",
+    "transformed_file": "code_trans_277.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "digital_image_processing"
+  },
+  {
+    "pair_id": 278,
+    "original_file": "code_orig_278.py",
+    "transformed_file": "code_trans_278.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "dynamic_programming"
+  },
+  {
+    "pair_id": 279,
+    "original_file": "code_orig_279.py",
+    "transformed_file": "code_trans_279.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "geodesy"
+  },
+  {
+    "pair_id": 280,
+    "original_file": "code_orig_280.py",
+    "transformed_file": "code_trans_280.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "knapsack"
+  },
+  {
+    "pair_id": 281,
+    "original_file": "code_orig_281.py",
+    "transformed_file": "code_trans_281.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "sorts"
+  },
+  {
+    "pair_id": 282,
+    "original_file": "code_orig_282.py",
+    "transformed_file": "code_trans_282.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "genetic_algorithm"
+  },
+  {
+    "pair_id": 283,
+    "original_file": "code_orig_283.py",
+    "transformed_file": "code_trans_283.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "neural_network"
+  },
+  {
+    "pair_id": 284,
+    "original_file": "code_orig_284.py",
+    "transformed_file": "code_trans_284.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "neural_network"
+  },
+  {
+    "pair_id": 285,
+    "original_file": "code_orig_285.py",
+    "transformed_file": "code_trans_285.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "blockchain"
+  },
+  {
+    "pair_id": 286,
+    "original_file": "code_orig_286.py",
+    "transformed_file": "code_trans_286.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "digital_image_processing"
+  },
+  {
+    "pair_id": 287,
+    "original_file": "code_orig_287.py",
+    "transformed_file": "code_trans_287.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "strings"
+  },
+  {
+    "pair_id": 288,
+    "original_file": "code_orig_288.py",
+    "transformed_file": "code_trans_288.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 289,
+    "original_file": "code_orig_289.py",
+    "transformed_file": "code_trans_289.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "dynamic_programming"
+  },
+  {
+    "pair_id": 290,
+    "original_file": "code_orig_290.py",
+    "transformed_file": "code_trans_290.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "maths"
+  },
+  {
+    "pair_id": 291,
+    "original_file": "code_orig_291.py",
+    "transformed_file": "code_trans_291.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "other"
+  },
+  {
+    "pair_id": 292,
+    "original_file": "code_orig_292.py",
+    "transformed_file": "code_trans_292.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "machine_learning"
+  },
+  {
+    "pair_id": 293,
+    "original_file": "code_orig_293.py",
+    "transformed_file": "code_trans_293.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "data_compression"
+  },
+  {
+    "pair_id": 294,
+    "original_file": "code_orig_294.py",
+    "transformed_file": "code_trans_294.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "ciphers"
+  },
+  {
+    "pair_id": 295,
+    "original_file": "code_orig_295.py",
+    "transformed_file": "code_trans_295.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "electronics"
+  },
+  {
+    "pair_id": 296,
+    "original_file": "code_orig_296.py",
+    "transformed_file": "code_trans_296.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "searches"
+  },
+  {
+    "pair_id": 297,
+    "original_file": "code_orig_297.py",
+    "transformed_file": "code_trans_297.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "neural_network"
+  },
+  {
+    "pair_id": 298,
+    "original_file": "code_orig_298.py",
+    "transformed_file": "code_trans_298.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "strings"
+  },
+  {
+    "pair_id": 299,
+    "original_file": "code_orig_299.py",
+    "transformed_file": "code_trans_299.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "matrix"
+  },
+  {
+    "pair_id": 300,
+    "original_file": "code_orig_300.py",
+    "transformed_file": "code_trans_300.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "greedy_methods"
+  },
+  {
+    "pair_id": 301,
+    "original_file": "code_orig_301.py",
+    "transformed_file": "code_trans_301.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "data_structures"
+  },
+  {
+    "pair_id": 302,
+    "original_file": "code_orig_302.py",
+    "transformed_file": "code_trans_302.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "data_compression"
+  },
+  {
+    "pair_id": 303,
+    "original_file": "code_orig_303.py",
+    "transformed_file": "code_trans_303.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "computer_vision"
+  },
+  {
+    "pair_id": 304,
+    "original_file": "code_orig_304.py",
+    "transformed_file": "code_trans_304.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "linear_algebra"
+  },
+  {
+    "pair_id": 305,
+    "original_file": "code_orig_305.py",
+    "transformed_file": "code_trans_305.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "bit_manipulation"
+  },
+  {
+    "pair_id": 306,
+    "original_file": "code_orig_306.py",
+    "transformed_file": "code_trans_306.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "graphics"
+  },
+  {
+    "pair_id": 307,
+    "original_file": "code_orig_307.py",
+    "transformed_file": "code_trans_307.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "file_transfer"
+  },
+  {
+    "pair_id": 308,
+    "original_file": "code_orig_308.py",
+    "transformed_file": "code_trans_308.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "electronics"
+  },
+  {
+    "pair_id": 309,
+    "original_file": "code_orig_309.py",
+    "transformed_file": "code_trans_309.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 310,
+    "original_file": "code_orig_310.py",
+    "transformed_file": "code_trans_310.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "physics"
+  },
+  {
+    "pair_id": 311,
+    "original_file": "code_orig_311.py",
+    "transformed_file": "code_trans_311.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "quantum"
+  },
+  {
+    "pair_id": 312,
+    "original_file": "code_orig_312.py",
+    "transformed_file": "code_trans_312.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "data_structures"
+  },
+  {
+    "pair_id": 313,
+    "original_file": "code_orig_313.py",
+    "transformed_file": "code_trans_313.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "data_structures"
+  },
+  {
+    "pair_id": 314,
+    "original_file": "code_orig_314.py",
+    "transformed_file": "code_trans_314.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "dynamic_programming"
+  },
+  {
+    "pair_id": 315,
+    "original_file": "code_orig_315.py",
+    "transformed_file": "code_trans_315.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "hashes"
+  },
+  {
+    "pair_id": 316,
+    "original_file": "code_orig_316.py",
+    "transformed_file": "code_trans_316.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "matrix"
+  },
+  {
+    "pair_id": 317,
+    "original_file": "code_orig_317.py",
+    "transformed_file": "code_trans_317.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "bit_manipulation"
+  },
+  {
+    "pair_id": 318,
+    "original_file": "code_orig_318.py",
+    "transformed_file": "code_trans_318.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "data_compression"
+  },
+  {
+    "pair_id": 319,
+    "original_file": "code_orig_319.py",
+    "transformed_file": "code_trans_319.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "divide_and_conquer"
+  },
+  {
+    "pair_id": 320,
+    "original_file": "code_orig_320.py",
+    "transformed_file": "code_trans_320.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "cellular_automata"
+  },
+  {
+    "pair_id": 321,
+    "original_file": "code_orig_321.py",
+    "transformed_file": "code_trans_321.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "graphics"
+  },
+  {
+    "pair_id": 322,
+    "original_file": "code_orig_322.py",
+    "transformed_file": "code_trans_322.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "audio_filters"
+  },
+  {
+    "pair_id": 323,
+    "original_file": "code_orig_323.py",
+    "transformed_file": "code_trans_323.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "bit_manipulation"
+  },
+  {
+    "pair_id": 324,
+    "original_file": "code_orig_324.py",
+    "transformed_file": "code_trans_324.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "knapsack"
+  },
+  {
+    "pair_id": 325,
+    "original_file": "code_orig_325.py",
+    "transformed_file": "code_trans_325.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "linear_programming"
+  },
+  {
+    "pair_id": 326,
+    "original_file": "code_orig_326.py",
+    "transformed_file": "code_trans_326.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "maths"
+  },
+  {
+    "pair_id": 327,
+    "original_file": "code_orig_327.py",
+    "transformed_file": "code_trans_327.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "file_transfer"
+  },
+  {
+    "pair_id": 328,
+    "original_file": "code_orig_328.py",
+    "transformed_file": "code_trans_328.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "graphs"
+  },
+  {
+    "pair_id": 329,
+    "original_file": "code_orig_329.py",
+    "transformed_file": "code_trans_329.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 330,
+    "original_file": "code_orig_330.py",
+    "transformed_file": "code_trans_330.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "electronics"
+  },
+  {
+    "pair_id": 331,
+    "original_file": "code_orig_331.py",
+    "transformed_file": "code_trans_331.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "knapsack"
+  },
+  {
+    "pair_id": 332,
+    "original_file": "code_orig_332.py",
+    "transformed_file": "code_trans_332.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "greedy_methods"
+  },
+  {
+    "pair_id": 333,
+    "original_file": "code_orig_333.py",
+    "transformed_file": "code_trans_333.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "networking_flow"
+  },
+  {
+    "pair_id": 334,
+    "original_file": "code_orig_334.py",
+    "transformed_file": "code_trans_334.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "data_structures"
+  },
+  {
+    "pair_id": 335,
+    "original_file": "code_orig_335.py",
+    "transformed_file": "code_trans_335.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 336,
+    "original_file": "code_orig_336.py",
+    "transformed_file": "code_trans_336.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "dynamic_programming"
+  },
+  {
+    "pair_id": 337,
+    "original_file": "code_orig_337.py",
+    "transformed_file": "code_trans_337.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 338,
+    "original_file": "code_orig_338.py",
+    "transformed_file": "code_trans_338.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "computer_vision"
+  },
+  {
+    "pair_id": 339,
+    "original_file": "code_orig_339.py",
+    "transformed_file": "code_trans_339.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "fractals"
+  },
+  {
+    "pair_id": 340,
+    "original_file": "code_orig_340.py",
+    "transformed_file": "code_trans_340.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "scheduling"
+  },
+  {
+    "pair_id": 341,
+    "original_file": "code_orig_341.py",
+    "transformed_file": "code_trans_341.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "web_programming"
+  },
+  {
+    "pair_id": 342,
+    "original_file": "code_orig_342.py",
+    "transformed_file": "code_trans_342.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "maths"
+  },
+  {
+    "pair_id": 343,
+    "original_file": "code_orig_343.py",
+    "transformed_file": "code_trans_343.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "ciphers"
+  },
+  {
+    "pair_id": 344,
+    "original_file": "code_orig_344.py",
+    "transformed_file": "code_trans_344.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "cellular_automata"
+  },
+  {
+    "pair_id": 345,
+    "original_file": "code_orig_345.py",
+    "transformed_file": "code_trans_345.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 346,
+    "original_file": "code_orig_346.py",
+    "transformed_file": "code_trans_346.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "computer_vision"
+  },
+  {
+    "pair_id": 347,
+    "original_file": "code_orig_347.py",
+    "transformed_file": "code_trans_347.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 348,
+    "original_file": "code_orig_348.py",
+    "transformed_file": "code_trans_348.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "networking_flow"
+  },
+  {
+    "pair_id": 349,
+    "original_file": "code_orig_349.py",
+    "transformed_file": "code_trans_349.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "divide_and_conquer"
+  },
+  {
+    "pair_id": 350,
+    "original_file": "code_orig_350.py",
+    "transformed_file": "code_trans_350.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "knapsack"
+  },
+  {
+    "pair_id": 351,
+    "original_file": "code_orig_351.py",
+    "transformed_file": "code_trans_351.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "data_compression"
+  },
+  {
+    "pair_id": 352,
+    "original_file": "code_orig_352.py",
+    "transformed_file": "code_trans_352.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "other"
+  },
+  {
+    "pair_id": 353,
+    "original_file": "code_orig_353.py",
+    "transformed_file": "code_trans_353.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 354,
+    "original_file": "code_orig_354.py",
+    "transformed_file": "code_trans_354.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "graphs"
+  },
+  {
+    "pair_id": 355,
+    "original_file": "code_orig_355.py",
+    "transformed_file": "code_trans_355.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "matrix"
+  },
+  {
+    "pair_id": 356,
+    "original_file": "code_orig_356.py",
+    "transformed_file": "code_trans_356.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "machine_learning"
+  },
+  {
+    "pair_id": 357,
+    "original_file": "code_orig_357.py",
+    "transformed_file": "code_trans_357.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "fuzzy_logic"
+  },
+  {
+    "pair_id": 358,
+    "original_file": "code_orig_358.py",
+    "transformed_file": "code_trans_358.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "data_structures"
+  },
+  {
+    "pair_id": 359,
+    "original_file": "code_orig_359.py",
+    "transformed_file": "code_trans_359.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "backtracking"
+  },
+  {
+    "pair_id": 360,
+    "original_file": "code_orig_360.py",
+    "transformed_file": "code_trans_360.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "web_programming"
+  },
+  {
+    "pair_id": 361,
+    "original_file": "code_orig_361.py",
+    "transformed_file": "code_trans_361.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "hashes"
+  },
+  {
+    "pair_id": 362,
+    "original_file": "code_orig_362.py",
+    "transformed_file": "code_trans_362.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "knapsack"
+  },
+  {
+    "pair_id": 363,
+    "original_file": "code_orig_363.py",
+    "transformed_file": "code_trans_363.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "backtracking"
+  },
+  {
+    "pair_id": 364,
+    "original_file": "code_orig_364.py",
+    "transformed_file": "code_trans_364.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "conversions"
+  },
+  {
+    "pair_id": 365,
+    "original_file": "code_orig_365.py",
+    "transformed_file": "code_trans_365.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "scheduling"
+  },
+  {
+    "pair_id": 366,
+    "original_file": "code_orig_366.py",
+    "transformed_file": "code_trans_366.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "hashes"
+  },
+  {
+    "pair_id": 367,
+    "original_file": "code_orig_367.py",
+    "transformed_file": "code_trans_367.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "maths"
+  },
+  {
+    "pair_id": 368,
+    "original_file": "code_orig_368.py",
+    "transformed_file": "code_trans_368.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "graphics"
+  },
+  {
+    "pair_id": 369,
+    "original_file": "code_orig_369.py",
+    "transformed_file": "code_trans_369.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 370,
+    "original_file": "code_orig_370.py",
+    "transformed_file": "code_trans_370.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "graphics"
+  },
+  {
+    "pair_id": 371,
+    "original_file": "code_orig_371.py",
+    "transformed_file": "code_trans_371.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "scheduling"
+  },
+  {
+    "pair_id": 372,
+    "original_file": "code_orig_372.py",
+    "transformed_file": "code_trans_372.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "other"
+  },
+  {
+    "pair_id": 373,
+    "original_file": "code_orig_373.py",
+    "transformed_file": "code_trans_373.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "financial"
+  },
+  {
+    "pair_id": 374,
+    "original_file": "code_orig_374.py",
+    "transformed_file": "code_trans_374.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "neural_network"
+  },
+  {
+    "pair_id": 375,
+    "original_file": "code_orig_375.py",
+    "transformed_file": "code_trans_375.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "quantum"
+  },
+  {
+    "pair_id": 376,
+    "original_file": "code_orig_376.py",
+    "transformed_file": "code_trans_376.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "genetic_algorithm"
+  },
+  {
+    "pair_id": 377,
+    "original_file": "code_orig_377.py",
+    "transformed_file": "code_trans_377.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "bit_manipulation"
+  },
+  {
+    "pair_id": 378,
+    "original_file": "code_orig_378.py",
+    "transformed_file": "code_trans_378.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "maths"
+  },
+  {
+    "pair_id": 379,
+    "original_file": "code_orig_379.py",
+    "transformed_file": "code_trans_379.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "scripts"
+  },
+  {
+    "pair_id": 380,
+    "original_file": "code_orig_380.py",
+    "transformed_file": "code_trans_380.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "physics"
+  },
+  {
+    "pair_id": 381,
+    "original_file": "code_orig_381.py",
+    "transformed_file": "code_trans_381.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "graphics"
+  },
+  {
+    "pair_id": 382,
+    "original_file": "code_orig_382.py",
+    "transformed_file": "code_trans_382.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "boolean_algebra"
+  },
+  {
+    "pair_id": 383,
+    "original_file": "code_orig_383.py",
+    "transformed_file": "code_trans_383.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "boolean_algebra"
+  },
+  {
+    "pair_id": 384,
+    "original_file": "code_orig_384.py",
+    "transformed_file": "code_trans_384.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 385,
+    "original_file": "code_orig_385.py",
+    "transformed_file": "code_trans_385.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "hashes"
+  },
+  {
+    "pair_id": 386,
+    "original_file": "code_orig_386.py",
+    "transformed_file": "code_trans_386.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "scheduling"
+  },
+  {
+    "pair_id": 387,
+    "original_file": "code_orig_387.py",
+    "transformed_file": "code_trans_387.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "web_programming"
+  },
+  {
+    "pair_id": 388,
+    "original_file": "code_orig_388.py",
+    "transformed_file": "code_trans_388.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "searches"
+  },
+  {
+    "pair_id": 389,
+    "original_file": "code_orig_389.py",
+    "transformed_file": "code_trans_389.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "other"
+  },
+  {
+    "pair_id": 390,
+    "original_file": "code_orig_390.py",
+    "transformed_file": "code_trans_390.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "electronics"
+  },
+  {
+    "pair_id": 391,
+    "original_file": "code_orig_391.py",
+    "transformed_file": "code_trans_391.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "hashes"
+  },
+  {
+    "pair_id": 392,
+    "original_file": "code_orig_392.py",
+    "transformed_file": "code_trans_392.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "computer_vision"
+  },
+  {
+    "pair_id": 393,
+    "original_file": "code_orig_393.py",
+    "transformed_file": "code_trans_393.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "computer_vision"
+  },
+  {
+    "pair_id": 394,
+    "original_file": "code_orig_394.py",
+    "transformed_file": "code_trans_394.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "web_programming"
+  },
+  {
+    "pair_id": 395,
+    "original_file": "code_orig_395.py",
+    "transformed_file": "code_trans_395.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "computer_vision"
+  },
+  {
+    "pair_id": 396,
+    "original_file": "code_orig_396.py",
+    "transformed_file": "code_trans_396.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "audio_filters"
+  },
+  {
+    "pair_id": 397,
+    "original_file": "code_orig_397.py",
+    "transformed_file": "code_trans_397.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "scheduling"
+  },
+  {
+    "pair_id": 398,
+    "original_file": "code_orig_398.py",
+    "transformed_file": "code_trans_398.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "blockchain"
+  },
+  {
+    "pair_id": 399,
+    "original_file": "code_orig_399.py",
+    "transformed_file": "code_trans_399.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "scripts"
+  },
+  {
+    "pair_id": 400,
+    "original_file": "code_orig_400.py",
+    "transformed_file": "code_trans_400.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "linear_algebra"
+  },
+  {
+    "pair_id": 401,
+    "original_file": "code_orig_401.py",
+    "transformed_file": "code_trans_401.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "audio_filters"
+  },
+  {
+    "pair_id": 402,
+    "original_file": "code_orig_402.py",
+    "transformed_file": "code_trans_402.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "geodesy"
+  },
+  {
+    "pair_id": 403,
+    "original_file": "code_orig_403.py",
+    "transformed_file": "code_trans_403.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "digital_image_processing"
+  },
+  {
+    "pair_id": 404,
+    "original_file": "code_orig_404.py",
+    "transformed_file": "code_trans_404.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "divide_and_conquer"
+  },
+  {
+    "pair_id": 405,
+    "original_file": "code_orig_405.py",
+    "transformed_file": "code_trans_405.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "cellular_automata"
+  },
+  {
+    "pair_id": 406,
+    "original_file": "code_orig_406.py",
+    "transformed_file": "code_trans_406.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "cellular_automata"
+  },
+  {
+    "pair_id": 407,
+    "original_file": "code_orig_407.py",
+    "transformed_file": "code_trans_407.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "sorts"
+  },
+  {
+    "pair_id": 408,
+    "original_file": "code_orig_408.py",
+    "transformed_file": "code_trans_408.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "backtracking"
+  },
+  {
+    "pair_id": 409,
+    "original_file": "code_orig_409.py",
+    "transformed_file": "code_trans_409.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "scheduling"
+  },
+  {
+    "pair_id": 410,
+    "original_file": "code_orig_410.py",
+    "transformed_file": "code_trans_410.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "machine_learning"
+  },
+  {
+    "pair_id": 411,
+    "original_file": "code_orig_411.py",
+    "transformed_file": "code_trans_411.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 412,
+    "original_file": "code_orig_412.py",
+    "transformed_file": "code_trans_412.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "greedy_methods"
+  },
+  {
+    "pair_id": 413,
+    "original_file": "code_orig_413.py",
+    "transformed_file": "code_trans_413.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "knapsack"
+  },
+  {
+    "pair_id": 414,
+    "original_file": "code_orig_414.py",
+    "transformed_file": "code_trans_414.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "other"
+  },
+  {
+    "pair_id": 415,
+    "original_file": "code_orig_415.py",
+    "transformed_file": "code_trans_415.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 416,
+    "original_file": "code_orig_416.py",
+    "transformed_file": "code_trans_416.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "computer_vision"
+  },
+  {
+    "pair_id": 417,
+    "original_file": "code_orig_417.py",
+    "transformed_file": "code_trans_417.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "other"
+  },
+  {
+    "pair_id": 418,
+    "original_file": "code_orig_418.py",
+    "transformed_file": "code_trans_418.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "strings"
+  },
+  {
+    "pair_id": 419,
+    "original_file": "code_orig_419.py",
+    "transformed_file": "code_trans_419.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "genetic_algorithm"
+  },
+  {
+    "pair_id": 420,
+    "original_file": "code_orig_420.py",
+    "transformed_file": "code_trans_420.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "electronics"
+  },
+  {
+    "pair_id": 421,
+    "original_file": "code_orig_421.py",
+    "transformed_file": "code_trans_421.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 422,
+    "original_file": "code_orig_422.py",
+    "transformed_file": "code_trans_422.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "strings"
+  },
+  {
+    "pair_id": 423,
+    "original_file": "code_orig_423.py",
+    "transformed_file": "code_trans_423.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "data_structures"
+  },
+  {
+    "pair_id": 424,
+    "original_file": "code_orig_424.py",
+    "transformed_file": "code_trans_424.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "linear_programming"
+  },
+  {
+    "pair_id": 425,
+    "original_file": "code_orig_425.py",
+    "transformed_file": "code_trans_425.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "data_structures"
+  },
+  {
+    "pair_id": 426,
+    "original_file": "code_orig_426.py",
+    "transformed_file": "code_trans_426.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "bit_manipulation"
+  },
+  {
+    "pair_id": 427,
+    "original_file": "code_orig_427.py",
+    "transformed_file": "code_trans_427.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "computer_vision"
+  },
+  {
+    "pair_id": 428,
+    "original_file": "code_orig_428.py",
+    "transformed_file": "code_trans_428.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "linear_programming"
+  },
+  {
+    "pair_id": 429,
+    "original_file": "code_orig_429.py",
+    "transformed_file": "code_trans_429.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "hashes"
+  },
+  {
+    "pair_id": 430,
+    "original_file": "code_orig_430.py",
+    "transformed_file": "code_trans_430.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "sorts"
+  },
+  {
+    "pair_id": 431,
+    "original_file": "code_orig_431.py",
+    "transformed_file": "code_trans_431.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "matrix"
+  },
+  {
+    "pair_id": 432,
+    "original_file": "code_orig_432.py",
+    "transformed_file": "code_trans_432.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "other"
+  },
+  {
+    "pair_id": 433,
+    "original_file": "code_orig_433.py",
+    "transformed_file": "code_trans_433.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "other"
+  },
+  {
+    "pair_id": 434,
+    "original_file": "code_orig_434.py",
+    "transformed_file": "code_trans_434.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "electronics"
+  },
+  {
+    "pair_id": 435,
+    "original_file": "code_orig_435.py",
+    "transformed_file": "code_trans_435.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "computer_vision"
+  },
+  {
+    "pair_id": 436,
+    "original_file": "code_orig_436.py",
+    "transformed_file": "code_trans_436.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "graphs"
+  },
+  {
+    "pair_id": 437,
+    "original_file": "code_orig_437.py",
+    "transformed_file": "code_trans_437.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "maths"
+  },
+  {
+    "pair_id": 438,
+    "original_file": "code_orig_438.py",
+    "transformed_file": "code_trans_438.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "electronics"
+  },
+  {
+    "pair_id": 439,
+    "original_file": "code_orig_439.py",
+    "transformed_file": "code_trans_439.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "ciphers"
+  },
+  {
+    "pair_id": 440,
+    "original_file": "code_orig_440.py",
+    "transformed_file": "code_trans_440.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "strings"
+  },
+  {
+    "pair_id": 441,
+    "original_file": "code_orig_441.py",
+    "transformed_file": "code_trans_441.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "financial"
+  },
+  {
+    "pair_id": 442,
+    "original_file": "code_orig_442.py",
+    "transformed_file": "code_trans_442.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "other"
+  },
+  {
+    "pair_id": 443,
+    "original_file": "code_orig_443.py",
+    "transformed_file": "code_trans_443.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "maths"
+  },
+  {
+    "pair_id": 444,
+    "original_file": "code_orig_444.py",
+    "transformed_file": "code_trans_444.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "maths"
+  },
+  {
+    "pair_id": 445,
+    "original_file": "code_orig_445.py",
+    "transformed_file": "code_trans_445.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "neural_network"
+  },
+  {
+    "pair_id": 446,
+    "original_file": "code_orig_446.py",
+    "transformed_file": "code_trans_446.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "other"
+  },
+  {
+    "pair_id": 447,
+    "original_file": "code_orig_447.py",
+    "transformed_file": "code_trans_447.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "web_programming"
+  },
+  {
+    "pair_id": 448,
+    "original_file": "code_orig_448.py",
+    "transformed_file": "code_trans_448.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "genetic_algorithm"
+  },
+  {
+    "pair_id": 449,
+    "original_file": "code_orig_449.py",
+    "transformed_file": "code_trans_449.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "digital_image_processing"
+  },
+  {
+    "pair_id": 450,
+    "original_file": "code_orig_450.py",
+    "transformed_file": "code_trans_450.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "divide_and_conquer"
+  },
+  {
+    "pair_id": 451,
+    "original_file": "code_orig_451.py",
+    "transformed_file": "code_trans_451.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 452,
+    "original_file": "code_orig_452.py",
+    "transformed_file": "code_trans_452.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "hashes"
+  },
+  {
+    "pair_id": 453,
+    "original_file": "code_orig_453.py",
+    "transformed_file": "code_trans_453.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "file_transfer"
+  },
+  {
+    "pair_id": 454,
+    "original_file": "code_orig_454.py",
+    "transformed_file": "code_trans_454.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "geodesy"
+  },
+  {
+    "pair_id": 455,
+    "original_file": "code_orig_455.py",
+    "transformed_file": "code_trans_455.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "cellular_automata"
+  },
+  {
+    "pair_id": 456,
+    "original_file": "code_orig_456.py",
+    "transformed_file": "code_trans_456.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "geometry"
+  },
+  {
+    "pair_id": 457,
+    "original_file": "code_orig_457.py",
+    "transformed_file": "code_trans_457.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 458,
+    "original_file": "code_orig_458.py",
+    "transformed_file": "code_trans_458.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 459,
+    "original_file": "code_orig_459.py",
+    "transformed_file": "code_trans_459.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "data_structures"
+  },
+  {
+    "pair_id": 460,
+    "original_file": "code_orig_460.py",
+    "transformed_file": "code_trans_460.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "matrix"
+  },
+  {
+    "pair_id": 461,
+    "original_file": "code_orig_461.py",
+    "transformed_file": "code_trans_461.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "audio_filters"
+  },
+  {
+    "pair_id": 462,
+    "original_file": "code_orig_462.py",
+    "transformed_file": "code_trans_462.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "dynamic_programming"
+  },
+  {
+    "pair_id": 463,
+    "original_file": "code_orig_463.py",
+    "transformed_file": "code_trans_463.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "conversions"
+  },
+  {
+    "pair_id": 464,
+    "original_file": "code_orig_464.py",
+    "transformed_file": "code_trans_464.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "scheduling"
+  },
+  {
+    "pair_id": 465,
+    "original_file": "code_orig_465.py",
+    "transformed_file": "code_trans_465.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "physics"
+  },
+  {
+    "pair_id": 466,
+    "original_file": "code_orig_466.py",
+    "transformed_file": "code_trans_466.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "genetic_algorithm"
+  },
+  {
+    "pair_id": 467,
+    "original_file": "code_orig_467.py",
+    "transformed_file": "code_trans_467.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "graphs"
+  },
+  {
+    "pair_id": 468,
+    "original_file": "code_orig_468.py",
+    "transformed_file": "code_trans_468.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "conversions"
+  },
+  {
+    "pair_id": 469,
+    "original_file": "code_orig_469.py",
+    "transformed_file": "code_trans_469.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "computer_vision"
+  },
+  {
+    "pair_id": 470,
+    "original_file": "code_orig_470.py",
+    "transformed_file": "code_trans_470.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "maths"
+  },
+  {
+    "pair_id": 471,
+    "original_file": "code_orig_471.py",
+    "transformed_file": "code_trans_471.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "scripts"
+  },
+  {
+    "pair_id": 472,
+    "original_file": "code_orig_472.py",
+    "transformed_file": "code_trans_472.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "fuzzy_logic"
+  },
+  {
+    "pair_id": 473,
+    "original_file": "code_orig_473.py",
+    "transformed_file": "code_trans_473.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "other"
+  },
+  {
+    "pair_id": 474,
+    "original_file": "code_orig_474.py",
+    "transformed_file": "code_trans_474.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "linear_programming"
+  },
+  {
+    "pair_id": 475,
+    "original_file": "code_orig_475.py",
+    "transformed_file": "code_trans_475.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "conversions"
+  },
+  {
+    "pair_id": 476,
+    "original_file": "code_orig_476.py",
+    "transformed_file": "code_trans_476.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 477,
+    "original_file": "code_orig_477.py",
+    "transformed_file": "code_trans_477.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "other"
+  },
+  {
+    "pair_id": 478,
+    "original_file": "code_orig_478.py",
+    "transformed_file": "code_trans_478.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "searches"
+  },
+  {
+    "pair_id": 479,
+    "original_file": "code_orig_479.py",
+    "transformed_file": "code_trans_479.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "linear_algebra"
+  },
+  {
+    "pair_id": 480,
+    "original_file": "code_orig_480.py",
+    "transformed_file": "code_trans_480.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "bit_manipulation"
+  },
+  {
+    "pair_id": 481,
+    "original_file": "code_orig_481.py",
+    "transformed_file": "code_trans_481.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "ciphers"
+  },
+  {
+    "pair_id": 482,
+    "original_file": "code_orig_482.py",
+    "transformed_file": "code_trans_482.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "sorts"
+  },
+  {
+    "pair_id": 483,
+    "original_file": "code_orig_483.py",
+    "transformed_file": "code_trans_483.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "digital_image_processing"
+  },
+  {
+    "pair_id": 484,
+    "original_file": "code_orig_484.py",
+    "transformed_file": "code_trans_484.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "linear_programming"
+  },
+  {
+    "pair_id": 485,
+    "original_file": "code_orig_485.py",
+    "transformed_file": "code_trans_485.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 486,
+    "original_file": "code_orig_486.py",
+    "transformed_file": "code_trans_486.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "blockchain"
+  },
+  {
+    "pair_id": 487,
+    "original_file": "code_orig_487.py",
+    "transformed_file": "code_trans_487.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "machine_learning"
+  },
+  {
+    "pair_id": 488,
+    "original_file": "code_orig_488.py",
+    "transformed_file": "code_trans_488.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "machine_learning"
+  },
+  {
+    "pair_id": 489,
+    "original_file": "code_orig_489.py",
+    "transformed_file": "code_trans_489.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "fractals"
+  },
+  {
+    "pair_id": 490,
+    "original_file": "code_orig_490.py",
+    "transformed_file": "code_trans_490.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "machine_learning"
+  },
+  {
+    "pair_id": 491,
+    "original_file": "code_orig_491.py",
+    "transformed_file": "code_trans_491.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "maths"
+  },
+  {
+    "pair_id": 492,
+    "original_file": "code_orig_492.py",
+    "transformed_file": "code_trans_492.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "geodesy"
+  },
+  {
+    "pair_id": 493,
+    "original_file": "code_orig_493.py",
+    "transformed_file": "code_trans_493.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "networking_flow"
+  },
+  {
+    "pair_id": 494,
+    "original_file": "code_orig_494.py",
+    "transformed_file": "code_trans_494.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "backtracking"
+  },
+  {
+    "pair_id": 495,
+    "original_file": "code_orig_495.py",
+    "transformed_file": "code_trans_495.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 496,
+    "original_file": "code_orig_496.py",
+    "transformed_file": "code_trans_496.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "maths"
+  },
+  {
+    "pair_id": 497,
+    "original_file": "code_orig_497.py",
+    "transformed_file": "code_trans_497.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "geometry"
+  },
+  {
+    "pair_id": 498,
+    "original_file": "code_orig_498.py",
+    "transformed_file": "code_trans_498.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "financial"
+  },
+  {
+    "pair_id": 499,
+    "original_file": "code_orig_499.py",
+    "transformed_file": "code_trans_499.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "geometry"
+  },
+  {
+    "pair_id": 500,
+    "original_file": "code_orig_500.py",
+    "transformed_file": "code_trans_500.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "data_structures"
+  },
+  {
+    "pair_id": 501,
+    "original_file": "code_orig_501.py",
+    "transformed_file": "code_trans_501.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 502,
+    "original_file": "code_orig_502.py",
+    "transformed_file": "code_trans_502.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "greedy_methods"
+  },
+  {
+    "pair_id": 503,
+    "original_file": "code_orig_503.py",
+    "transformed_file": "code_trans_503.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "data_compression"
+  },
+  {
+    "pair_id": 504,
+    "original_file": "code_orig_504.py",
+    "transformed_file": "code_trans_504.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "graphics"
+  },
+  {
+    "pair_id": 505,
+    "original_file": "code_orig_505.py",
+    "transformed_file": "code_trans_505.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "blockchain"
+  },
+  {
+    "pair_id": 506,
+    "original_file": "code_orig_506.py",
+    "transformed_file": "code_trans_506.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "audio_filters"
+  },
+  {
+    "pair_id": 507,
+    "original_file": "code_orig_507.py",
+    "transformed_file": "code_trans_507.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "matrix"
+  },
+  {
+    "pair_id": 508,
+    "original_file": "code_orig_508.py",
+    "transformed_file": "code_trans_508.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "genetic_algorithm"
+  },
+  {
+    "pair_id": 509,
+    "original_file": "code_orig_509.py",
+    "transformed_file": "code_trans_509.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "electronics"
+  },
+  {
+    "pair_id": 510,
+    "original_file": "code_orig_510.py",
+    "transformed_file": "code_trans_510.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "bit_manipulation"
+  },
+  {
+    "pair_id": 511,
+    "original_file": "code_orig_511.py",
+    "transformed_file": "code_trans_511.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "other"
+  },
+  {
+    "pair_id": 512,
+    "original_file": "code_orig_512.py",
+    "transformed_file": "code_trans_512.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "neural_network"
+  },
+  {
+    "pair_id": 513,
+    "original_file": "code_orig_513.py",
+    "transformed_file": "code_trans_513.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "divide_and_conquer"
+  },
+  {
+    "pair_id": 514,
+    "original_file": "code_orig_514.py",
+    "transformed_file": "code_trans_514.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "maths"
+  },
+  {
+    "pair_id": 515,
+    "original_file": "code_orig_515.py",
+    "transformed_file": "code_trans_515.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "ciphers"
+  },
+  {
+    "pair_id": 516,
+    "original_file": "code_orig_516.py",
+    "transformed_file": "code_trans_516.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "graphs"
+  },
+  {
+    "pair_id": 517,
+    "original_file": "code_orig_517.py",
+    "transformed_file": "code_trans_517.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "scheduling"
+  },
+  {
+    "pair_id": 518,
+    "original_file": "code_orig_518.py",
+    "transformed_file": "code_trans_518.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 519,
+    "original_file": "code_orig_519.py",
+    "transformed_file": "code_trans_519.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "maths"
+  },
+  {
+    "pair_id": 520,
+    "original_file": "code_orig_520.py",
+    "transformed_file": "code_trans_520.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "other"
+  },
+  {
+    "pair_id": 521,
+    "original_file": "code_orig_521.py",
+    "transformed_file": "code_trans_521.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "geodesy"
+  },
+  {
+    "pair_id": 522,
+    "original_file": "code_orig_522.py",
+    "transformed_file": "code_trans_522.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "dynamic_programming"
+  },
+  {
+    "pair_id": 523,
+    "original_file": "code_orig_523.py",
+    "transformed_file": "code_trans_523.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 524,
+    "original_file": "code_orig_524.py",
+    "transformed_file": "code_trans_524.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "audio_filters"
+  },
+  {
+    "pair_id": 525,
+    "original_file": "code_orig_525.py",
+    "transformed_file": "code_trans_525.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "physics"
+  },
+  {
+    "pair_id": 526,
+    "original_file": "code_orig_526.py",
+    "transformed_file": "code_trans_526.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "physics"
+  },
+  {
+    "pair_id": 527,
+    "original_file": "code_orig_527.py",
+    "transformed_file": "code_trans_527.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "maths"
+  },
+  {
+    "pair_id": 528,
+    "original_file": "code_orig_528.py",
+    "transformed_file": "code_trans_528.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "linear_algebra"
+  },
+  {
+    "pair_id": 529,
+    "original_file": "code_orig_529.py",
+    "transformed_file": "code_trans_529.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "electronics"
+  },
+  {
+    "pair_id": 530,
+    "original_file": "code_orig_530.py",
+    "transformed_file": "code_trans_530.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "strings"
+  },
+  {
+    "pair_id": 531,
+    "original_file": "code_orig_531.py",
+    "transformed_file": "code_trans_531.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "other"
+  },
+  {
+    "pair_id": 532,
+    "original_file": "code_orig_532.py",
+    "transformed_file": "code_trans_532.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "dynamic_programming"
+  },
+  {
+    "pair_id": 533,
+    "original_file": "code_orig_533.py",
+    "transformed_file": "code_trans_533.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "linear_algebra"
+  },
+  {
+    "pair_id": 534,
+    "original_file": "code_orig_534.py",
+    "transformed_file": "code_trans_534.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "other"
+  },
+  {
+    "pair_id": 535,
+    "original_file": "code_orig_535.py",
+    "transformed_file": "code_trans_535.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "machine_learning"
+  },
+  {
+    "pair_id": 536,
+    "original_file": "code_orig_536.py",
+    "transformed_file": "code_trans_536.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "maths"
+  },
+  {
+    "pair_id": 537,
+    "original_file": "code_orig_537.py",
+    "transformed_file": "code_trans_537.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 538,
+    "original_file": "code_orig_538.py",
+    "transformed_file": "code_trans_538.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "fuzzy_logic"
+  },
+  {
+    "pair_id": 539,
+    "original_file": "code_orig_539.py",
+    "transformed_file": "code_trans_539.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "knapsack"
+  },
+  {
+    "pair_id": 540,
+    "original_file": "code_orig_540.py",
+    "transformed_file": "code_trans_540.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "strings"
+  },
+  {
+    "pair_id": 541,
+    "original_file": "code_orig_541.py",
+    "transformed_file": "code_trans_541.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "maths"
+  },
+  {
+    "pair_id": 542,
+    "original_file": "code_orig_542.py",
+    "transformed_file": "code_trans_542.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "backtracking"
+  },
+  {
+    "pair_id": 543,
+    "original_file": "code_orig_543.py",
+    "transformed_file": "code_trans_543.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "machine_learning"
+  },
+  {
+    "pair_id": 544,
+    "original_file": "code_orig_544.py",
+    "transformed_file": "code_trans_544.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "geodesy"
+  },
+  {
+    "pair_id": 545,
+    "original_file": "code_orig_545.py",
+    "transformed_file": "code_trans_545.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "ciphers"
+  },
+  {
+    "pair_id": 546,
+    "original_file": "code_orig_546.py",
+    "transformed_file": "code_trans_546.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "searches"
+  },
+  {
+    "pair_id": 547,
+    "original_file": "code_orig_547.py",
+    "transformed_file": "code_trans_547.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "hashes"
+  },
+  {
+    "pair_id": 548,
+    "original_file": "code_orig_548.py",
+    "transformed_file": "code_trans_548.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 549,
+    "original_file": "code_orig_549.py",
+    "transformed_file": "code_trans_549.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 550,
+    "original_file": "code_orig_550.py",
+    "transformed_file": "code_trans_550.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "maths"
+  },
+  {
+    "pair_id": 551,
+    "original_file": "code_orig_551.py",
+    "transformed_file": "code_trans_551.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "financial"
+  },
+  {
+    "pair_id": 552,
+    "original_file": "code_orig_552.py",
+    "transformed_file": "code_trans_552.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "financial"
+  },
+  {
+    "pair_id": 553,
+    "original_file": "code_orig_553.py",
+    "transformed_file": "code_trans_553.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "linear_programming"
+  },
+  {
+    "pair_id": 554,
+    "original_file": "code_orig_554.py",
+    "transformed_file": "code_trans_554.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "searches"
+  },
+  {
+    "pair_id": 555,
+    "original_file": "code_orig_555.py",
+    "transformed_file": "code_trans_555.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "sorts"
+  },
+  {
+    "pair_id": 556,
+    "original_file": "code_orig_556.py",
+    "transformed_file": "code_trans_556.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "physics"
+  },
+  {
+    "pair_id": 557,
+    "original_file": "code_orig_557.py",
+    "transformed_file": "code_trans_557.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "graphs"
+  },
+  {
+    "pair_id": 558,
+    "original_file": "code_orig_558.py",
+    "transformed_file": "code_trans_558.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "bit_manipulation"
+  },
+  {
+    "pair_id": 559,
+    "original_file": "code_orig_559.py",
+    "transformed_file": "code_trans_559.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "maths"
+  },
+  {
+    "pair_id": 560,
+    "original_file": "code_orig_560.py",
+    "transformed_file": "code_trans_560.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "data_structures"
+  },
+  {
+    "pair_id": 561,
+    "original_file": "code_orig_561.py",
+    "transformed_file": "code_trans_561.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "graphics"
+  },
+  {
+    "pair_id": 562,
+    "original_file": "code_orig_562.py",
+    "transformed_file": "code_trans_562.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "project_euler"
+  },
+  {
+    "pair_id": 563,
+    "original_file": "code_orig_563.py",
+    "transformed_file": "code_trans_563.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "scheduling"
+  },
+  {
+    "pair_id": 564,
+    "original_file": "code_orig_564.py",
+    "transformed_file": "code_trans_564.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "conversions"
+  },
+  {
+    "pair_id": 565,
+    "original_file": "code_orig_565.py",
+    "transformed_file": "code_trans_565.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "scripts"
+  },
+  {
+    "pair_id": 566,
+    "original_file": "code_orig_566.py",
+    "transformed_file": "code_trans_566.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "searches"
+  },
+  {
+    "pair_id": 567,
+    "original_file": "code_orig_567.py",
+    "transformed_file": "code_trans_567.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "sorts"
+  },
+  {
+    "pair_id": 568,
+    "original_file": "code_orig_568.py",
+    "transformed_file": "code_trans_568.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "hashes"
+  },
+  {
+    "pair_id": 569,
+    "original_file": "code_orig_569.py",
+    "transformed_file": "code_trans_569.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "electronics"
+  },
+  {
+    "pair_id": 570,
+    "original_file": "code_orig_570.py",
+    "transformed_file": "code_trans_570.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "data_compression"
+  },
+  {
+    "pair_id": 571,
+    "original_file": "code_orig_571.py",
+    "transformed_file": "code_trans_571.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "graphs"
+  },
+  {
+    "pair_id": 572,
+    "original_file": "code_orig_572.py",
+    "transformed_file": "code_trans_572.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "conversions"
+  },
+  {
+    "pair_id": 573,
+    "original_file": "code_orig_573.py",
+    "transformed_file": "code_trans_573.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "strings"
+  },
+  {
+    "pair_id": 574,
+    "original_file": "code_orig_574.py",
+    "transformed_file": "code_trans_574.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "physics"
+  },
+  {
+    "pair_id": 575,
+    "original_file": "code_orig_575.py",
+    "transformed_file": "code_trans_575.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "web_programming"
+  },
+  {
+    "pair_id": 576,
+    "original_file": "code_orig_576.py",
+    "transformed_file": "code_trans_576.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "data_structures"
+  },
+  {
+    "pair_id": 577,
+    "original_file": "code_orig_577.py",
+    "transformed_file": "code_trans_577.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "divide_and_conquer"
+  },
+  {
+    "pair_id": 578,
+    "original_file": "code_orig_578.py",
+    "transformed_file": "code_trans_578.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "web_programming"
+  },
+  {
+    "pair_id": 579,
+    "original_file": "code_orig_579.py",
+    "transformed_file": "code_trans_579.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "machine_learning"
+  },
+  {
+    "pair_id": 580,
+    "original_file": "code_orig_580.py",
+    "transformed_file": "code_trans_580.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "maths"
+  },
+  {
+    "pair_id": 581,
+    "original_file": "code_orig_581.py",
+    "transformed_file": "code_trans_581.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "conversions"
+  },
+  {
+    "pair_id": 582,
+    "original_file": "code_orig_582.py",
+    "transformed_file": "code_trans_582.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "graphs"
+  },
+  {
+    "pair_id": 583,
+    "original_file": "code_orig_583.py",
+    "transformed_file": "code_trans_583.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "digital_image_processing"
+  },
+  {
+    "pair_id": 584,
+    "original_file": "code_orig_584.py",
+    "transformed_file": "code_trans_584.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "greedy_methods"
+  },
+  {
+    "pair_id": 585,
+    "original_file": "code_orig_585.py",
+    "transformed_file": "code_trans_585.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "machine_learning"
+  },
+  {
+    "pair_id": 586,
+    "original_file": "code_orig_586.py",
+    "transformed_file": "code_trans_586.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "quantum"
+  },
+  {
+    "pair_id": 587,
+    "original_file": "code_orig_587.py",
+    "transformed_file": "code_trans_587.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "backtracking"
+  },
+  {
+    "pair_id": 588,
+    "original_file": "code_orig_588.py",
+    "transformed_file": "code_trans_588.py",
+    "is_plagiarized": 1,
+    "clone_type": "type4",
+    "category": "financial"
+  },
+  {
+    "pair_id": 589,
+    "original_file": "code_orig_589.py",
+    "transformed_file": "code_trans_589.py",
+    "is_plagiarized": 1,
+    "clone_type": "type2",
+    "category": "bit_manipulation"
+  },
+  {
+    "pair_id": 590,
+    "original_file": "code_orig_590.py",
+    "transformed_file": "code_trans_590.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "audio_filters"
+  },
+  {
+    "pair_id": 591,
+    "original_file": "code_orig_591.py",
+    "transformed_file": "code_trans_591.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "computer_vision"
+  },
+  {
+    "pair_id": 592,
+    "original_file": "code_orig_592.py",
+    "transformed_file": "code_trans_592.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "financial"
+  },
+  {
+    "pair_id": 593,
+    "original_file": "code_orig_593.py",
+    "transformed_file": "code_trans_593.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "scripts"
+  },
+  {
+    "pair_id": 594,
+    "original_file": "code_orig_594.py",
+    "transformed_file": "code_trans_594.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "quantum"
+  },
+  {
+    "pair_id": 595,
+    "original_file": "code_orig_595.py",
+    "transformed_file": "code_trans_595.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "geometry"
+  },
+  {
+    "pair_id": 596,
+    "original_file": "code_orig_596.py",
+    "transformed_file": "code_trans_596.py",
+    "is_plagiarized": 0,
+    "clone_type": "none",
+    "category": "financial"
+  },
+  {
+    "pair_id": 597,
+    "original_file": "code_orig_597.py",
+    "transformed_file": "code_trans_597.py",
+    "is_plagiarized": 1,
+    "clone_type": "type3",
+    "category": "machine_learning"
+  },
+  {
+    "pair_id": 598,
+    "original_file": "code_orig_598.py",
+    "transformed_file": "code_trans_598.py",
+    "is_plagiarized": 1,
+    "clone_type": "type1",
+    "category": "boolean_algebra"
+  },
+  {
+    "pair_id": 599,
+    "original_file": "code_orig_599.py",
+    "transformed_file": "code_trans_599.py",
+    "is_plagiarized": 1,
+    "clone_type": "mixed",
+    "category": "matrix"
+  }
+]
