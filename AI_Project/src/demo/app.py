@@ -416,6 +416,12 @@ def compute_similarity_features(code1: str, code2: str) -> dict:
 def load_models():
     """Load all trained models"""
     import pickle
+    import sys
+    
+    # Add ml_models to path so DNN class can be found
+    ml_models_path = str(project_root / "src" / "ml_models")
+    if ml_models_path not in sys.path:
+        sys.path.insert(0, ml_models_path)
     
     models = {}
     model_dir = project_root / "src" / "ml_models" / "artifacts"
