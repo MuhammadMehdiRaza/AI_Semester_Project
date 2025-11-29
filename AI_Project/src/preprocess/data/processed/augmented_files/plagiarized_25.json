@@ -1,0 +1,99 @@
+{
+  "path": "data/augmented\\plagiarized_25.py",
+  "loc": 20,
+  "imports": [],
+  "node_hist": {
+    "Module": 1,
+    "FunctionDef": 2,
+    "Assign": 3,
+    "Expr": 1,
+    "arguments": 2,
+    "For": 2,
+    "Return": 2,
+    "Name": 22,
+    "Call": 5,
+    "arg": 2,
+    "Constant": 10,
+    "AugAssign": 3,
+    "If": 1,
+    "Store": 8,
+    "BinOp": 3,
+    "Mult": 1,
+    "Load": 14,
+    "Compare": 1,
+    "Add": 4,
+    "Eq": 1,
+    "Mod": 1
+  },
+  "num_functions": 2,
+  "functions": [
+    {
+      "name": "factorial_v1",
+      "args": 1,
+      "lineno": 3,
+      "end_lineno": 7
+    },
+    {
+      "name": "ft_v4",
+      "args": 1,
+      "lineno": 9,
+      "end_lineno": 16
+    }
+  ],
+  "avg_cc": 2.5,
+  "max_cc": 3,
+  "top_idents": [
+    [
+      "ttl_v4",
+      4
+    ],
+    [
+      "i",
+      4
+    ],
+    [
+      "res",
+      3
+    ],
+    [
+      "rst_v1",
+      2
+    ],
+    [
+      "j",
+      2
+    ],
+    [
+      "range",
+      2
+    ],
+    [
+      "ft_v4",
+      1
+    ],
+    [
+      "print",
+      1
+    ],
+    [
+      "x",
+      1
+    ],
+    [
+      "n",
+      1
+    ],
+    [
+      "factorial_v1",
+      1
+    ]
+  ],
+  "subtree_hashes": [
+    "9d2c0e76b7c25be86ee314fe4e8e875f8a476cc20130df146da8323534740afc",
+    "9d543b9dffc5dd9f679d75ade33a1689e045080f0f8691881695914a19048bfd",
+    "de67da0ed303087f7c39731a487043a76daac5f79fc6a66b3dccd226b23e887d",
+    "c77fa26d110441899a61d9e51695063a9307bcf8b049a891151d9ecc639138f8",
+    "e7d5a6c5d2732cc8822f28ae5998fbc2cbe285644293a753271a8372133dce5b"
+  ],
+  "canonical_code": "def f1(v1):\n    v2 = 1\n    for v3 in v4(2, v1 + 1):\n        v2 *= v3\n    return v2\n\ndef f2(v5):\n    v6 = 0\n    for v7 in v4(1, v5 + 1):\n        if v7 % 2 == 0:\n            v6 += f1(v7)\n        else:\n            v6 += v7\n    return v6\nv8 = f2(5)\nv9('Result:', v8)"
+}

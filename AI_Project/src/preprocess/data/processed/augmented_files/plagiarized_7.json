@@ -1,0 +1,94 @@
+{
+  "path": "data/augmented\\plagiarized_7.py",
+  "loc": 12,
+  "imports": [
+    "math"
+  ],
+  "node_hist": {
+    "Module": 1,
+    "Import": 1,
+    "FunctionDef": 2,
+    "Assign": 1,
+    "Expr": 1,
+    "alias": 1,
+    "arguments": 2,
+    "Return": 2,
+    "Name": 13,
+    "Call": 6,
+    "arg": 2,
+    "Store": 1,
+    "Constant": 6,
+    "IfExp": 1,
+    "Load": 13,
+    "Compare": 1,
+    "BinOp": 2,
+    "Eq": 1,
+    "Attribute": 1,
+    "Mod": 1,
+    "Add": 1
+  },
+  "num_functions": 2,
+  "functions": [
+    {
+      "name": "ft_v3",
+      "args": 1,
+      "lineno": 4,
+      "end_lineno": 7
+    },
+    {
+      "name": "process_v3",
+      "args": 1,
+      "lineno": 5,
+      "end_lineno": 6
+    }
+  ],
+  "avg_cc": 1.0,
+  "max_cc": 1,
+  "top_idents": [
+    [
+      "i",
+      3
+    ],
+    [
+      "rst_v5",
+      2
+    ],
+    [
+      "ft_v3",
+      1
+    ],
+    [
+      "print",
+      1
+    ],
+    [
+      "sum_v4",
+      1
+    ],
+    [
+      "map_v1",
+      1
+    ],
+    [
+      "process_v3",
+      1
+    ],
+    [
+      "range",
+      1
+    ],
+    [
+      "math",
+      1
+    ],
+    [
+      "n",
+      1
+    ]
+  ],
+  "subtree_hashes": [
+    "17cd7e0510dba0a6550056a3ee2875cc15b138dd8fbaed3fc4c7bece74830806",
+    "5209d504f67e0f885c8127a50d5c65aaddf9a2b1390ea89b95c452313d1f9d4f"
+  ],
+  "canonical_code": "import math\n\ndef f1(v1):\n\n    def f2(v2):\n        return v3.factorial(v2) if v2 % 2 == 0 else v2\n    return v4(v5(f2, v6(1, v1 + 1)))\nv7 = f1(5)\nv8('Result:', v7)"
+}
