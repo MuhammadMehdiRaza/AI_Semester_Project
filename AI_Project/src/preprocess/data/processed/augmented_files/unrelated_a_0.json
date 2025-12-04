@@ -1,0 +1,99 @@
+{
+  "path": "data/augmented\\unrelated_a_0.py",
+  "loc": 19,
+  "imports": [],
+  "node_hist": {
+    "Module": 1,
+    "FunctionDef": 2,
+    "Assign": 3,
+    "Expr": 1,
+    "arguments": 2,
+    "For": 2,
+    "Return": 2,
+    "Name": 22,
+    "Call": 5,
+    "arg": 2,
+    "Constant": 10,
+    "AugAssign": 3,
+    "If": 1,
+    "Store": 8,
+    "BinOp": 3,
+    "Mult": 1,
+    "Load": 14,
+    "Compare": 1,
+    "Add": 4,
+    "Eq": 1,
+    "Mod": 1
+  },
+  "num_functions": 2,
+  "functions": [
+    {
+      "name": "factorial",
+      "args": 1,
+      "lineno": 2,
+      "end_lineno": 6
+    },
+    {
+      "name": "ft",
+      "args": 1,
+      "lineno": 8,
+      "end_lineno": 15
+    }
+  ],
+  "avg_cc": 2.5,
+  "max_cc": 3,
+  "top_idents": [
+    [
+      "ttl",
+      4
+    ],
+    [
+      "i",
+      4
+    ],
+    [
+      "result",
+      3
+    ],
+    [
+      "rst",
+      2
+    ],
+    [
+      "j",
+      2
+    ],
+    [
+      "range",
+      2
+    ],
+    [
+      "ft",
+      1
+    ],
+    [
+      "print",
+      1
+    ],
+    [
+      "x",
+      1
+    ],
+    [
+      "n",
+      1
+    ],
+    [
+      "factorial",
+      1
+    ]
+  ],
+  "subtree_hashes": [
+    "bfcee20ff12cd309eafc8ce9a682e9448d366b721af837e2cbf341289f4364e5",
+    "0d0ae0f1356299d1ac9a639da8c2db82c66e071e8cf80cd1a39dbf2fcc6ae740",
+    "f793ef8d9c9068c412417c84fb6db5c2973c5c26a301258be1cc371803ece336",
+    "c68cb0c7506da82a6a1cc539a92cf33219bdcfb40862791549fa9b7038462e5a",
+    "0c5746b013c75e58672051ae5f954c4323755f4bac4c1f6b5d7e6abf59ea6903"
+  ],
+  "canonical_code": "def f1(v1):\n    v2 = 1\n    for v3 in v4(2, v1 + 1):\n        v2 *= v3\n    return v2\n\ndef f2(v5):\n    v6 = 0\n    for v7 in v4(1, v5 + 1):\n        if v7 % 2 == 0:\n            v6 += f1(v7)\n        else:\n            v6 += v7\n    return v6\nv8 = f2(5)\nv9('Result:', v8)"
+}

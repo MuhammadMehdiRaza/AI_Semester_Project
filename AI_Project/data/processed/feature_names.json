@@ -1,0 +1,21 @@
+[
+  "canonical_len_ratio",
+  "canonical_similarity",
+  "cc_avg_diff",
+  "cc_max_diff",
+  "common_imports",
+  "common_subtrees",
+  "exact_match",
+  "func_count_diff",
+  "func_count_ratio",
+  "ident_jaccard",
+  "import_count_diff",
+  "import_jaccard",
+  "loc_avg",
+  "loc_diff",
+  "loc_ratio",
+  "node_hist_cosine",
+  "node_hist_jaccard",
+  "subtree_count_diff",
+  "subtree_hash_jaccard"
+]

@@ -1,0 +1,4202 @@
+[
+  {
+    "pair_id": 0,
+    "original": "code_orig_0.py",
+    "transformed": "code_trans_0.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 1,
+    "original": "code_orig_1.py",
+    "transformed": "code_trans_1.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 2,
+    "original": "code_orig_2.py",
+    "transformed": "code_trans_2.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 3,
+    "original": "code_orig_3.py",
+    "transformed": "code_trans_3.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 4,
+    "original": "code_orig_4.py",
+    "transformed": "code_trans_4.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 5,
+    "original": "code_orig_5.py",
+    "transformed": "code_trans_5.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 6,
+    "original": "code_orig_6.py",
+    "transformed": "code_trans_6.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 7,
+    "original": "code_orig_7.py",
+    "transformed": "code_trans_7.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 8,
+    "original": "code_orig_8.py",
+    "transformed": "code_trans_8.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 9,
+    "original": "code_orig_9.py",
+    "transformed": "code_trans_9.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 10,
+    "original": "code_orig_10.py",
+    "transformed": "code_trans_10.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 11,
+    "original": "code_orig_11.py",
+    "transformed": "code_trans_11.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 12,
+    "original": "code_orig_12.py",
+    "transformed": "code_trans_12.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 13,
+    "original": "code_orig_13.py",
+    "transformed": "code_trans_13.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 14,
+    "original": "code_orig_14.py",
+    "transformed": "code_trans_14.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 15,
+    "original": "code_orig_15.py",
+    "transformed": "code_trans_15.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 16,
+    "original": "code_orig_16.py",
+    "transformed": "code_trans_16.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 17,
+    "original": "code_orig_17.py",
+    "transformed": "code_trans_17.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 18,
+    "original": "code_orig_18.py",
+    "transformed": "code_trans_18.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 19,
+    "original": "code_orig_19.py",
+    "transformed": "code_trans_19.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 20,
+    "original": "code_orig_20.py",
+    "transformed": "code_trans_20.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 21,
+    "original": "code_orig_21.py",
+    "transformed": "code_trans_21.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 22,
+    "original": "code_orig_22.py",
+    "transformed": "code_trans_22.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 23,
+    "original": "code_orig_23.py",
+    "transformed": "code_trans_23.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 24,
+    "original": "code_orig_24.py",
+    "transformed": "code_trans_24.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 25,
+    "original": "code_orig_25.py",
+    "transformed": "code_trans_25.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 26,
+    "original": "code_orig_26.py",
+    "transformed": "code_trans_26.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 27,
+    "original": "code_orig_27.py",
+    "transformed": "code_trans_27.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 28,
+    "original": "code_orig_28.py",
+    "transformed": "code_trans_28.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 29,
+    "original": "code_orig_29.py",
+    "transformed": "code_trans_29.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 30,
+    "original": "code_orig_30.py",
+    "transformed": "code_trans_30.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 31,
+    "original": "code_orig_31.py",
+    "transformed": "code_trans_31.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 32,
+    "original": "code_orig_32.py",
+    "transformed": "code_trans_32.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 33,
+    "original": "code_orig_33.py",
+    "transformed": "code_trans_33.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 34,
+    "original": "code_orig_34.py",
+    "transformed": "code_trans_34.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 35,
+    "original": "code_orig_35.py",
+    "transformed": "code_trans_35.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 36,
+    "original": "code_orig_36.py",
+    "transformed": "code_trans_36.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 37,
+    "original": "code_orig_37.py",
+    "transformed": "code_trans_37.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 38,
+    "original": "code_orig_38.py",
+    "transformed": "code_trans_38.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 39,
+    "original": "code_orig_39.py",
+    "transformed": "code_trans_39.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 40,
+    "original": "code_orig_40.py",
+    "transformed": "code_trans_40.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 41,
+    "original": "code_orig_41.py",
+    "transformed": "code_trans_41.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 42,
+    "original": "code_orig_42.py",
+    "transformed": "code_trans_42.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 43,
+    "original": "code_orig_43.py",
+    "transformed": "code_trans_43.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 44,
+    "original": "code_orig_44.py",
+    "transformed": "code_trans_44.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 45,
+    "original": "code_orig_45.py",
+    "transformed": "code_trans_45.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 46,
+    "original": "code_orig_46.py",
+    "transformed": "code_trans_46.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 47,
+    "original": "code_orig_47.py",
+    "transformed": "code_trans_47.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 48,
+    "original": "code_orig_48.py",
+    "transformed": "code_trans_48.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 49,
+    "original": "code_orig_49.py",
+    "transformed": "code_trans_49.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 50,
+    "original": "code_orig_50.py",
+    "transformed": "code_trans_50.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 51,
+    "original": "code_orig_51.py",
+    "transformed": "code_trans_51.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 52,
+    "original": "code_orig_52.py",
+    "transformed": "code_trans_52.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 53,
+    "original": "code_orig_53.py",
+    "transformed": "code_trans_53.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 54,
+    "original": "code_orig_54.py",
+    "transformed": "code_trans_54.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 55,
+    "original": "code_orig_55.py",
+    "transformed": "code_trans_55.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 56,
+    "original": "code_orig_56.py",
+    "transformed": "code_trans_56.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 57,
+    "original": "code_orig_57.py",
+    "transformed": "code_trans_57.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 58,
+    "original": "code_orig_58.py",
+    "transformed": "code_trans_58.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 59,
+    "original": "code_orig_59.py",
+    "transformed": "code_trans_59.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 60,
+    "original": "code_orig_60.py",
+    "transformed": "code_trans_60.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 61,
+    "original": "code_orig_61.py",
+    "transformed": "code_trans_61.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 62,
+    "original": "code_orig_62.py",
+    "transformed": "code_trans_62.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 63,
+    "original": "code_orig_63.py",
+    "transformed": "code_trans_63.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 64,
+    "original": "code_orig_64.py",
+    "transformed": "code_trans_64.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 65,
+    "original": "code_orig_65.py",
+    "transformed": "code_trans_65.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 66,
+    "original": "code_orig_66.py",
+    "transformed": "code_trans_66.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 67,
+    "original": "code_orig_67.py",
+    "transformed": "code_trans_67.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 68,
+    "original": "code_orig_68.py",
+    "transformed": "code_trans_68.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 69,
+    "original": "code_orig_69.py",
+    "transformed": "code_trans_69.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 70,
+    "original": "code_orig_70.py",
+    "transformed": "code_trans_70.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 71,
+    "original": "code_orig_71.py",
+    "transformed": "code_trans_71.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 72,
+    "original": "code_orig_72.py",
+    "transformed": "code_trans_72.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 73,
+    "original": "code_orig_73.py",
+    "transformed": "code_trans_73.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 74,
+    "original": "code_orig_74.py",
+    "transformed": "code_trans_74.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 75,
+    "original": "code_orig_75.py",
+    "transformed": "code_trans_75.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 76,
+    "original": "code_orig_76.py",
+    "transformed": "code_trans_76.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 77,
+    "original": "code_orig_77.py",
+    "transformed": "code_trans_77.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 78,
+    "original": "code_orig_78.py",
+    "transformed": "code_trans_78.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 79,
+    "original": "code_orig_79.py",
+    "transformed": "code_trans_79.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 80,
+    "original": "code_orig_80.py",
+    "transformed": "code_trans_80.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 81,
+    "original": "code_orig_81.py",
+    "transformed": "code_trans_81.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 82,
+    "original": "code_orig_82.py",
+    "transformed": "code_trans_82.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 83,
+    "original": "code_orig_83.py",
+    "transformed": "code_trans_83.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 84,
+    "original": "code_orig_84.py",
+    "transformed": "code_trans_84.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 85,
+    "original": "code_orig_85.py",
+    "transformed": "code_trans_85.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 86,
+    "original": "code_orig_86.py",
+    "transformed": "code_trans_86.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 87,
+    "original": "code_orig_87.py",
+    "transformed": "code_trans_87.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 88,
+    "original": "code_orig_88.py",
+    "transformed": "code_trans_88.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 89,
+    "original": "code_orig_89.py",
+    "transformed": "code_trans_89.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 90,
+    "original": "code_orig_90.py",
+    "transformed": "code_trans_90.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 91,
+    "original": "code_orig_91.py",
+    "transformed": "code_trans_91.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 92,
+    "original": "code_orig_92.py",
+    "transformed": "code_trans_92.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 93,
+    "original": "code_orig_93.py",
+    "transformed": "code_trans_93.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 94,
+    "original": "code_orig_94.py",
+    "transformed": "code_trans_94.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 95,
+    "original": "code_orig_95.py",
+    "transformed": "code_trans_95.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 96,
+    "original": "code_orig_96.py",
+    "transformed": "code_trans_96.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 97,
+    "original": "code_orig_97.py",
+    "transformed": "code_trans_97.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 98,
+    "original": "code_orig_98.py",
+    "transformed": "code_trans_98.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 99,
+    "original": "code_orig_99.py",
+    "transformed": "code_trans_99.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 100,
+    "original": "code_orig_100.py",
+    "transformed": "code_trans_100.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 101,
+    "original": "code_orig_101.py",
+    "transformed": "code_trans_101.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 102,
+    "original": "code_orig_102.py",
+    "transformed": "code_trans_102.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 103,
+    "original": "code_orig_103.py",
+    "transformed": "code_trans_103.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 104,
+    "original": "code_orig_104.py",
+    "transformed": "code_trans_104.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 105,
+    "original": "code_orig_105.py",
+    "transformed": "code_trans_105.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 106,
+    "original": "code_orig_106.py",
+    "transformed": "code_trans_106.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 107,
+    "original": "code_orig_107.py",
+    "transformed": "code_trans_107.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 108,
+    "original": "code_orig_108.py",
+    "transformed": "code_trans_108.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 109,
+    "original": "code_orig_109.py",
+    "transformed": "code_trans_109.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 110,
+    "original": "code_orig_110.py",
+    "transformed": "code_trans_110.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 111,
+    "original": "code_orig_111.py",
+    "transformed": "code_trans_111.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 112,
+    "original": "code_orig_112.py",
+    "transformed": "code_trans_112.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 113,
+    "original": "code_orig_113.py",
+    "transformed": "code_trans_113.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 114,
+    "original": "code_orig_114.py",
+    "transformed": "code_trans_114.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 115,
+    "original": "code_orig_115.py",
+    "transformed": "code_trans_115.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 116,
+    "original": "code_orig_116.py",
+    "transformed": "code_trans_116.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 117,
+    "original": "code_orig_117.py",
+    "transformed": "code_trans_117.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 118,
+    "original": "code_orig_118.py",
+    "transformed": "code_trans_118.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 119,
+    "original": "code_orig_119.py",
+    "transformed": "code_trans_119.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 120,
+    "original": "code_orig_120.py",
+    "transformed": "code_trans_120.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 121,
+    "original": "code_orig_121.py",
+    "transformed": "code_trans_121.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 122,
+    "original": "code_orig_122.py",
+    "transformed": "code_trans_122.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 123,
+    "original": "code_orig_123.py",
+    "transformed": "code_trans_123.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 124,
+    "original": "code_orig_124.py",
+    "transformed": "code_trans_124.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 125,
+    "original": "code_orig_125.py",
+    "transformed": "code_trans_125.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 126,
+    "original": "code_orig_126.py",
+    "transformed": "code_trans_126.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 127,
+    "original": "code_orig_127.py",
+    "transformed": "code_trans_127.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 128,
+    "original": "code_orig_128.py",
+    "transformed": "code_trans_128.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 129,
+    "original": "code_orig_129.py",
+    "transformed": "code_trans_129.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 130,
+    "original": "code_orig_130.py",
+    "transformed": "code_trans_130.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 131,
+    "original": "code_orig_131.py",
+    "transformed": "code_trans_131.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 132,
+    "original": "code_orig_132.py",
+    "transformed": "code_trans_132.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 133,
+    "original": "code_orig_133.py",
+    "transformed": "code_trans_133.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 134,
+    "original": "code_orig_134.py",
+    "transformed": "code_trans_134.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 135,
+    "original": "code_orig_135.py",
+    "transformed": "code_trans_135.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 136,
+    "original": "code_orig_136.py",
+    "transformed": "code_trans_136.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 137,
+    "original": "code_orig_137.py",
+    "transformed": "code_trans_137.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 138,
+    "original": "code_orig_138.py",
+    "transformed": "code_trans_138.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 139,
+    "original": "code_orig_139.py",
+    "transformed": "code_trans_139.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 140,
+    "original": "code_orig_140.py",
+    "transformed": "code_trans_140.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 141,
+    "original": "code_orig_141.py",
+    "transformed": "code_trans_141.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 142,
+    "original": "code_orig_142.py",
+    "transformed": "code_trans_142.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 143,
+    "original": "code_orig_143.py",
+    "transformed": "code_trans_143.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 144,
+    "original": "code_orig_144.py",
+    "transformed": "code_trans_144.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 145,
+    "original": "code_orig_145.py",
+    "transformed": "code_trans_145.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 146,
+    "original": "code_orig_146.py",
+    "transformed": "code_trans_146.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 147,
+    "original": "code_orig_147.py",
+    "transformed": "code_trans_147.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 148,
+    "original": "code_orig_148.py",
+    "transformed": "code_trans_148.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 149,
+    "original": "code_orig_149.py",
+    "transformed": "code_trans_149.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 150,
+    "original": "code_orig_150.py",
+    "transformed": "code_trans_150.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 151,
+    "original": "code_orig_151.py",
+    "transformed": "code_trans_151.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 152,
+    "original": "code_orig_152.py",
+    "transformed": "code_trans_152.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 153,
+    "original": "code_orig_153.py",
+    "transformed": "code_trans_153.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 154,
+    "original": "code_orig_154.py",
+    "transformed": "code_trans_154.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 155,
+    "original": "code_orig_155.py",
+    "transformed": "code_trans_155.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 156,
+    "original": "code_orig_156.py",
+    "transformed": "code_trans_156.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 157,
+    "original": "code_orig_157.py",
+    "transformed": "code_trans_157.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 158,
+    "original": "code_orig_158.py",
+    "transformed": "code_trans_158.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 159,
+    "original": "code_orig_159.py",
+    "transformed": "code_trans_159.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 160,
+    "original": "code_orig_160.py",
+    "transformed": "code_trans_160.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 161,
+    "original": "code_orig_161.py",
+    "transformed": "code_trans_161.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 162,
+    "original": "code_orig_162.py",
+    "transformed": "code_trans_162.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 163,
+    "original": "code_orig_163.py",
+    "transformed": "code_trans_163.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 164,
+    "original": "code_orig_164.py",
+    "transformed": "code_trans_164.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 165,
+    "original": "code_orig_165.py",
+    "transformed": "code_trans_165.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 166,
+    "original": "code_orig_166.py",
+    "transformed": "code_trans_166.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 167,
+    "original": "code_orig_167.py",
+    "transformed": "code_trans_167.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 168,
+    "original": "code_orig_168.py",
+    "transformed": "code_trans_168.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 169,
+    "original": "code_orig_169.py",
+    "transformed": "code_trans_169.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 170,
+    "original": "code_orig_170.py",
+    "transformed": "code_trans_170.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 171,
+    "original": "code_orig_171.py",
+    "transformed": "code_trans_171.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 172,
+    "original": "code_orig_172.py",
+    "transformed": "code_trans_172.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 173,
+    "original": "code_orig_173.py",
+    "transformed": "code_trans_173.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 174,
+    "original": "code_orig_174.py",
+    "transformed": "code_trans_174.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 175,
+    "original": "code_orig_175.py",
+    "transformed": "code_trans_175.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 176,
+    "original": "code_orig_176.py",
+    "transformed": "code_trans_176.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 177,
+    "original": "code_orig_177.py",
+    "transformed": "code_trans_177.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 178,
+    "original": "code_orig_178.py",
+    "transformed": "code_trans_178.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 179,
+    "original": "code_orig_179.py",
+    "transformed": "code_trans_179.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 180,
+    "original": "code_orig_180.py",
+    "transformed": "code_trans_180.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 181,
+    "original": "code_orig_181.py",
+    "transformed": "code_trans_181.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 182,
+    "original": "code_orig_182.py",
+    "transformed": "code_trans_182.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 183,
+    "original": "code_orig_183.py",
+    "transformed": "code_trans_183.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 184,
+    "original": "code_orig_184.py",
+    "transformed": "code_trans_184.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 185,
+    "original": "code_orig_185.py",
+    "transformed": "code_trans_185.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 186,
+    "original": "code_orig_186.py",
+    "transformed": "code_trans_186.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 187,
+    "original": "code_orig_187.py",
+    "transformed": "code_trans_187.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 188,
+    "original": "code_orig_188.py",
+    "transformed": "code_trans_188.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 189,
+    "original": "code_orig_189.py",
+    "transformed": "code_trans_189.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 190,
+    "original": "code_orig_190.py",
+    "transformed": "code_trans_190.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 191,
+    "original": "code_orig_191.py",
+    "transformed": "code_trans_191.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 192,
+    "original": "code_orig_192.py",
+    "transformed": "code_trans_192.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 193,
+    "original": "code_orig_193.py",
+    "transformed": "code_trans_193.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 194,
+    "original": "code_orig_194.py",
+    "transformed": "code_trans_194.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 195,
+    "original": "code_orig_195.py",
+    "transformed": "code_trans_195.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 196,
+    "original": "code_orig_196.py",
+    "transformed": "code_trans_196.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 197,
+    "original": "code_orig_197.py",
+    "transformed": "code_trans_197.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 198,
+    "original": "code_orig_198.py",
+    "transformed": "code_trans_198.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 199,
+    "original": "code_orig_199.py",
+    "transformed": "code_trans_199.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 200,
+    "original": "code_orig_200.py",
+    "transformed": "code_trans_200.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 201,
+    "original": "code_orig_201.py",
+    "transformed": "code_trans_201.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 202,
+    "original": "code_orig_202.py",
+    "transformed": "code_trans_202.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 203,
+    "original": "code_orig_203.py",
+    "transformed": "code_trans_203.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 204,
+    "original": "code_orig_204.py",
+    "transformed": "code_trans_204.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 205,
+    "original": "code_orig_205.py",
+    "transformed": "code_trans_205.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 206,
+    "original": "code_orig_206.py",
+    "transformed": "code_trans_206.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 207,
+    "original": "code_orig_207.py",
+    "transformed": "code_trans_207.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 208,
+    "original": "code_orig_208.py",
+    "transformed": "code_trans_208.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 209,
+    "original": "code_orig_209.py",
+    "transformed": "code_trans_209.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 210,
+    "original": "code_orig_210.py",
+    "transformed": "code_trans_210.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 211,
+    "original": "code_orig_211.py",
+    "transformed": "code_trans_211.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 212,
+    "original": "code_orig_212.py",
+    "transformed": "code_trans_212.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 213,
+    "original": "code_orig_213.py",
+    "transformed": "code_trans_213.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 214,
+    "original": "code_orig_214.py",
+    "transformed": "code_trans_214.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 215,
+    "original": "code_orig_215.py",
+    "transformed": "code_trans_215.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 216,
+    "original": "code_orig_216.py",
+    "transformed": "code_trans_216.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 217,
+    "original": "code_orig_217.py",
+    "transformed": "code_trans_217.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 218,
+    "original": "code_orig_218.py",
+    "transformed": "code_trans_218.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 219,
+    "original": "code_orig_219.py",
+    "transformed": "code_trans_219.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 220,
+    "original": "code_orig_220.py",
+    "transformed": "code_trans_220.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 221,
+    "original": "code_orig_221.py",
+    "transformed": "code_trans_221.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 222,
+    "original": "code_orig_222.py",
+    "transformed": "code_trans_222.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 223,
+    "original": "code_orig_223.py",
+    "transformed": "code_trans_223.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 224,
+    "original": "code_orig_224.py",
+    "transformed": "code_trans_224.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 225,
+    "original": "code_orig_225.py",
+    "transformed": "code_trans_225.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 226,
+    "original": "code_orig_226.py",
+    "transformed": "code_trans_226.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 227,
+    "original": "code_orig_227.py",
+    "transformed": "code_trans_227.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 228,
+    "original": "code_orig_228.py",
+    "transformed": "code_trans_228.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 229,
+    "original": "code_orig_229.py",
+    "transformed": "code_trans_229.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 230,
+    "original": "code_orig_230.py",
+    "transformed": "code_trans_230.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 231,
+    "original": "code_orig_231.py",
+    "transformed": "code_trans_231.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 232,
+    "original": "code_orig_232.py",
+    "transformed": "code_trans_232.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 233,
+    "original": "code_orig_233.py",
+    "transformed": "code_trans_233.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 234,
+    "original": "code_orig_234.py",
+    "transformed": "code_trans_234.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 235,
+    "original": "code_orig_235.py",
+    "transformed": "code_trans_235.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 236,
+    "original": "code_orig_236.py",
+    "transformed": "code_trans_236.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 237,
+    "original": "code_orig_237.py",
+    "transformed": "code_trans_237.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 238,
+    "original": "code_orig_238.py",
+    "transformed": "code_trans_238.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 239,
+    "original": "code_orig_239.py",
+    "transformed": "code_trans_239.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 240,
+    "original": "code_orig_240.py",
+    "transformed": "code_trans_240.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 241,
+    "original": "code_orig_241.py",
+    "transformed": "code_trans_241.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 242,
+    "original": "code_orig_242.py",
+    "transformed": "code_trans_242.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 243,
+    "original": "code_orig_243.py",
+    "transformed": "code_trans_243.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 244,
+    "original": "code_orig_244.py",
+    "transformed": "code_trans_244.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 245,
+    "original": "code_orig_245.py",
+    "transformed": "code_trans_245.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 246,
+    "original": "code_orig_246.py",
+    "transformed": "code_trans_246.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 247,
+    "original": "code_orig_247.py",
+    "transformed": "code_trans_247.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 248,
+    "original": "code_orig_248.py",
+    "transformed": "code_trans_248.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 249,
+    "original": "code_orig_249.py",
+    "transformed": "code_trans_249.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 250,
+    "original": "code_orig_250.py",
+    "transformed": "code_trans_250.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 251,
+    "original": "code_orig_251.py",
+    "transformed": "code_trans_251.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 252,
+    "original": "code_orig_252.py",
+    "transformed": "code_trans_252.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 253,
+    "original": "code_orig_253.py",
+    "transformed": "code_trans_253.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 254,
+    "original": "code_orig_254.py",
+    "transformed": "code_trans_254.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 255,
+    "original": "code_orig_255.py",
+    "transformed": "code_trans_255.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 256,
+    "original": "code_orig_256.py",
+    "transformed": "code_trans_256.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 257,
+    "original": "code_orig_257.py",
+    "transformed": "code_trans_257.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 258,
+    "original": "code_orig_258.py",
+    "transformed": "code_trans_258.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 259,
+    "original": "code_orig_259.py",
+    "transformed": "code_trans_259.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 260,
+    "original": "code_orig_260.py",
+    "transformed": "code_trans_260.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 261,
+    "original": "code_orig_261.py",
+    "transformed": "code_trans_261.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 262,
+    "original": "code_orig_262.py",
+    "transformed": "code_trans_262.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 263,
+    "original": "code_orig_263.py",
+    "transformed": "code_trans_263.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 264,
+    "original": "code_orig_264.py",
+    "transformed": "code_trans_264.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 265,
+    "original": "code_orig_265.py",
+    "transformed": "code_trans_265.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 266,
+    "original": "code_orig_266.py",
+    "transformed": "code_trans_266.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 267,
+    "original": "code_orig_267.py",
+    "transformed": "code_trans_267.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 268,
+    "original": "code_orig_268.py",
+    "transformed": "code_trans_268.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 269,
+    "original": "code_orig_269.py",
+    "transformed": "code_trans_269.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 270,
+    "original": "code_orig_270.py",
+    "transformed": "code_trans_270.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 271,
+    "original": "code_orig_271.py",
+    "transformed": "code_trans_271.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 272,
+    "original": "code_orig_272.py",
+    "transformed": "code_trans_272.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 273,
+    "original": "code_orig_273.py",
+    "transformed": "code_trans_273.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 274,
+    "original": "code_orig_274.py",
+    "transformed": "code_trans_274.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 275,
+    "original": "code_orig_275.py",
+    "transformed": "code_trans_275.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 276,
+    "original": "code_orig_276.py",
+    "transformed": "code_trans_276.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 277,
+    "original": "code_orig_277.py",
+    "transformed": "code_trans_277.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 278,
+    "original": "code_orig_278.py",
+    "transformed": "code_trans_278.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 279,
+    "original": "code_orig_279.py",
+    "transformed": "code_trans_279.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 280,
+    "original": "code_orig_280.py",
+    "transformed": "code_trans_280.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 281,
+    "original": "code_orig_281.py",
+    "transformed": "code_trans_281.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 282,
+    "original": "code_orig_282.py",
+    "transformed": "code_trans_282.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 283,
+    "original": "code_orig_283.py",
+    "transformed": "code_trans_283.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 284,
+    "original": "code_orig_284.py",
+    "transformed": "code_trans_284.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 285,
+    "original": "code_orig_285.py",
+    "transformed": "code_trans_285.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 286,
+    "original": "code_orig_286.py",
+    "transformed": "code_trans_286.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 287,
+    "original": "code_orig_287.py",
+    "transformed": "code_trans_287.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 288,
+    "original": "code_orig_288.py",
+    "transformed": "code_trans_288.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 289,
+    "original": "code_orig_289.py",
+    "transformed": "code_trans_289.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 290,
+    "original": "code_orig_290.py",
+    "transformed": "code_trans_290.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 291,
+    "original": "code_orig_291.py",
+    "transformed": "code_trans_291.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 292,
+    "original": "code_orig_292.py",
+    "transformed": "code_trans_292.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 293,
+    "original": "code_orig_293.py",
+    "transformed": "code_trans_293.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 294,
+    "original": "code_orig_294.py",
+    "transformed": "code_trans_294.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 295,
+    "original": "code_orig_295.py",
+    "transformed": "code_trans_295.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 296,
+    "original": "code_orig_296.py",
+    "transformed": "code_trans_296.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 297,
+    "original": "code_orig_297.py",
+    "transformed": "code_trans_297.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 298,
+    "original": "code_orig_298.py",
+    "transformed": "code_trans_298.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 299,
+    "original": "code_orig_299.py",
+    "transformed": "code_trans_299.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 300,
+    "original": "code_orig_300.py",
+    "transformed": "code_trans_300.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 301,
+    "original": "code_orig_301.py",
+    "transformed": "code_trans_301.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 302,
+    "original": "code_orig_302.py",
+    "transformed": "code_trans_302.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 303,
+    "original": "code_orig_303.py",
+    "transformed": "code_trans_303.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 304,
+    "original": "code_orig_304.py",
+    "transformed": "code_trans_304.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 305,
+    "original": "code_orig_305.py",
+    "transformed": "code_trans_305.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 306,
+    "original": "code_orig_306.py",
+    "transformed": "code_trans_306.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 307,
+    "original": "code_orig_307.py",
+    "transformed": "code_trans_307.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 308,
+    "original": "code_orig_308.py",
+    "transformed": "code_trans_308.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 309,
+    "original": "code_orig_309.py",
+    "transformed": "code_trans_309.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 310,
+    "original": "code_orig_310.py",
+    "transformed": "code_trans_310.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 311,
+    "original": "code_orig_311.py",
+    "transformed": "code_trans_311.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 312,
+    "original": "code_orig_312.py",
+    "transformed": "code_trans_312.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 313,
+    "original": "code_orig_313.py",
+    "transformed": "code_trans_313.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 314,
+    "original": "code_orig_314.py",
+    "transformed": "code_trans_314.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 315,
+    "original": "code_orig_315.py",
+    "transformed": "code_trans_315.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 316,
+    "original": "code_orig_316.py",
+    "transformed": "code_trans_316.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 317,
+    "original": "code_orig_317.py",
+    "transformed": "code_trans_317.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 318,
+    "original": "code_orig_318.py",
+    "transformed": "code_trans_318.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 319,
+    "original": "code_orig_319.py",
+    "transformed": "code_trans_319.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 320,
+    "original": "code_orig_320.py",
+    "transformed": "code_trans_320.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 321,
+    "original": "code_orig_321.py",
+    "transformed": "code_trans_321.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 322,
+    "original": "code_orig_322.py",
+    "transformed": "code_trans_322.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 323,
+    "original": "code_orig_323.py",
+    "transformed": "code_trans_323.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 324,
+    "original": "code_orig_324.py",
+    "transformed": "code_trans_324.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 325,
+    "original": "code_orig_325.py",
+    "transformed": "code_trans_325.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 326,
+    "original": "code_orig_326.py",
+    "transformed": "code_trans_326.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 327,
+    "original": "code_orig_327.py",
+    "transformed": "code_trans_327.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 328,
+    "original": "code_orig_328.py",
+    "transformed": "code_trans_328.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 329,
+    "original": "code_orig_329.py",
+    "transformed": "code_trans_329.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 330,
+    "original": "code_orig_330.py",
+    "transformed": "code_trans_330.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 331,
+    "original": "code_orig_331.py",
+    "transformed": "code_trans_331.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 332,
+    "original": "code_orig_332.py",
+    "transformed": "code_trans_332.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 333,
+    "original": "code_orig_333.py",
+    "transformed": "code_trans_333.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 334,
+    "original": "code_orig_334.py",
+    "transformed": "code_trans_334.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 335,
+    "original": "code_orig_335.py",
+    "transformed": "code_trans_335.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 336,
+    "original": "code_orig_336.py",
+    "transformed": "code_trans_336.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 337,
+    "original": "code_orig_337.py",
+    "transformed": "code_trans_337.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 338,
+    "original": "code_orig_338.py",
+    "transformed": "code_trans_338.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 339,
+    "original": "code_orig_339.py",
+    "transformed": "code_trans_339.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 340,
+    "original": "code_orig_340.py",
+    "transformed": "code_trans_340.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 341,
+    "original": "code_orig_341.py",
+    "transformed": "code_trans_341.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 342,
+    "original": "code_orig_342.py",
+    "transformed": "code_trans_342.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 343,
+    "original": "code_orig_343.py",
+    "transformed": "code_trans_343.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 344,
+    "original": "code_orig_344.py",
+    "transformed": "code_trans_344.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 345,
+    "original": "code_orig_345.py",
+    "transformed": "code_trans_345.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 346,
+    "original": "code_orig_346.py",
+    "transformed": "code_trans_346.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 347,
+    "original": "code_orig_347.py",
+    "transformed": "code_trans_347.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 348,
+    "original": "code_orig_348.py",
+    "transformed": "code_trans_348.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 349,
+    "original": "code_orig_349.py",
+    "transformed": "code_trans_349.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 350,
+    "original": "code_orig_350.py",
+    "transformed": "code_trans_350.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 351,
+    "original": "code_orig_351.py",
+    "transformed": "code_trans_351.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 352,
+    "original": "code_orig_352.py",
+    "transformed": "code_trans_352.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 353,
+    "original": "code_orig_353.py",
+    "transformed": "code_trans_353.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 354,
+    "original": "code_orig_354.py",
+    "transformed": "code_trans_354.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 355,
+    "original": "code_orig_355.py",
+    "transformed": "code_trans_355.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 356,
+    "original": "code_orig_356.py",
+    "transformed": "code_trans_356.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 357,
+    "original": "code_orig_357.py",
+    "transformed": "code_trans_357.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 358,
+    "original": "code_orig_358.py",
+    "transformed": "code_trans_358.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 359,
+    "original": "code_orig_359.py",
+    "transformed": "code_trans_359.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 360,
+    "original": "code_orig_360.py",
+    "transformed": "code_trans_360.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 361,
+    "original": "code_orig_361.py",
+    "transformed": "code_trans_361.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 362,
+    "original": "code_orig_362.py",
+    "transformed": "code_trans_362.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 363,
+    "original": "code_orig_363.py",
+    "transformed": "code_trans_363.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 364,
+    "original": "code_orig_364.py",
+    "transformed": "code_trans_364.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 365,
+    "original": "code_orig_365.py",
+    "transformed": "code_trans_365.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 366,
+    "original": "code_orig_366.py",
+    "transformed": "code_trans_366.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 367,
+    "original": "code_orig_367.py",
+    "transformed": "code_trans_367.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 368,
+    "original": "code_orig_368.py",
+    "transformed": "code_trans_368.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 369,
+    "original": "code_orig_369.py",
+    "transformed": "code_trans_369.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 370,
+    "original": "code_orig_370.py",
+    "transformed": "code_trans_370.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 371,
+    "original": "code_orig_371.py",
+    "transformed": "code_trans_371.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 372,
+    "original": "code_orig_372.py",
+    "transformed": "code_trans_372.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 373,
+    "original": "code_orig_373.py",
+    "transformed": "code_trans_373.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 374,
+    "original": "code_orig_374.py",
+    "transformed": "code_trans_374.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 375,
+    "original": "code_orig_375.py",
+    "transformed": "code_trans_375.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 376,
+    "original": "code_orig_376.py",
+    "transformed": "code_trans_376.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 377,
+    "original": "code_orig_377.py",
+    "transformed": "code_trans_377.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 378,
+    "original": "code_orig_378.py",
+    "transformed": "code_trans_378.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 379,
+    "original": "code_orig_379.py",
+    "transformed": "code_trans_379.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 380,
+    "original": "code_orig_380.py",
+    "transformed": "code_trans_380.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 381,
+    "original": "code_orig_381.py",
+    "transformed": "code_trans_381.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 382,
+    "original": "code_orig_382.py",
+    "transformed": "code_trans_382.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 383,
+    "original": "code_orig_383.py",
+    "transformed": "code_trans_383.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 384,
+    "original": "code_orig_384.py",
+    "transformed": "code_trans_384.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 385,
+    "original": "code_orig_385.py",
+    "transformed": "code_trans_385.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 386,
+    "original": "code_orig_386.py",
+    "transformed": "code_trans_386.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 387,
+    "original": "code_orig_387.py",
+    "transformed": "code_trans_387.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 388,
+    "original": "code_orig_388.py",
+    "transformed": "code_trans_388.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 389,
+    "original": "code_orig_389.py",
+    "transformed": "code_trans_389.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 390,
+    "original": "code_orig_390.py",
+    "transformed": "code_trans_390.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 391,
+    "original": "code_orig_391.py",
+    "transformed": "code_trans_391.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 392,
+    "original": "code_orig_392.py",
+    "transformed": "code_trans_392.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 393,
+    "original": "code_orig_393.py",
+    "transformed": "code_trans_393.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 394,
+    "original": "code_orig_394.py",
+    "transformed": "code_trans_394.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 395,
+    "original": "code_orig_395.py",
+    "transformed": "code_trans_395.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 396,
+    "original": "code_orig_396.py",
+    "transformed": "code_trans_396.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 397,
+    "original": "code_orig_397.py",
+    "transformed": "code_trans_397.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 398,
+    "original": "code_orig_398.py",
+    "transformed": "code_trans_398.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 399,
+    "original": "code_orig_399.py",
+    "transformed": "code_trans_399.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 400,
+    "original": "code_orig_400.py",
+    "transformed": "code_trans_400.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 401,
+    "original": "code_orig_401.py",
+    "transformed": "code_trans_401.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 402,
+    "original": "code_orig_402.py",
+    "transformed": "code_trans_402.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 403,
+    "original": "code_orig_403.py",
+    "transformed": "code_trans_403.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 404,
+    "original": "code_orig_404.py",
+    "transformed": "code_trans_404.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 405,
+    "original": "code_orig_405.py",
+    "transformed": "code_trans_405.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 406,
+    "original": "code_orig_406.py",
+    "transformed": "code_trans_406.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 407,
+    "original": "code_orig_407.py",
+    "transformed": "code_trans_407.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 408,
+    "original": "code_orig_408.py",
+    "transformed": "code_trans_408.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 409,
+    "original": "code_orig_409.py",
+    "transformed": "code_trans_409.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 410,
+    "original": "code_orig_410.py",
+    "transformed": "code_trans_410.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 411,
+    "original": "code_orig_411.py",
+    "transformed": "code_trans_411.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 412,
+    "original": "code_orig_412.py",
+    "transformed": "code_trans_412.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 413,
+    "original": "code_orig_413.py",
+    "transformed": "code_trans_413.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 414,
+    "original": "code_orig_414.py",
+    "transformed": "code_trans_414.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 415,
+    "original": "code_orig_415.py",
+    "transformed": "code_trans_415.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 416,
+    "original": "code_orig_416.py",
+    "transformed": "code_trans_416.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 417,
+    "original": "code_orig_417.py",
+    "transformed": "code_trans_417.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 418,
+    "original": "code_orig_418.py",
+    "transformed": "code_trans_418.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 419,
+    "original": "code_orig_419.py",
+    "transformed": "code_trans_419.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 420,
+    "original": "code_orig_420.py",
+    "transformed": "code_trans_420.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 421,
+    "original": "code_orig_421.py",
+    "transformed": "code_trans_421.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 422,
+    "original": "code_orig_422.py",
+    "transformed": "code_trans_422.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 423,
+    "original": "code_orig_423.py",
+    "transformed": "code_trans_423.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 424,
+    "original": "code_orig_424.py",
+    "transformed": "code_trans_424.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 425,
+    "original": "code_orig_425.py",
+    "transformed": "code_trans_425.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 426,
+    "original": "code_orig_426.py",
+    "transformed": "code_trans_426.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 427,
+    "original": "code_orig_427.py",
+    "transformed": "code_trans_427.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 428,
+    "original": "code_orig_428.py",
+    "transformed": "code_trans_428.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 429,
+    "original": "code_orig_429.py",
+    "transformed": "code_trans_429.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 430,
+    "original": "code_orig_430.py",
+    "transformed": "code_trans_430.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 431,
+    "original": "code_orig_431.py",
+    "transformed": "code_trans_431.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 432,
+    "original": "code_orig_432.py",
+    "transformed": "code_trans_432.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 433,
+    "original": "code_orig_433.py",
+    "transformed": "code_trans_433.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 434,
+    "original": "code_orig_434.py",
+    "transformed": "code_trans_434.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 435,
+    "original": "code_orig_435.py",
+    "transformed": "code_trans_435.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 436,
+    "original": "code_orig_436.py",
+    "transformed": "code_trans_436.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 437,
+    "original": "code_orig_437.py",
+    "transformed": "code_trans_437.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 438,
+    "original": "code_orig_438.py",
+    "transformed": "code_trans_438.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 439,
+    "original": "code_orig_439.py",
+    "transformed": "code_trans_439.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 440,
+    "original": "code_orig_440.py",
+    "transformed": "code_trans_440.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 441,
+    "original": "code_orig_441.py",
+    "transformed": "code_trans_441.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 442,
+    "original": "code_orig_442.py",
+    "transformed": "code_trans_442.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 443,
+    "original": "code_orig_443.py",
+    "transformed": "code_trans_443.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 444,
+    "original": "code_orig_444.py",
+    "transformed": "code_trans_444.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 445,
+    "original": "code_orig_445.py",
+    "transformed": "code_trans_445.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 446,
+    "original": "code_orig_446.py",
+    "transformed": "code_trans_446.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 447,
+    "original": "code_orig_447.py",
+    "transformed": "code_trans_447.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 448,
+    "original": "code_orig_448.py",
+    "transformed": "code_trans_448.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 449,
+    "original": "code_orig_449.py",
+    "transformed": "code_trans_449.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 450,
+    "original": "code_orig_450.py",
+    "transformed": "code_trans_450.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 451,
+    "original": "code_orig_451.py",
+    "transformed": "code_trans_451.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 452,
+    "original": "code_orig_452.py",
+    "transformed": "code_trans_452.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 453,
+    "original": "code_orig_453.py",
+    "transformed": "code_trans_453.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 454,
+    "original": "code_orig_454.py",
+    "transformed": "code_trans_454.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 455,
+    "original": "code_orig_455.py",
+    "transformed": "code_trans_455.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 456,
+    "original": "code_orig_456.py",
+    "transformed": "code_trans_456.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 457,
+    "original": "code_orig_457.py",
+    "transformed": "code_trans_457.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 458,
+    "original": "code_orig_458.py",
+    "transformed": "code_trans_458.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 459,
+    "original": "code_orig_459.py",
+    "transformed": "code_trans_459.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 460,
+    "original": "code_orig_460.py",
+    "transformed": "code_trans_460.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 461,
+    "original": "code_orig_461.py",
+    "transformed": "code_trans_461.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 462,
+    "original": "code_orig_462.py",
+    "transformed": "code_trans_462.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 463,
+    "original": "code_orig_463.py",
+    "transformed": "code_trans_463.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 464,
+    "original": "code_orig_464.py",
+    "transformed": "code_trans_464.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 465,
+    "original": "code_orig_465.py",
+    "transformed": "code_trans_465.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 466,
+    "original": "code_orig_466.py",
+    "transformed": "code_trans_466.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 467,
+    "original": "code_orig_467.py",
+    "transformed": "code_trans_467.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 468,
+    "original": "code_orig_468.py",
+    "transformed": "code_trans_468.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 469,
+    "original": "code_orig_469.py",
+    "transformed": "code_trans_469.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 470,
+    "original": "code_orig_470.py",
+    "transformed": "code_trans_470.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 471,
+    "original": "code_orig_471.py",
+    "transformed": "code_trans_471.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 472,
+    "original": "code_orig_472.py",
+    "transformed": "code_trans_472.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 473,
+    "original": "code_orig_473.py",
+    "transformed": "code_trans_473.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 474,
+    "original": "code_orig_474.py",
+    "transformed": "code_trans_474.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 475,
+    "original": "code_orig_475.py",
+    "transformed": "code_trans_475.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 476,
+    "original": "code_orig_476.py",
+    "transformed": "code_trans_476.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 477,
+    "original": "code_orig_477.py",
+    "transformed": "code_trans_477.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 478,
+    "original": "code_orig_478.py",
+    "transformed": "code_trans_478.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 479,
+    "original": "code_orig_479.py",
+    "transformed": "code_trans_479.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 480,
+    "original": "code_orig_480.py",
+    "transformed": "code_trans_480.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 481,
+    "original": "code_orig_481.py",
+    "transformed": "code_trans_481.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 482,
+    "original": "code_orig_482.py",
+    "transformed": "code_trans_482.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 483,
+    "original": "code_orig_483.py",
+    "transformed": "code_trans_483.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 484,
+    "original": "code_orig_484.py",
+    "transformed": "code_trans_484.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 485,
+    "original": "code_orig_485.py",
+    "transformed": "code_trans_485.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 486,
+    "original": "code_orig_486.py",
+    "transformed": "code_trans_486.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 487,
+    "original": "code_orig_487.py",
+    "transformed": "code_trans_487.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 488,
+    "original": "code_orig_488.py",
+    "transformed": "code_trans_488.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 489,
+    "original": "code_orig_489.py",
+    "transformed": "code_trans_489.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 490,
+    "original": "code_orig_490.py",
+    "transformed": "code_trans_490.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 491,
+    "original": "code_orig_491.py",
+    "transformed": "code_trans_491.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 492,
+    "original": "code_orig_492.py",
+    "transformed": "code_trans_492.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 493,
+    "original": "code_orig_493.py",
+    "transformed": "code_trans_493.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 494,
+    "original": "code_orig_494.py",
+    "transformed": "code_trans_494.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 495,
+    "original": "code_orig_495.py",
+    "transformed": "code_trans_495.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 496,
+    "original": "code_orig_496.py",
+    "transformed": "code_trans_496.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 497,
+    "original": "code_orig_497.py",
+    "transformed": "code_trans_497.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 498,
+    "original": "code_orig_498.py",
+    "transformed": "code_trans_498.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 499,
+    "original": "code_orig_499.py",
+    "transformed": "code_trans_499.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 500,
+    "original": "code_orig_500.py",
+    "transformed": "code_trans_500.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 501,
+    "original": "code_orig_501.py",
+    "transformed": "code_trans_501.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 502,
+    "original": "code_orig_502.py",
+    "transformed": "code_trans_502.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 503,
+    "original": "code_orig_503.py",
+    "transformed": "code_trans_503.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 504,
+    "original": "code_orig_504.py",
+    "transformed": "code_trans_504.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 505,
+    "original": "code_orig_505.py",
+    "transformed": "code_trans_505.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 506,
+    "original": "code_orig_506.py",
+    "transformed": "code_trans_506.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 507,
+    "original": "code_orig_507.py",
+    "transformed": "code_trans_507.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 508,
+    "original": "code_orig_508.py",
+    "transformed": "code_trans_508.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 509,
+    "original": "code_orig_509.py",
+    "transformed": "code_trans_509.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 510,
+    "original": "code_orig_510.py",
+    "transformed": "code_trans_510.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 511,
+    "original": "code_orig_511.py",
+    "transformed": "code_trans_511.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 512,
+    "original": "code_orig_512.py",
+    "transformed": "code_trans_512.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 513,
+    "original": "code_orig_513.py",
+    "transformed": "code_trans_513.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 514,
+    "original": "code_orig_514.py",
+    "transformed": "code_trans_514.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 515,
+    "original": "code_orig_515.py",
+    "transformed": "code_trans_515.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 516,
+    "original": "code_orig_516.py",
+    "transformed": "code_trans_516.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 517,
+    "original": "code_orig_517.py",
+    "transformed": "code_trans_517.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 518,
+    "original": "code_orig_518.py",
+    "transformed": "code_trans_518.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 519,
+    "original": "code_orig_519.py",
+    "transformed": "code_trans_519.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 520,
+    "original": "code_orig_520.py",
+    "transformed": "code_trans_520.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 521,
+    "original": "code_orig_521.py",
+    "transformed": "code_trans_521.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 522,
+    "original": "code_orig_522.py",
+    "transformed": "code_trans_522.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 523,
+    "original": "code_orig_523.py",
+    "transformed": "code_trans_523.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 524,
+    "original": "code_orig_524.py",
+    "transformed": "code_trans_524.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 525,
+    "original": "code_orig_525.py",
+    "transformed": "code_trans_525.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 526,
+    "original": "code_orig_526.py",
+    "transformed": "code_trans_526.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 527,
+    "original": "code_orig_527.py",
+    "transformed": "code_trans_527.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 528,
+    "original": "code_orig_528.py",
+    "transformed": "code_trans_528.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 529,
+    "original": "code_orig_529.py",
+    "transformed": "code_trans_529.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 530,
+    "original": "code_orig_530.py",
+    "transformed": "code_trans_530.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 531,
+    "original": "code_orig_531.py",
+    "transformed": "code_trans_531.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 532,
+    "original": "code_orig_532.py",
+    "transformed": "code_trans_532.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 533,
+    "original": "code_orig_533.py",
+    "transformed": "code_trans_533.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 534,
+    "original": "code_orig_534.py",
+    "transformed": "code_trans_534.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 535,
+    "original": "code_orig_535.py",
+    "transformed": "code_trans_535.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 536,
+    "original": "code_orig_536.py",
+    "transformed": "code_trans_536.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 537,
+    "original": "code_orig_537.py",
+    "transformed": "code_trans_537.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 538,
+    "original": "code_orig_538.py",
+    "transformed": "code_trans_538.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 539,
+    "original": "code_orig_539.py",
+    "transformed": "code_trans_539.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 540,
+    "original": "code_orig_540.py",
+    "transformed": "code_trans_540.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 541,
+    "original": "code_orig_541.py",
+    "transformed": "code_trans_541.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 542,
+    "original": "code_orig_542.py",
+    "transformed": "code_trans_542.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 543,
+    "original": "code_orig_543.py",
+    "transformed": "code_trans_543.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 544,
+    "original": "code_orig_544.py",
+    "transformed": "code_trans_544.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 545,
+    "original": "code_orig_545.py",
+    "transformed": "code_trans_545.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 546,
+    "original": "code_orig_546.py",
+    "transformed": "code_trans_546.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 547,
+    "original": "code_orig_547.py",
+    "transformed": "code_trans_547.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 548,
+    "original": "code_orig_548.py",
+    "transformed": "code_trans_548.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 549,
+    "original": "code_orig_549.py",
+    "transformed": "code_trans_549.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 550,
+    "original": "code_orig_550.py",
+    "transformed": "code_trans_550.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 551,
+    "original": "code_orig_551.py",
+    "transformed": "code_trans_551.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 552,
+    "original": "code_orig_552.py",
+    "transformed": "code_trans_552.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 553,
+    "original": "code_orig_553.py",
+    "transformed": "code_trans_553.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 554,
+    "original": "code_orig_554.py",
+    "transformed": "code_trans_554.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 555,
+    "original": "code_orig_555.py",
+    "transformed": "code_trans_555.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 556,
+    "original": "code_orig_556.py",
+    "transformed": "code_trans_556.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 557,
+    "original": "code_orig_557.py",
+    "transformed": "code_trans_557.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 558,
+    "original": "code_orig_558.py",
+    "transformed": "code_trans_558.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 559,
+    "original": "code_orig_559.py",
+    "transformed": "code_trans_559.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 560,
+    "original": "code_orig_560.py",
+    "transformed": "code_trans_560.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 561,
+    "original": "code_orig_561.py",
+    "transformed": "code_trans_561.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 562,
+    "original": "code_orig_562.py",
+    "transformed": "code_trans_562.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 563,
+    "original": "code_orig_563.py",
+    "transformed": "code_trans_563.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 564,
+    "original": "code_orig_564.py",
+    "transformed": "code_trans_564.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 565,
+    "original": "code_orig_565.py",
+    "transformed": "code_trans_565.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 566,
+    "original": "code_orig_566.py",
+    "transformed": "code_trans_566.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 567,
+    "original": "code_orig_567.py",
+    "transformed": "code_trans_567.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 568,
+    "original": "code_orig_568.py",
+    "transformed": "code_trans_568.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 569,
+    "original": "code_orig_569.py",
+    "transformed": "code_trans_569.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 570,
+    "original": "code_orig_570.py",
+    "transformed": "code_trans_570.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 571,
+    "original": "code_orig_571.py",
+    "transformed": "code_trans_571.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 572,
+    "original": "code_orig_572.py",
+    "transformed": "code_trans_572.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 573,
+    "original": "code_orig_573.py",
+    "transformed": "code_trans_573.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 574,
+    "original": "code_orig_574.py",
+    "transformed": "code_trans_574.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 575,
+    "original": "code_orig_575.py",
+    "transformed": "code_trans_575.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 576,
+    "original": "code_orig_576.py",
+    "transformed": "code_trans_576.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 577,
+    "original": "code_orig_577.py",
+    "transformed": "code_trans_577.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 578,
+    "original": "code_orig_578.py",
+    "transformed": "code_trans_578.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 579,
+    "original": "code_orig_579.py",
+    "transformed": "code_trans_579.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 580,
+    "original": "code_orig_580.py",
+    "transformed": "code_trans_580.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 581,
+    "original": "code_orig_581.py",
+    "transformed": "code_trans_581.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 582,
+    "original": "code_orig_582.py",
+    "transformed": "code_trans_582.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 583,
+    "original": "code_orig_583.py",
+    "transformed": "code_trans_583.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 584,
+    "original": "code_orig_584.py",
+    "transformed": "code_trans_584.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 585,
+    "original": "code_orig_585.py",
+    "transformed": "code_trans_585.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 586,
+    "original": "code_orig_586.py",
+    "transformed": "code_trans_586.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 587,
+    "original": "code_orig_587.py",
+    "transformed": "code_trans_587.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 588,
+    "original": "code_orig_588.py",
+    "transformed": "code_trans_588.py",
+    "clone_type": "type4",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 589,
+    "original": "code_orig_589.py",
+    "transformed": "code_trans_589.py",
+    "clone_type": "type2",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 590,
+    "original": "code_orig_590.py",
+    "transformed": "code_trans_590.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 591,
+    "original": "code_orig_591.py",
+    "transformed": "code_trans_591.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 592,
+    "original": "code_orig_592.py",
+    "transformed": "code_trans_592.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 593,
+    "original": "code_orig_593.py",
+    "transformed": "code_trans_593.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 594,
+    "original": "code_orig_594.py",
+    "transformed": "code_trans_594.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 595,
+    "original": "code_orig_595.py",
+    "transformed": "code_trans_595.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 596,
+    "original": "code_orig_596.py",
+    "transformed": "code_trans_596.py",
+    "clone_type": "none",
+    "is_plagiarized": 0
+  },
+  {
+    "pair_id": 597,
+    "original": "code_orig_597.py",
+    "transformed": "code_trans_597.py",
+    "clone_type": "type3",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 598,
+    "original": "code_orig_598.py",
+    "transformed": "code_trans_598.py",
+    "clone_type": "type1",
+    "is_plagiarized": 1
+  },
+  {
+    "pair_id": 599,
+    "original": "code_orig_599.py",
+    "transformed": "code_trans_599.py",
+    "clone_type": "mixed",
+    "is_plagiarized": 1
+  }
+]

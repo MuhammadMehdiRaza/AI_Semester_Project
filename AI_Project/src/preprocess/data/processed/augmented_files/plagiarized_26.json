@@ -1,0 +1,81 @@
+{
+  "path": "data/augmented\\plagiarized_26.py",
+  "loc": 10,
+  "imports": [
+    "math"
+  ],
+  "node_hist": {
+    "Module": 1,
+    "Import": 1,
+    "FunctionDef": 1,
+    "Assign": 1,
+    "Expr": 1,
+    "alias": 1,
+    "arguments": 1,
+    "Return": 1,
+    "Name": 12,
+    "Call": 5,
+    "arg": 1,
+    "Store": 2,
+    "Constant": 6,
+    "GeneratorExp": 1,
+    "Load": 11,
+    "IfExp": 1,
+    "comprehension": 1,
+    "Compare": 1,
+    "BinOp": 2,
+    "Eq": 1,
+    "Attribute": 1,
+    "Mod": 1,
+    "Add": 1
+  },
+  "num_functions": 1,
+  "functions": [
+    {
+      "name": "ft_v8",
+      "args": 1,
+      "lineno": 4,
+      "end_lineno": 5
+    }
+  ],
+  "avg_cc": 3.0,
+  "max_cc": 3,
+  "top_idents": [
+    [
+      "i",
+      4
+    ],
+    [
+      "rst_v1",
+      2
+    ],
+    [
+      "ft_v8",
+      1
+    ],
+    [
+      "print",
+      1
+    ],
+    [
+      "sum_v5",
+      1
+    ],
+    [
+      "range",
+      1
+    ],
+    [
+      "math",
+      1
+    ],
+    [
+      "n",
+      1
+    ]
+  ],
+  "subtree_hashes": [
+    "da1e89afbd4074ed42d06cc54819562655a16f066ee6116cb0b9204c4d007979"
+  ],
+  "canonical_code": "import math\n\ndef f1(v1):\n    return v2((v4.factorial(v3) if v3 % 2 == 0 else v3 for v3 in v5(1, v1 + 1)))\nv6 = f1(5)\nv7('Result:', v6)"
+}

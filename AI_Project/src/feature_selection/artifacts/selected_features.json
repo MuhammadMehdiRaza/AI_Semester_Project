@@ -1,18 +1,25 @@
 {
   "selected_features": [
-    "node_cosine",
-    "node_total_ratio",
+    "canonical_len_ratio",
     "canonical_similarity",
-    "node_diff_Store",
-    "node_diff_Name",
-    "node_hist_l1",
-    "node_hist_l2",
-    "node_total_diff",
-    "node_diff_Constant",
-    "node_diff_Assign"
+    "cc_avg_diff",
+    "cc_max_diff",
+    "common_imports",
+    "common_subtrees",
+    "exact_match",
+    "func_count_diff",
+    "func_count_ratio",
+    "ident_jaccard",
+    "import_count_diff",
+    "import_jaccard",
+    "loc_avg",
+    "loc_diff",
+    "loc_ratio",
+    "node_hist_cosine",
+    "node_hist_jaccard",
+    "subtree_count_diff",
+    "subtree_hash_jaccard"
   ],
-  "parameters": {
-    "max_features": 10,
-    "method": "ml_guided"
-  }
+  "n_selected": 19,
+  "method": "all_features"
 }
